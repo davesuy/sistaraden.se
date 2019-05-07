@@ -46,6 +46,7 @@ Thumbs.db
 # "themes" directory
 wp-content/*
 !wp-content/themes/
+!wp-content/plugins/
 
 # ignore these plugins
 wp-content/plugins/hello.php
