@@ -58,11 +58,11 @@ wp-content/themes/twenty*/
 
 
 # ignore theme folder of acf-json
-#wp-content/themes/beaver-theme/acf-json/*
+#wp-content/themes/bb-theme-child/acf-json/*
 
 # ignore additional theme related directories (
 # node, bower and the dist folder
-# wp-content/themes/addtional/node_modules/*
+wp-content/themes/bb-theme-child/node_modules/*
 
 
 
