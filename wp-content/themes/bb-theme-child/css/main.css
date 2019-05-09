@@ -1,3 +1,7 @@
 @media (max-width: 1440px) {
-  .fl-page-header-container {
-    background: red !important; } }
+  .fl-module-menu #menu-main-menu a {
+    padding-left: 12px;
+    padding-right: 12px; }
+  .fl-module-menu #menu-main-menu a.fl-button {
+    padding-left: 12px;
+    padding-right: 12px; } }

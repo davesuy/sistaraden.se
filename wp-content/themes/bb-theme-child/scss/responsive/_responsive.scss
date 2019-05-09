@@ -56,30 +56,35 @@ $breakpoint: map-get($breakpoints, sm);
   }
 }
 
-
 // Start CSS
 
 @include respond-below(lp) {
 
+	
+	.fl-module-menu {
 
-	#menu-main-menu {
+		#menu-main-menu {
 
-		.menu  {
-
-				a {
-					padding-left: 12px;
-					padding-right: 12px;
-				}
-
-				a.fl-button {
-					padding-left: 12px;
-					padding-right: 12px;
-				}
-
+	
+			a {
+				padding-left: 12px;
+				padding-right: 12px;
 			}
-			
-		}
 
-	} 
+			a.fl-button {
+				padding-left: 12px;
+				padding-right: 12px;
+			}
+
+
+		} 
+
+	}
+
+
 
 }
+
+
+
+
