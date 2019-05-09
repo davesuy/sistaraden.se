@@ -5,3 +5,15 @@
   #sr-header-con a.fl-button {
     padding-left: 12px;
     padding-right: 12px; } }
+
+.blue-stripe {
+  position: relative; }
+  .blue-stripe:before {
+    content: "";
+    background: url(../svg/dstripe/dstripe-home01.svg) repeat scroll 0 0 transparent;
+    background-size: cover;
+    position: absolute;
+    height: 333px;
+    width: 456px;
+    bottom: -30px;
+    left: 0; }

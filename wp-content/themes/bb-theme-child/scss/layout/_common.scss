@@ -1,0 +1,19 @@
+
+.blue-stripe {
+	
+	position: relative;
+
+	&:before {
+
+		content: "";
+		background: url(#{$svg_dir}/dstripe/dstripe-home01.svg) repeat scroll 0 0 transparent;
+		background-size: cover;
+	    position: absolute;
+	    height: 333px;
+	    width: 456px;
+	    bottom: -30px;
+	    left: 0;
+
+	}
+	
+}
