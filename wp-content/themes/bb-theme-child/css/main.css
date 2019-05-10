@@ -17,3 +17,26 @@
     width: 456px;
     bottom: -30px;
     left: 0; }
+
+.blue-stripe-3 .fl-row-fixed-width {
+  position: relative; }
+  .blue-stripe-3 .fl-row-fixed-width:before {
+    content: "";
+    background: url(../svg/dstripe/dstripe-home03.svg) repeat scroll 0 0 transparent;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 660px;
+    z-index: 1;
+    top: 192px; }
+
+.sr-heading-bg .fl-heading .fl-heading-text {
+  background: #D8E5E8;
+  padding: 10px 20px; }
+
+.fl-col,
+.fl-col-content,
+.fl-module,
+.fl-col-group {
+  z-index: 2;
+  position: relative; }
