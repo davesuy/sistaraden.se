@@ -131,6 +131,9 @@
   position: relative;
   z-index: 2; }
 
+.single-post .sr-single-post-wrapper .fl-row-content-wrap {
+  z-index: 2; }
+
 .single-post-stripe {
   position: relative; }
   .single-post-stripe:after {
