@@ -61,3 +61,23 @@
 
 .esg-grid .esg-filters:nth-of-type(2) .esg-allfilter {
   display: none; }
+
+/* Single Post */
+.sr-single-post-info-con .esgrid-meta-text {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-family: Roboto Condensed;
+  font-weight: normal; }
+
+.sr-single-post-info-con .esgrid-tag-text,
+.sr-single-post-info-con .esgrid-tag-text a {
+  color: #C7C7C7;
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal; }
+
+.single-post .fl-content {
+  margin-top: 0; }
