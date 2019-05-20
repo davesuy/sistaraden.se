@@ -166,7 +166,7 @@
 	position: relative;
 
 	&:after {
-			content: "";
+		content: "";
 		background: url(#{$images_dir}/dstripe/post-stripe.png) no-repeat scroll 0 0 transparent;
 		background-size: contain;
 	    position: absolute;
