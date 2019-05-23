@@ -155,3 +155,29 @@ function portfolio_category() {
 
 }
 add_action( 'init', 'portfolio_category', 0 );
+
+
+function add_last_nav_item($items) {
+
+	$last_items = "";
+
+	if ( wp_is_mobile() ) {
+
+		 $last_items = do_shortcode('[fl_builder_insert_layout slug="mobile-elements"]');
+	} 
+
+
+	if(!empty($last_items )) {
+
+		 return $items .= $last_items;
+
+	} else {
+
+		return $items;
+
+	}
+
+
+	
+}
+add_filter('wp_nav_menu_items','add_last_nav_item');
