@@ -43,6 +43,21 @@
   z-index: 2;
   position: relative; }
 
+.sr-menu-con.fl-menu-mobile-clone .fl-module-content {
+  margin: 0 !important; }
+  .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {
+    padding: 25px 0;
+    background-color: rgba(10, 10, 10, 0.75); }
+    .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu li a {
+      color: #fff;
+      -webkit-text-fill-color: transparent;
+      /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #fff;
+      font-weight: normal;
+      padding: 15px;
+      line-height: 1.2; }
+
 .widget_ess_grid .widgettitle {
   font-size: 50px;
   float: left; }

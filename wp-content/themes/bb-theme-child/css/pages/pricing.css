@@ -1,0 +1,33 @@
+.pricing-column-wrapper .pricing-column-con:nth-child(1) {
+  position: relative; }
+  .pricing-column-wrapper .pricing-column-con:nth-child(1):after {
+    content: "";
+    background: url(../images/dstripe/dstripe-pink.png) no-repeat scroll 0 0 transparent;
+    background-size: contain;
+    position: absolute;
+    height: 296px;
+    width: 636px;
+    top: 140px;
+    left: -65px; }
+
+.pricing-column-wrapper .pricing-column-con:nth-child(2):after {
+  content: "";
+  background: url(../images/dstripe/dstripe-green.png) no-repeat scroll 0 0 transparent;
+  background-size: contain;
+  position: absolute;
+  height: 296px;
+  width: 636px;
+  bottom: -52px;
+  left: -45px; }
+
+.custom-made-wrapper .custom-made-con {
+  position: relative; }
+  .custom-made-wrapper .custom-made-con:after {
+    content: "";
+    background: url(../images/dstripe/dstripe-purple.png) no-repeat scroll 0 0 transparent;
+    background-size: contain;
+    position: absolute;
+    height: 120px;
+    width: 456px;
+    bottom: -40px;
+    left: -65px; }
