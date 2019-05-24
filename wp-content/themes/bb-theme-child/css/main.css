@@ -34,7 +34,7 @@
 
 .sr-heading-bg .fl-heading .fl-heading-text {
   background: #D8E5E8;
-  padding: 10px 20px; }
+  /*padding: 10px 20px;*/ }
 
 .fl-col,
 .fl-col-content,
@@ -57,6 +57,8 @@
       font-weight: normal;
       padding: 15px;
       line-height: 1.2; }
+    .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu a.fl-button {
+      border: none; }
 
 .widget_ess_grid .widgettitle {
   font-size: 50px;
