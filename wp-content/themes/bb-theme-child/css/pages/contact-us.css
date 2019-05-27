@@ -1,0 +1,9 @@
+.subscription-form .fl-form-field input[type="email"] {
+  height: 3.5rem;
+  box-shadow: 0px 2px 4px #00000029; }
+
+.subscription-form .fl-form-button a.fl-button {
+  height: 3.625rem; }
+
+.subscription-form .fl-form-button span.fl-button-text {
+  vertical-align: sub; }
