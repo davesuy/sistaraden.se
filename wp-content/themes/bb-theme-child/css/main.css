@@ -345,3 +345,42 @@
 
 .subscription-form .fl-form-button span.fl-button-text {
   vertical-align: sub; }
+
+#sistaraden-login-wrapper #user_login {
+  border-radius: 0;
+  -webkit-box-shadow: inset -2px -8px 0px 0px #707070;
+  -moz-box-shadow: inset -2px -8px 0px 0px #707070;
+  box-shadow: inset -2px -8px 0px 0px #707070;
+  border: none;
+  padding: 34px 10px 34px 10px; }
+
+#sistaraden-login-wrapper #user_pass {
+  border-radius: 0;
+  -webkit-box-shadow: inset -2px -8px 0px 0px #707070;
+  -moz-box-shadow: inset -2px -8px 0px 0px #707070;
+  box-shadow: inset -2px -8px 0px 0px #707070;
+  border: none;
+  padding: 34px 10px 34px 10px; }
+
+#sistaraden-login-wrapper .login-submit {
+  text-align: center; }
+  #sistaraden-login-wrapper .login-submit #wp-submit {
+    border-radius: 0;
+    padding: 17px 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 305px;
+    font-size: 24px;
+    font-family: Roboto Condensed;
+    text-transform: uppercase; }
+  #sistaraden-login-wrapper .login-submit:after {
+    content: "";
+    background: #000;
+    height: 3px;
+    width: 100%;
+    display: block;
+    max-width: 305px;
+    margin-top: 10px;
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: 3px solid #000; }
