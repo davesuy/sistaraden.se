@@ -34,6 +34,34 @@
   top: 50%;
   margin-top: -110px; }
 
+.green-stripe {
+  position: relative; }
+  .green-stripe:before {
+    content: "";
+    background: url(../images/dstripe/green-stripe-center.png) repeat scroll 0 0 transparent;
+    background-size: cover;
+    position: absolute; }
+
+.green-stripe.green-stripe-diagonal:before {
+  background: url(../images/dstripe/green-stripe-diagonal.png) repeat scroll 0 0 transparent;
+  height: 217px;
+  width: 333px;
+  left: -30px;
+  top: -20px; }
+
+.green-stripe.green-stripe-center:before {
+  height: 404px;
+  width: 378px;
+  left: 50%;
+  margin-left: -195px; }
+
+.green-stripe.green-stripe-left:before {
+  height: 217px;
+  width: 333px;
+  left: 10px;
+  top: 50%;
+  margin-top: -110px; }
+
 .blue-stripe {
   position: relative; }
   .blue-stripe:before {
