@@ -283,7 +283,7 @@
   border-top: 4px solid #222222; }
 
 .about-us-card {
-  height: 25.875rem;
+  height: 334px;
   overflow: hidden; }
   .about-us-card img {
     transition: transform .5s ease;
@@ -303,7 +303,7 @@
     text-align: right;
     position: relative;
     max-width: 241px;
-    right: -10%;
+    right: -4%;
     bottom: 40%;
     color: #F4F7F6;
     font-family: Roboto Condensed, sans-serif;
