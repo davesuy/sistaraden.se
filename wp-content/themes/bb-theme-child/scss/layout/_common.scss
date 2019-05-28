@@ -16,7 +16,8 @@
 	&:before {
 		background: url(#{$images_dir:}/dstripe/red-stripe-diagonal.png) repeat scroll 0 0 transparent;
 		height: 217px;
-	    width: 333px;
+	    max-width: 333px;
+	    width: 100%;
 	    left: -30px;
 	    top: -20px
 	}
@@ -28,7 +29,8 @@
 	&:before {
 
 	   	height: 404px;
-	    width: 378px;
+	    max-width: 378px;
+	    width: 100%;
 	    left: 50%;
     	margin-left: -195px;
 	}
@@ -38,7 +40,8 @@
 	&:before {
 
 		height: 217px;
-	    width: 333px;
+	    max-width: 333px;
+	    width: 100%;
 	    left: 10px;
 	    top: 50%;
 	    margin-top: -110px;
@@ -64,7 +67,8 @@
 	&:before {
 		background: url(#{$images_dir:}/dstripe/green-stripe-diagonal.png) repeat scroll 0 0 transparent;
 		height: 217px;
-	    width: 333px;
+	    max-width: 333px;
+	    width: 100%;
 	    left: -30px;
 	    top: -20px
 	}
@@ -76,7 +80,8 @@
 	&:before {
 
 	   	height: 404px;
-	    width: 378px;
+	    max-width: 378px;
+	    width: 100%;
 	    left: 50%;
     	margin-left: -195px;
 	}
@@ -86,7 +91,8 @@
 	&:before {
 
 		height: 217px;
-	    width: 333px;
+	    max-width: 333px;
+	    width: 100%;
 	    left: 10px;
 	    top: 50%;
 	    margin-top: -110px;
@@ -104,6 +110,7 @@
 		background-size: cover;
 	    position: absolute;
 	    height: 333px;
+	    width: 100%;
 	   	max-width: 456px;
 	    width: 100%;
 	    bottom: -30px;

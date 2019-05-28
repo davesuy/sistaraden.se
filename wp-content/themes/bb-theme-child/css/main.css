@@ -17,19 +17,22 @@
 .red-stripe.red-stripe-diagonal:before {
   background: url(../images/dstripe/red-stripe-diagonal.png) repeat scroll 0 0 transparent;
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: -30px;
   top: -20px; }
 
 .red-stripe.red-stripe-center:before {
   height: 404px;
-  width: 378px;
+  max-width: 378px;
+  width: 100%;
   left: 50%;
   margin-left: -195px; }
 
 .red-stripe.red-stripe-left:before {
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: 10px;
   top: 50%;
   margin-top: -110px; }
@@ -45,19 +48,22 @@
 .green-stripe.green-stripe-diagonal:before {
   background: url(../images/dstripe/green-stripe-diagonal.png) repeat scroll 0 0 transparent;
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: -30px;
   top: -20px; }
 
 .green-stripe.green-stripe-center:before {
   height: 404px;
-  width: 378px;
+  max-width: 378px;
+  width: 100%;
   left: 50%;
   margin-left: -195px; }
 
 .green-stripe.green-stripe-left:before {
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: 10px;
   top: 50%;
   margin-top: -110px; }
@@ -70,6 +76,7 @@
     background-size: cover;
     position: absolute;
     height: 333px;
+    width: 100%;
     max-width: 456px;
     width: 100%;
     bottom: -30px;
