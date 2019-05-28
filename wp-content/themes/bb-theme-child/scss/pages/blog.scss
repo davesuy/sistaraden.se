@@ -206,3 +206,9 @@
 	}
 	
 }
+
+@media screen and (max-width: 768px)  {
+	.single-post-stripe.single-post-stripe-right:after {
+			right: 0;
+	}
+}

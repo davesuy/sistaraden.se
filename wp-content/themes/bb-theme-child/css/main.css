@@ -245,6 +245,10 @@
     left: -72px;
     z-index: -1; }
 
+@media screen and (max-width: 768px) {
+  .single-post-stripe.single-post-stripe-right:after {
+    right: 0; } }
+
 .pricing-column-wrapper .pricing-column-con:nth-child(1) {
   position: relative; }
   .pricing-column-wrapper .pricing-column-con:nth-child(1):after {

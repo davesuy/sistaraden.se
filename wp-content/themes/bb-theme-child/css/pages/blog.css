@@ -118,3 +118,7 @@
     bottom: -53px;
     left: -72px;
     z-index: -1; }
+
+@media screen and (max-width: 768px) {
+  .single-post-stripe.single-post-stripe-right:after {
+    right: 0; } }
