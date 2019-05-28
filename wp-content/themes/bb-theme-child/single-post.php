@@ -5,7 +5,7 @@
 
 		<?php FLTheme::sidebar( 'left' ); ?>
 
-		<div class="fl-content <?php FLTheme::content_class(); ?>">
+		<div class="fl-content <?php //FLTheme::content_class(); ?>">
 			<?php
 			if ( have_posts() ) :
 				while ( have_posts() ) :
