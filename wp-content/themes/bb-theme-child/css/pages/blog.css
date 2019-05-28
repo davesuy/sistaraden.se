@@ -32,7 +32,8 @@
   font-weight: 700;
   color: #2F2F2F;
   padding: 40px 20px;
-  width: 168px;
+  max-width: 168px;
+  width: 100%;
   margin-right: 15px;
   text-align: center; }
   .esg-filters .esg-filter-wrapper .esg-filterbutton:nth-of-type(6) {
@@ -97,7 +98,8 @@
     background-size: contain;
     position: absolute;
     height: 175px;
-    width: 184px; }
+    max-width: 184px;
+    width: 100%; }
 
 .single-post-stripe.single-post-stripe-right:after {
   right: -72px;
@@ -111,7 +113,8 @@
     background-size: contain;
     position: absolute;
     height: 175px;
-    width: 184px;
+    max-width: 184px;
+    width: 100%;
     bottom: -53px;
     left: -72px;
     z-index: -1; }
