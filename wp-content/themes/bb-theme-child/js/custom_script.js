@@ -14,7 +14,7 @@ jQuery(document).ready(function( $ ) {
 		autoScrolling:false,
 		scrollHorizontally: true,
 		controlArrows: true,
-		fitToSection: true
+		fitToSection: true,
 		scrollingSpeed:700,
 	    css3: true,
 	    onLeave: function(index, nextIndex, direction) {
