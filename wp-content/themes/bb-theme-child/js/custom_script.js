@@ -1,4 +1,7 @@
 jQuery(document).ready(function( $ ) {
+	var slideIndex  = 1,
+    sliding     = false;
+
 	$('#fullpage').fullpage({
 		//options here
 		licenseKey: 'FA8BB31D-D2554F35-AC9CCC50-CA78D1E7',
