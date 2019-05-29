@@ -17,19 +17,22 @@
 .red-stripe.red-stripe-diagonal:before {
   background: url(../images/dstripe/red-stripe-diagonal.png) repeat scroll 0 0 transparent;
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: -30px;
   top: -20px; }
 
 .red-stripe.red-stripe-center:before {
   height: 404px;
-  width: 378px;
+  max-width: 378px;
+  width: 100%;
   left: 50%;
   margin-left: -195px; }
 
 .red-stripe.red-stripe-left:before {
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: 10px;
   top: 50%;
   margin-top: -110px; }
@@ -45,19 +48,22 @@
 .green-stripe.green-stripe-diagonal:before {
   background: url(../images/dstripe/green-stripe-diagonal.png) repeat scroll 0 0 transparent;
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: -30px;
   top: -20px; }
 
 .green-stripe.green-stripe-center:before {
   height: 404px;
-  width: 378px;
+  max-width: 378px;
+  width: 100%;
   left: 50%;
   margin-left: -195px; }
 
 .green-stripe.green-stripe-left:before {
   height: 217px;
-  width: 333px;
+  max-width: 333px;
+  width: 100%;
   left: 10px;
   top: 50%;
   margin-top: -110px; }
@@ -70,7 +76,9 @@
     background-size: cover;
     position: absolute;
     height: 333px;
-    width: 456px;
+    width: 100%;
+    max-width: 456px;
+    width: 100%;
     bottom: -30px;
     left: 0; }
 
@@ -150,7 +158,8 @@
   font-weight: 700;
   color: #2F2F2F;
   padding: 40px 20px;
-  width: 168px;
+  max-width: 168px;
+  width: 100%;
   margin-right: 15px;
   text-align: center; }
   .esg-filters .esg-filter-wrapper .esg-filterbutton:nth-of-type(6) {
@@ -215,7 +224,8 @@
     background-size: contain;
     position: absolute;
     height: 175px;
-    width: 184px; }
+    max-width: 184px;
+    width: 100%; }
 
 .single-post-stripe.single-post-stripe-right:after {
   right: -72px;
@@ -229,10 +239,17 @@
     background-size: contain;
     position: absolute;
     height: 175px;
-    width: 184px;
+    max-width: 184px;
+    width: 100%;
     bottom: -53px;
     left: -72px;
     z-index: -1; }
+
+@media screen and (max-width: 768px) {
+  .single-post-stripe.single-post-stripe-right:after {
+    right: 0; }
+  .single-post-stripe-left-photo .fl-photo-content:after {
+    bottom: 0; } }
 
 .pricing-column-wrapper .pricing-column-con:nth-child(1) {
   position: relative; }
@@ -242,7 +259,8 @@
     background-size: contain;
     position: absolute;
     height: 296px;
-    width: 636px;
+    max-width: 636px;
+    width: 100%;
     top: 140px;
     left: -65px; }
 
@@ -252,7 +270,8 @@
   background-size: contain;
   position: absolute;
   height: 296px;
-  width: 636px;
+  max-width: 636px;
+  width: 100%;
   bottom: -52px;
   left: -45px; }
 
@@ -264,7 +283,8 @@
     background-size: contain;
     position: absolute;
     height: 120px;
-    width: 456px;
+    max-width: 456px;
+    width: 100%;
     bottom: -40px;
     left: -65px; }
 
@@ -283,7 +303,7 @@
   border-top: 4px solid #222222; }
 
 .about-us-card {
-  height: 25.875rem;
+  height: 334px;
   overflow: hidden; }
   .about-us-card img {
     transition: transform .5s ease;
@@ -303,8 +323,8 @@
     text-align: right;
     position: relative;
     max-width: 241px;
-    right: -10%;
-    bottom: 40%;
+    right: -4%;
+    bottom: 44%;
     color: #F4F7F6;
     font-family: Roboto Condensed, sans-serif;
     font-weight: 500;
@@ -336,6 +356,20 @@
       height: 96px;
       margin: 0px 20px; }
 
+@media screen and (max-width: 768px) {
+  .about-us-card .about-us-card-labels {
+    position: absolute;
+    right: 13%;
+    bottom: 10%; } }
+
+@media screen and (max-width: 500px) {
+  .blue-stripe:before {
+    height: 300px; }
+  .about-us-card .about-us-card-labels {
+    position: absolute;
+    right: 13%;
+    bottom: 10%; } }
+
 .subscription-form .fl-form-field input[type="email"] {
   height: 3.5rem;
   box-shadow: 0px 2px 4px #00000029; }
@@ -345,3 +379,42 @@
 
 .subscription-form .fl-form-button span.fl-button-text {
   vertical-align: sub; }
+
+#sistaraden-login-wrapper #user_login {
+  border-radius: 0;
+  -webkit-box-shadow: inset -2px -8px 0px 0px #707070;
+  -moz-box-shadow: inset -2px -8px 0px 0px #707070;
+  box-shadow: inset -2px -8px 0px 0px #707070;
+  border: none;
+  padding: 34px 10px 34px 10px; }
+
+#sistaraden-login-wrapper #user_pass {
+  border-radius: 0;
+  -webkit-box-shadow: inset -2px -8px 0px 0px #707070;
+  -moz-box-shadow: inset -2px -8px 0px 0px #707070;
+  box-shadow: inset -2px -8px 0px 0px #707070;
+  border: none;
+  padding: 34px 10px 34px 10px; }
+
+#sistaraden-login-wrapper .login-submit {
+  text-align: center; }
+  #sistaraden-login-wrapper .login-submit #wp-submit {
+    border-radius: 0;
+    padding: 17px 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 305px;
+    font-size: 24px;
+    font-family: Roboto Condensed;
+    text-transform: uppercase; }
+  #sistaraden-login-wrapper .login-submit:after {
+    content: "";
+    background: #000;
+    height: 3px;
+    width: 100%;
+    display: block;
+    max-width: 305px;
+    margin-top: 10px;
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: 3px solid #000; }

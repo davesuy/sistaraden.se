@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-	<div class="row">
+	<!-- <div class="row"> -->
 
 		<?php FLTheme::sidebar( 'left' ); ?>
 
@@ -17,8 +17,8 @@
 		</div>
 
 		<?php FLTheme::sidebar( 'right' ); ?>
-
-	</div>
+<!-- 
+	</div> -->
 
 
 <?php get_footer(); ?>

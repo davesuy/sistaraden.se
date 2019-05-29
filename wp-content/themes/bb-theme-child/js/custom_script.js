@@ -1,6 +1,12 @@
 jQuery(document).ready(function( $ ) {
+  
+  
+  $('#user_login').attr('placeholder', 'E-post');
+  $('#user_pass').attr('placeholder', 'Lösenord');
+  
 	var slideIndex  = 1,
     sliding     = false;
+
 
 	$('#fullpage').fullpage({
 		//options here
@@ -11,7 +17,6 @@ jQuery(document).ready(function( $ ) {
 		fitToSection: true
 		scrollingSpeed:700,
 	    css3: true,
-
 	    onLeave: function(index, nextIndex, direction) {
 
 	        if(index == 2 && !sliding) {

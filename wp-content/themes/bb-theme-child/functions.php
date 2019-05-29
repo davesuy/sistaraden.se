@@ -183,3 +183,30 @@ function add_last_nav_item($items) {
 	
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
+
+// Login Page
+
+function wpabsolute_login_form_shortcode( $atts, $content = null ) {
+$a = shortcode_atts( array(
+	'redirect' => ( is_ssl() ? 'https://' : 'http://' ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'],
+	'label_username' => __( 'Email' ),
+	'label_password' => __( 'Password' ),
+	'label_remember' => __( 'Remember Me' ),
+	'label_log_in' => __( 'Log In' ),
+	'remember_checked' => true,
+	), $atts );
+
+	$args = array(
+	'echo' => false,
+	'remember' => true,
+	'redirect' => esc_url( $a['redirect'] ),
+	'label_username' => esc_attr( $a['label_username'] ),
+	'label_password' => esc_attr( $a['label_password'] ),
+	'label_remember' => esc_attr( $a['label_remember'] ),
+	'label_log_in' => esc_attr( $a['label_log_in'] ),
+	'value_remember' => $a['remember_checked']
+	);
+	
+	return wp_login_form( $args );
+}
+add_shortcode( 'login_form', 'wpabsolute_login_form_shortcode' );
