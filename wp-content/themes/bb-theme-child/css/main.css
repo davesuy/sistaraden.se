@@ -259,7 +259,8 @@
     background-size: contain;
     position: absolute;
     height: 296px;
-    width: 636px;
+    max-width: 636px;
+    width: 100%;
     top: 140px;
     left: -65px; }
 
@@ -269,7 +270,8 @@
   background-size: contain;
   position: absolute;
   height: 296px;
-  width: 636px;
+  max-width: 636px;
+  width: 100%;
   bottom: -52px;
   left: -45px; }
 
@@ -281,7 +283,8 @@
     background-size: contain;
     position: absolute;
     height: 120px;
-    width: 456px;
+    max-width: 456px;
+    width: 100%;
     bottom: -40px;
     left: -65px; }
 
