@@ -36,7 +36,7 @@
         position: relative;
         max-width: 241px;
         right: -4%;
-        bottom: 40%;
+        bottom: 44%;
         color: #F4F7F6;
         font-family: Roboto Condensed, sans-serif;
         font-weight: 500;
@@ -82,3 +82,24 @@
           }
       }
 
+@media screen and (max-width: 768px)  {
+   .about-us-card .about-us-card-labels {
+      position: absolute;
+      right: 13%;
+      bottom: 10%;
+  }
+
+}
+
+@media screen and (max-width: 500px)  {
+  .blue-stripe:before {
+        height: 300px;
+  }
+
+  .about-us-card .about-us-card-labels {
+      position: absolute;
+      right: 13%;
+      bottom: 10%;
+  }
+
+}
