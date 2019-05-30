@@ -344,7 +344,8 @@
 
 .about-us-card {
   height: 334px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .about-us-card img {
     transition: transform .5s ease;
     opacity: 1;
@@ -353,8 +354,22 @@
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden; }
+  .about-us-card:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    background: #000001;
+    width: 0;
+    -webkit-transition: width 0.5s;
+    transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -o-transition: width 0.5s; }
+  .about-us-card:hover:before {
+    height: 4px;
+    width: 92%; }
   .about-us-card:hover img {
-    transform: scale(1.2); }
+    /*transform: scale(1.2);*/ }
   .about-us-card:hover .about-us-card-labels {
     display: none; }
   .about-us-card:hover .hover-overlay {
