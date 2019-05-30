@@ -92,34 +92,36 @@ jQuery(document).ready(function( $ ) {
 }(jQuery);
 
 
+jQuery(document).ready(function( $ ) {
+	$('#fullpage').fullpage({
+		licenseKey: 'FA8BB31D-D2554F35-AC9CCC50-CA78D1E7',
+		sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
+		menu: '#menu',
+		slidesNavigation: true,
+	    hybrid:true,
+	    fitToSection: false,
+		scrollHorizontally: true,
+		scrollOverflow: true,
+	    scrollHorizontallyKey: '[]',
+		scrollOverflowKey: '[]',
+		afterSlideLoad: function(section, origin, destination, direction){
+				console.log({
+					section: section,
+					origin: origin,
+					destination: destination,
+					direction: direction
+				});
+		},
+		onSlideLeave: function(section, origin, destination, direction){
+				console.log({
+					section: section,
+					origin: origin,
+					destination: destination,
+					direction: direction
+				});
+		}
 
-$('#fullpage').fullpage({
-	licenseKey: 'FA8BB31D-D2554F35-AC9CCC50-CA78D1E7',
-	sectionsColor: ['#ff73a1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc'],
-	anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage'],
-	menu: '#menu',
-	slidesNavigation: true,
-    hybrid:true,
-    fitToSection: false,
-	scrollHorizontally: true,
-	scrollOverflow: true,
-    scrollHorizontallyKey: '[]',
-	scrollOverflowKey: '[]',
-	afterSlideLoad: function(section, origin, destination, direction){
-			console.log({
-				section: section,
-				origin: origin,
-				destination: destination,
-				direction: direction
-			});
-	},
-	onSlideLeave: function(section, origin, destination, direction){
-			console.log({
-				section: section,
-				origin: origin,
-				destination: destination,
-				direction: direction
-			});
-	}
-	
+	});
+
 });
