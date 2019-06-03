@@ -112,14 +112,18 @@
   height: auto;
   max-height: unset; }
 
-#menu-language-switcher li.wpml-ls-current-language .fl-has-submenu-container a::after, #menu-language-switcher li.wpml-ls-current-language .fl-has-submenu-container a:hover::after {
+#menu-language-switcher li.wpml-ls-current-language .fl-has-submenu-container::after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f078";
-  margin-left: 15px; }
+  margin-left: 15px;
+  position: absolute;
+  top: 30%;
+  left: 80%; }
 
 #menu-language-switcher .sub-menu {
-  min-width: unset !important; }
+  min-width: 100px;
+  text-align: center; }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
