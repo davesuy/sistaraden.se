@@ -107,6 +107,20 @@
   z-index: 2;
   position: relative; }
 
+#menu-language-switcher li.menu-item a img {
+  width: 40px;
+  height: auto;
+  max-height: unset; }
+
+#menu-language-switcher li.wpml-ls-current-language .fl-has-submenu-container a::after, #menu-language-switcher li.wpml-ls-current-language .fl-has-submenu-container a:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  margin-left: 15px; }
+
+#menu-language-switcher .sub-menu {
+  min-width: unset !important; }
+
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
   .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {

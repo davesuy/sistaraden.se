@@ -1,6 +1,6 @@
 
 .red-stripe {
-	
+
 	position: relative;
 
 	&:before {
@@ -8,9 +8,9 @@
 		background: url(#{$images_dir:}/dstripe/red-stripe-center.png) repeat scroll 0 0 transparent;
 		background-size: cover;
 	    position: absolute;
-	 
+
 	}
-	
+
 }
 .red-stripe.red-stripe-diagonal {
 	&:before {
@@ -45,13 +45,13 @@
 	    left: 10px;
 	    top: 50%;
 	    margin-top: -110px;
-    	
+
 	}
 }
 
 
 .green-stripe {
-	
+
 	position: relative;
 
 	&:before {
@@ -59,9 +59,9 @@
 		background: url(#{$images_dir:}/dstripe/green-stripe-center.png) repeat scroll 0 0 transparent;
 		background-size: cover;
 	    position: absolute;
-	 
+
 	}
-	
+
 }
 .green-stripe.green-stripe-diagonal {
 	&:before {
@@ -96,12 +96,12 @@
 	    left: 10px;
 	    top: 50%;
 	    margin-top: -110px;
-    	
+
 	}
 }
 
 .blue-stripe {
-	
+
 	position: relative;
 
 	&:before {
@@ -116,14 +116,14 @@
 	    bottom: -30px;
 	    left: 0;
 	}
-	
+
 }
 
 
 .blue-stripe-3 {
-	
+
 	background-color: #D8E5E8;
-		
+
 	.fl-row-fixed-width {
 
 		position: relative;
@@ -143,22 +143,41 @@
 }
 
 .sr-heading-bg {
-	
+
 	.fl-heading {
 
 		.fl-heading-text {
 			background: #D8E5E8;
 			/*padding: 10px 20px;*/
 		}
-		
+
 	}
-	
+
 }
 
-.fl-col, 
-.fl-col-content, 
+.fl-col,
+.fl-col-content,
 .fl-module,
 .fl-col-group   {
 	z-index: 2;
 	position: relative;
+}
+
+#menu-language-switcher {
+	li.menu-item a img {
+		width: 40px;
+		height: auto;
+		max-height: unset;
+	}
+
+	li.wpml-ls-current-language .fl-has-submenu-container a::after, li.wpml-ls-current-language .fl-has-submenu-container a:hover::after {
+		font-family: "Font Awesome 5 Free";
+		font-weight: 900;
+		content: "\f078";
+		margin-left: 15px;
+	}
+
+	.sub-menu {
+		min-width: unset !important;
+	}
 }
