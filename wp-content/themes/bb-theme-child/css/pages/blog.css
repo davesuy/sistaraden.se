@@ -119,6 +119,46 @@
     left: -72px;
     z-index: -1; }
 
+.eg-sistaraden-content .eg-sistaraden-element-0-a a:before {
+  max-width: 100%;
+  width: 64px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s; }
+
+.esg-grid .mainul li.eg-sistaraden-wrapper:hover .eg-sistaraden-content .eg-sistaraden-element-0-a a {
+  position: fixed;
+  width: 85%;
+  bottom: 30px; }
+
+.esg-grid .mainul li.eg-sistaraden-wrapper:hover .eg-sistaraden-content .eg-sistaraden-element-0-a a:before {
+  max-width: inherit;
+  width: 100%;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  -moz-transition: width 0.5s;
+  -o-transition: width 0.5s; }
+
+.esg-grid .mainul li.eg-sistaraden-wrapper:after {
+  content: "";
+  background: url(../images/dstripe/small-green-stripe.png) repeat scroll 0 0 transparent;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  background-size: cover; }
+
+.esg-grid .mainul li.eg-sistaraden-wrapper:hover:after {
+  position: absolute;
+  opacity: 1;
+  width: 119px;
+  height: 81px;
+  right: -30px;
+  bottom: -30px;
+  z-index: -1; }
+
 @media screen and (max-width: 768px) {
   .single-post-stripe.single-post-stripe-right:after {
     right: 0; }
