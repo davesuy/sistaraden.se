@@ -163,7 +163,9 @@
 	position: relative;
 }
 
-#menu-language-switcher {
+#menu-language-switcher,
+#menu-language-switcher-de,
+#menu-language-switcher-en {
 	li.menu-item a img {
 		width: 40px;
 		height: auto;
