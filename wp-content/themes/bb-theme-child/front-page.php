@@ -26,11 +26,11 @@
 
 	
 
-
+</div>
 <!-- <input type="hidden" id="_4" value="3" /> -->
 
 
-<div class="fl-content-full container section">
+<div class="fl-content-full container">
 	<div class="row">
 		<div class="fl-content col-md-12">
 			<?php
@@ -44,5 +44,5 @@
 		</div>
 	</div>
 </div>
-</div>
+
 <?php get_footer(); ?>
