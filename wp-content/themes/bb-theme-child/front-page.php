@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 
-<div id="fullpage">
+<!-- <div id="fullpage">
 
 	<div class="section">
 		<div class="slide first">
@@ -26,7 +26,7 @@
 
 	
 
-</div>
+</div> -->
 <!-- <input type="hidden" id="_4" value="3" /> -->
 
 
