@@ -1,0 +1,56 @@
+/* Sistaraden Custom CSS Horizontal Scrolling */
+
+#fullpage {
+	
+	.section {
+		width: 100%;
+	}
+
+	.slide { 
+
+		.bg-white {
+		    width: 100%;
+		    max-width: 632px;
+		    margin: 0 auto;
+		    position: relative;
+		    min-height: 496px;
+
+		    h1 {
+		    	position: absolute;
+			    font-family: "Roboto Condensed";
+			    font-size: 72px;
+			    font-weight: 700;
+			    max-width: 539px;
+			    left: -85px;
+			    top: -78px;
+		    }
+
+		    p {
+		    	max-width: 405px;
+		    }
+
+		    position: relative;
+
+			.h-blue-stripe {
+			    background: url(../svg/dstripe/dstripe-home01.svg) repeat scroll 0 0 transparent;
+			    background-size: cover;
+			    position: absolute;
+			    height: 229px;
+			    width: 100%;
+			    max-width: 356px;
+			    top: -72px;
+    			right: -102px;
+			    z-index: -1;
+			}
+		 }
+
+
+	}
+
+	.fp-slidesNav.fp-bottom {
+    	bottom: 180px;
+    	text-align: center;
+	}
+
+}
+

@@ -16,11 +16,16 @@ function add_sistaraden_scripts() {
   wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/main.css', array(), '1.1', 'all');
   wp_enqueue_style('fullpage-css', get_stylesheet_directory_uri() . '/css/fullpage.css', '3.0.5', true);
  
+  wp_enqueue_script('scrolloverflow.min.js', get_stylesheet_directory_uri() . '/js/scrolloverflow.min.js', array ( 'jquery' ), '0.1.2', true);
+  
+  
 
   wp_enqueue_script('fullpage-js', get_stylesheet_directory_uri() . '/js/fullpage.js', array ( 'jquery' ), '3.0.5', true);
   wp_enqueue_script('fullpage.extensions.min.js', get_stylesheet_directory_uri() . '/js/fullpage.extensions.min.js', array ( 'jquery' ), '3.0.5', true);
 
-  wp_enqueue_script('scrolloverflow.min.js', get_stylesheet_directory_uri() . '/js/scrolloverflow.min.js', array ( 'jquery' ), '1.0.0', true);
+
+  //wp_enqueue_script('jquery.fullPage.js', get_stylesheet_directory_uri() . '/js/jquery.fullPage.js', array ( 'jquery' ), '2.9.6', true);
+
 
   wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/js/custom_script.js', array ( 'jquery' ), 1.1, true);
  
