@@ -2,8 +2,8 @@ jQuery(document).ready(function( $ ) {
 
 	// Placeholder for subscribe field
   
-  	//$('#user_login').attr('placeholder', 'E-post');
-  	//$('#user_pass').attr('placeholder', 'Lösenord');
+  	$('#user_login').attr('placeholder', 'E-post');
+  	$('#user_pass').attr('placeholder', 'Lösenord');
 
 
 
