@@ -113,7 +113,7 @@
 	    width: 100%;
 	   	max-width: 456px;
 	    width: 100%;
-	    bottom: -30px;
+	    bottom: -55px;
 	    left: 0;
 	}
 
@@ -165,8 +165,16 @@
 
 #menu-language-switcher,
 #menu-language-switcher-de,
-#menu-language-switcher-en {
-	li.menu-item a img {
+#menu-language-switcher-en,
+.wpml-ls-legacy-dropdown {
+
+	li a {
+		border: none;
+    	display: inline-block;
+	}
+
+	li.menu-item a img,
+	li a img {
 		width: 40px;
 		height: auto;
 		max-height: unset;
