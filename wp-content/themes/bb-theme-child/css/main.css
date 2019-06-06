@@ -2419,7 +2419,7 @@ Copyright (c) 2015 Daniel Eden
   /*z-index: 2;
 	position: relative;*/ }
 
-.home-tool-section-con .fl-row-content-wrap {
+.home-tool-section-con .fl-col {
   z-index: 2; }
 
 #menu-language-switcher li a,
