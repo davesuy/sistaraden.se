@@ -163,12 +163,27 @@
 	position: relative;*/
 }
 
-.home-tool-section-con {
+.fl-builder-edit {
+
+	.home-tool-section-con,
+	.z-index-frnt {
+
+		.fl-col {
+			z-index: unset;
+		
+		}
+
+	}
+}
+
+.home-tool-section-con,
+.z-index-frnt {
 
 	.fl-col {
 		z-index: 2;
+		position: relative;
 	}
-	
+
 }
 
 #menu-language-switcher,

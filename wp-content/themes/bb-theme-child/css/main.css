@@ -2419,8 +2419,14 @@ Copyright (c) 2015 Daniel Eden
   /*z-index: 2;
 	position: relative;*/ }
 
-.home-tool-section-con .fl-col {
-  z-index: 2; }
+.fl-builder-edit .home-tool-section-con .fl-col,
+.fl-builder-edit .z-index-frnt .fl-col {
+  z-index: unset; }
+
+.home-tool-section-con .fl-col,
+.z-index-frnt .fl-col {
+  z-index: 2;
+  position: relative; }
 
 #menu-language-switcher li a,
 #menu-language-switcher-de li a,
