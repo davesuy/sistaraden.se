@@ -57,6 +57,16 @@ jQuery(document).ready(function( $ ) {
 	//methods
 	//$.fn.fullpage.setAllowScrolling(true);
 
+	//***** Mobile Menu ****//
+	$( "#sr-mobile-menu .sr-mobile-menu-toggle img" ).click(function() {
+      $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle("slow");
+    });
+    
+    
+    $( "#sr-mobile-menu .sr-mobile-menu-close img" ).click(function() {
+      $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle( "slow");
+    });
+
 });
 
 ! function(n) {

@@ -2443,7 +2443,7 @@ Copyright (c) 2015 Daniel Eden
 #menu-language-switcher-en li a img,
 .wpml-ls-legacy-dropdown li.menu-item a img,
 .wpml-ls-legacy-dropdown li a img {
-  width: 40px;
+  max-width: 24px;
   height: auto;
   max-height: unset; }
 
@@ -2466,6 +2466,18 @@ Copyright (c) 2015 Daniel Eden
   min-width: 100px;
   text-align: center; }
 
+#menu-language-switcher .wpml-ls-sub-menu,
+#menu-language-switcher-de .wpml-ls-sub-menu,
+#menu-language-switcher-en .wpml-ls-sub-menu,
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu {
+  border: none; }
+
+#menu-language-switcher .wpml-ls-item-toggle,
+#menu-language-switcher-de .wpml-ls-item-toggle,
+#menu-language-switcher-en .wpml-ls-item-toggle,
+.wpml-ls-legacy-dropdown .wpml-ls-item-toggle {
+  background-color: transparent !important; }
+
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
   .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {
@@ -2482,6 +2494,14 @@ Copyright (c) 2015 Daniel Eden
       line-height: 1.2; }
     .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu a.fl-button {
       border: none; }
+
+#sr-mobile-menu .sr-mobile-menu-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  z-index: 100000;
+  width: 100% !important; }
 
 /* Sistaraden Custom CSS Horizontal Scrolling */
 #fullpage .section {
