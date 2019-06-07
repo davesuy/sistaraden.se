@@ -2443,7 +2443,7 @@ Copyright (c) 2015 Daniel Eden
 #menu-language-switcher-en li a img,
 .wpml-ls-legacy-dropdown li.menu-item a img,
 .wpml-ls-legacy-dropdown li a img {
-  width: 40px;
+  max-width: 24px;
   height: auto;
   max-height: unset; }
 
@@ -2465,6 +2465,18 @@ Copyright (c) 2015 Daniel Eden
 .wpml-ls-legacy-dropdown .sub-menu {
   min-width: 100px;
   text-align: center; }
+
+#menu-language-switcher .wpml-ls-sub-menu,
+#menu-language-switcher-de .wpml-ls-sub-menu,
+#menu-language-switcher-en .wpml-ls-sub-menu,
+.wpml-ls-legacy-dropdown .wpml-ls-sub-menu {
+  border: none; }
+
+#menu-language-switcher .wpml-ls-item-toggle,
+#menu-language-switcher-de .wpml-ls-item-toggle,
+#menu-language-switcher-en .wpml-ls-item-toggle,
+.wpml-ls-legacy-dropdown .wpml-ls-item-toggle {
+  background-color: transparent !important; }
 
 form#loginform p:not(.login-remember):not([type="submit"]) {
   position: relative; }
@@ -2504,6 +2516,14 @@ form#loginform .focused label {
       line-height: 1.2; }
     .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu a.fl-button {
       border: none; }
+
+#sr-mobile-menu .sr-mobile-menu-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  z-index: 100000;
+  width: 100% !important; }
 
 /* Sistaraden Custom CSS Horizontal Scrolling */
 #fullpage .section {
@@ -2686,31 +2706,33 @@ form#loginform .focused label {
     left: -72px;
     z-index: -1; }
 
-.eg-sistaraden-content .eg-sistaraden-element-0-a a:before {
-  max-width: 100%;
-  width: 64px;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-  -moz-transition: width 0.5s;
-  -o-transition: width 0.5s; }
+/*.eg-sistaraden-content .eg-sistaraden-element-0-a a:before {
+	max-width: 100%;
+	width: 64px;
 
-.esg-grid .mainul li.eg-sistaraden-wrapper:hover .eg-sistaraden-content .eg-sistaraden-element-0-a a {
-  position: fixed;
-  width: 85%;
-  bottom: 30px; }
-
-.esg-grid .mainul li.eg-sistaraden-wrapper:hover .eg-sistaraden-content .eg-sistaraden-element-0-a a:before {
-  max-width: inherit;
+}*/
+.eg-sistaraden-content .eg-sistaraden-element-0-a a {
   width: 100%;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
-  -moz-transition: width 0.5s;
-  -o-transition: width 0.5s; }
+  border-bottom: 3px solid #000;
+  position: absolute;
+  z-index: 999999;
+  bottom: -10px;
+  padding-bottom: 3px;
+  -webkit-transition-property: width;
+  -webkit-transition-duration: 2s;
+  transition-property: width;
+  transition-duration: 2s; }
 
 .esg-grid .mainul li.eg-sistaraden-wrapper:after {
   content: "";
   background: url(../images/dstripe/small-green-stripe.png) repeat scroll 0 0 transparent;
   opacity: 0;
+  position: absolute;
+  width: 119px;
+  height: 81px;
+  right: -30px;
+  bottom: -26px;
+  z-index: -1;
   -webkit-transition: opacity 1s;
   transition: opacity 1s;
   -moz-transition: opacity 1s;
@@ -2718,13 +2740,25 @@ form#loginform .focused label {
   background-size: cover; }
 
 .esg-grid .mainul li.eg-sistaraden-wrapper:hover:after {
-  position: absolute;
-  opacity: 1;
-  width: 119px;
-  height: 81px;
-  right: -30px;
-  bottom: -26px;
-  z-index: -1; }
+  opacity: 1; }
+
+/* Custom Media Width and Height */
+.eg-sistaraden-content a:focus {
+  color: inherit; }
+
+.eg-sistaraden-content .eg-sistaraden-element-0-a a {
+  position: relative; }
+
+.esg-entry-media-wrapper, .esg-entry-cover {
+  /*max-width: 260px;
+ width: 100%;
+max-height: 178px !important;*/ }
+
+.esg-overflowtrick {
+  overflow: visible !important; }
+
+.eg-sistaraden-content {
+  min-height: 230px !important; }
 
 @media screen and (max-width: 768px) {
   .single-post-stripe.single-post-stripe-right:after {
