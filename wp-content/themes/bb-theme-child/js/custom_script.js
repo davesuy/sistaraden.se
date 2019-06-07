@@ -7,11 +7,11 @@ jQuery(document).ready(function( $ ) {
 	$('.esg-grid .mainul li.eg-sistaraden-wrapper').mouseenter(function(){
 			$(this).find('.eg-sistaraden-element-0-a a').animate({
 				width: "220"
-			},'fast');
+			},0.1);
 		}).mouseleave(function(){
 			$(this).find('.eg-sistaraden-element-0-a a').animate({
 				width: boxWidth + 3
-			}, 'fast');
+			}, 0.1);
 		});
 
 	// Placeholder for subscribe field
