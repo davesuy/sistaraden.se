@@ -170,7 +170,7 @@
 
 		.fl-col {
 			z-index: unset;
-		
+
 		}
 
 	}
@@ -217,10 +217,37 @@
 		min-width: 100px;
 		text-align: center;
 	}
+
 	.wpml-ls-sub-menu{
 		border: none;
 	}
 	.wpml-ls-item-toggle{
 	    background-color:transparent !important;
+	}
+}
+
+form#loginform {
+	p:not(.login-remember):not([type="submit"]) { position: relative; }
+
+	p:not(.login-remember):not([type="submit"]) input {
+	    position: relative;
+	    padding: 12px 0px 5px 0;
+	    width: 100%;
+	    outline: 0;
+	    border: 0;
+	    transition: box-shadow 150ms ease-out;
+	}
+
+	p:not(.login-remember):not([type="submit"]) label {
+		position: absolute;
+		left: 10px;
+		top: 30%;
+		transition: transform 150ms ease-out, font-size 150ms ease-out;
+		z-index: 1;
+	}
+
+	.focused label {
+		transform: translateY(-80%);
+		font-size: .75em;
 	}
 }
