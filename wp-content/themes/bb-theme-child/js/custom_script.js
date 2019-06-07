@@ -1,5 +1,20 @@
 jQuery(document).ready(function( $ ) {
 
+	/* Grid Animate */
+
+	var boxWidth = $('.esg-grid .mainul li.eg-sistaraden-wrapper .eg-sistaraden-element-0-a a').width();
+
+	$('.esg-grid .mainul li.eg-sistaraden-wrapper').mouseenter(function(){
+			$(this).find('.eg-sistaraden-element-0-a a').animate({
+				width: "230"
+			});
+		}).mouseleave(function(){
+			$(this).find('.eg-sistaraden-element-0-a a').animate({
+				width: boxWidth + 3
+			});
+		});
+
+
 	// Placeholder for subscribe field
   
   	$('#user_login').attr('placeholder', 'E-post');
