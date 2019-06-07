@@ -1,9 +1,21 @@
 jQuery(document).ready(function( $ ) {
-
 	// Placeholder for subscribe field
-  
-  	$('#user_login').attr('placeholder', 'E-post');
-  	$('#user_pass').attr('placeholder', 'Lösenord');
+  	// $('#user_login').attr('placeholder', 'E-post');
+  	// $('#user_pass').attr('placeholder', 'Lösenord');
+
+    $('body').on('focus', '#loginform input:not([type="checkbox"]):not([type="submit"])', function() {
+        $(this).parents('p').addClass('focused');
+    });
+
+    $('body').on('blur', '#loginform input:not([type="checkbox"]):not([type="submit"])', function() {
+        var inputValue = $(this).val();
+        if ( inputValue == "" ) {
+            $(this).removeClass('filled');
+            $(this).parents('p').removeClass('focused');
+        } else {
+            $(this).addClass('filled');
+        }
+    });
 
 
 
@@ -130,50 +142,50 @@ jQuery(document).ready(function( $ ) {
 				// });
 
 			/**
-			* use the following condition: 
+			* use the following condition:
 			*
 			*   if( index == 1 && direction == 'down' ) {
 			*
 			* if you haven't enabled the dot navigation
-			* or you aren't interested in the animations that occur 
-			* when you jump (using the dot navigation) 
-			* from the first section to another sections 
+			* or you aren't interested in the animations that occur
+			* when you jump (using the dot navigation)
+			* from the first section to another sections
 			*/
 
 			//console.log(destination.index);
 
 			// first animation
-			if( destination.index == 1) { 
+			if( destination.index == 1) {
 
-				$isAnimatedSecond.addClass('animated fadeInUpBig'); 
+				$isAnimatedSecond.addClass('animated fadeInUpBig');
 				$isAnimatedSecond.eq(0).css('animation-delay', '.3s');
 				$isAnimatedSecond.eq(1).css('animation-delay', '.6s');
 				$isAnimatedSecond.eq(2).css('animation-delay', '.9s');
 				$isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '1.7s');
 
-				$isAnimatedThird.addClass('animated fadeInRightBig').css('animation-delay', '.3s'); 
-				$isAnimatedDown.addClass('animated fadeInDownBig').css('animation-delay', '.3s'); 
+				$isAnimatedThird.addClass('animated fadeInRightBig').css('animation-delay', '.3s');
+				$isAnimatedDown.addClass('animated fadeInDownBig').css('animation-delay', '.3s');
 
 			} else {
 
-				$isAnimatedSecond.removeClass('animated fadeInUpBig'); 
-				$isAnimatedThird.removeClass('animated fadeInRightBig'); 
+				$isAnimatedSecond.removeClass('animated fadeInUpBig');
+				$isAnimatedThird.removeClass('animated fadeInRightBig');
 
-				$isAnimatedDown.removeClass('animated fadeInDownBig'); 
+				$isAnimatedDown.removeClass('animated fadeInDownBig');
 			}
 			/**
-			* use the following condition: 
+			* use the following condition:
 			*
 			*   else if( index == 2 && direction == 'down' ) {
 			*
 			* if you haven't enabled the dot navigation
-			* or you aren't interested in the animations that occur 
-			* when you jump (using the dot navigation) from the first section to the third one 
+			* or you aren't interested in the animations that occur
+			* when you jump (using the dot navigation) from the first section to the third one
 			*/
 
 			// second animation
 			// else if( ( index == 1 || index == 2 ) && nextIndex == 3 ) {
-			// 	$isAnimatedThird.eq(0).addClass('animated fadeInRightBig').css('animation-delay', '.3s'); 
+			// 	$isAnimatedThird.eq(0).addClass('animated fadeInRightBig').css('animation-delay', '.3s');
 			// 	$isAnimatedThird.eq(1).addClass('animated fadeInLeftBig').css('animation-delay', '.6s');
 			// 	$isAnimatedThirdSingle.addClass('animated bounceInDown').css('animation-delay', '1.2s');
 			// }
@@ -185,9 +197,9 @@ jQuery(document).ready(function( $ ) {
 			*   else if( index == 3 && direction == 'down' ) {
 			*
 			* if you haven't enabled the dot navigation
-			* or you aren't interested in the animations that occur 
-			* when you jump (using the dot navigation) 
-			* from the first or second section to the fourth one 
+			* or you aren't interested in the animations that occur
+			* when you jump (using the dot navigation)
+			* from the first or second section to the fourth one
 			*/
 
 			// third animation
@@ -200,18 +212,18 @@ jQuery(document).ready(function( $ ) {
 			// }
 		},
 		afterSlideLoad: function(section, origin, destination, direction){
-	
+
 
 		},
 		onLeave: function(index, nextIndex, direction){
 			//alert(1);
-			
+
 			//fullpage_api.setAutoScrolling(false);
 			//$.fn.fullpage.setAllowScrolling(false);
 
-		
-		
-			
+
+
+
 		},
 		afterLoad: function(origin, destination, direction) {
 
@@ -227,7 +239,7 @@ jQuery(document).ready(function( $ ) {
 
 			}
 
-	
+
 
 			$(document).scroll(function() {
 
