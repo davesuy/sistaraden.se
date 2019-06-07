@@ -251,3 +251,18 @@ form#loginform {
 		font-size: .75em;
 	}
 }
+
+.esg-filters {
+	.eg-search-wrapper .eg-search-input {
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+	}
+}
+
+.esg-media-cover-wrapper {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	.esg-entry-content { box-shadow: unset !important; }
+}
+
+header {
+	#sr-header-con .fl-row-content-wrap { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+}

@@ -1,6 +1,9 @@
 @import '../global/variables';
 
 .pricing-column-wrapper {
+	.pricing-column-con > .fl-node-content .fl-col-group {
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	}
 
 	.pricing-column-con:nth-child(1) {
 		position: relative;
@@ -42,7 +45,7 @@
 }
 
 .custom-made-wrapper {
-	
+
 	.custom-made-con {
 		position: relative;
 		&:after {

@@ -43,10 +43,10 @@
 	}
 
 	.esg-filter-wrapper  {
-	
+
 
 		.esg-filterbutton {
-			
+
 		    border-radius: 0px;
 		    border: none;
 		    font-size: 20px;
@@ -63,9 +63,9 @@
 		    flex-direction: column;
 		    vertical-align: middle;
 
-			-moz-box-shadow:    0px 2px 4px rgba(0, 0, 0, 0.161);
-			-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
-			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
+			-moz-box-shadow:    0px 3px 6px rgba(0, 0, 0, 0.06);
+			-webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.06);
+			box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.06);
 			transition: box-shadow 0.9s ease-in-out;
 
 			-webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -181,19 +181,17 @@
 	.fl-row-bg-photo {
 
 		.fl-row-content-wrap {
-			
-
 				position: relative;
 				z-index: 2;
-			
-		
+
+
 		}
 
 	}
 
 	.sr-single-post-wrapper {
 		.fl-row-content-wrap {
-
+			box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16);
 			z-index: 2;
 		}
 	}
@@ -211,7 +209,7 @@
 	    height: 175px;
 	    max-width: 184px;
 	    width: 100%;
-	   
+
 	}
 }
 
@@ -226,7 +224,7 @@
 	position: relative;
 
 	.fl-photo-content {
-		
+
 		 &:after {
 		 	content: "";
 			background: url(#{$images_dir}/dstripe/post-stripe.png) no-repeat scroll 0 0 transparent;
@@ -241,7 +239,7 @@
 		}
 
 	}
-	
+
 }
 
 
@@ -285,7 +283,7 @@
 
 .esg-grid .mainul li.eg-sistaraden-wrapper:hover:after  {
 
-	
+
 	opacity: 1;
 
 }

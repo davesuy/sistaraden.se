@@ -1,3 +1,6 @@
+.pricing-column-wrapper .pricing-column-con > .fl-node-content .fl-col-group {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+
 .pricing-column-wrapper .pricing-column-con:nth-child(1) {
   position: relative; }
   .pricing-column-wrapper .pricing-column-con:nth-child(1):after {
