@@ -159,8 +159,31 @@
 .fl-col-content,
 .fl-module,
 .fl-col-group   {
-	z-index: 2;
-	position: relative;
+	/*z-index: 2;
+	position: relative;*/
+}
+
+.fl-builder-edit {
+
+	.home-tool-section-con,
+	.z-index-frnt {
+
+		.fl-col {
+			z-index: unset;
+		
+		}
+
+	}
+}
+
+.home-tool-section-con,
+.z-index-frnt {
+
+	.fl-col {
+		z-index: 2;
+		position: relative;
+	}
+
 }
 
 #menu-language-switcher,
