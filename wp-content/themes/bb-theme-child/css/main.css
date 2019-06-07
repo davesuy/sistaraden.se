@@ -2740,9 +2740,9 @@ form#loginform .focused label {
   bottom: -10px;
   padding-bottom: 3px;
   -webkit-transition-property: width;
-  -webkit-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.2s;
   transition-property: width;
-  transition-duration: 0.5s; }
+  transition-duration: 0.2s; }
 
 .esg-grid .mainul li.eg-sistaraden-wrapper:after {
   content: "";
