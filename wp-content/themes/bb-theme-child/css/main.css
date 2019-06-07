@@ -2575,7 +2575,11 @@ form#loginform .focused label {
     padding-left: 50px;
     font-family: Roboto;
     font-size: 17px;
-    height: 50px; }
+    height: 50px;
+    border: 1px solid #EBEBEB;
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161); }
   .esg-filters .eg-search-wrapper .eg-search-submit {
     position: absolute;
     left: 15px;
@@ -2661,6 +2665,11 @@ form#loginform .focused label {
 
 .esg-grid .esg-filters:nth-of-type(2) .esg-allfilter {
   display: none; }
+
+.esg-grid .eg-sistaraden-content {
+  -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161); }
 
 /* Single Post */
 .sr-single-post-info-con .esgrid-meta-text {
