@@ -243,3 +243,15 @@
 
 	}
 }
+
+.no-gutters {
+    padding: 5px;
+    margin: 0px;
+}
+#sr-parallax-section{
+	.sr-parallax-content{
+	    width: 80%;
+	    position: relative;
+	    right: 25%;
+	}
+}

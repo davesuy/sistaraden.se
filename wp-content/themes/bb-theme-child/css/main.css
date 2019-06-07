@@ -2494,6 +2494,15 @@ Copyright (c) 2015 Daniel Eden
   right: 5px;
   color: #000000; }
 
+.no-gutters {
+  padding: 5px;
+  margin: 0px; }
+
+#sr-parallax-section .sr-parallax-content {
+  width: 80%;
+  position: relative;
+  right: 25%; }
+
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
   .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {
