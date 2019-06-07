@@ -2469,6 +2469,22 @@ Copyright (c) 2015 Daniel Eden
 .wpml-ls-legacy-dropdown .wpml-ls-item-toggle {
   background-color: transparent !important; }
 
+#menu-language-switcher a.wpml-ls-item-toggle:after,
+#menu-language-switcher-de a.wpml-ls-item-toggle:after,
+#menu-language-switcher-en a.wpml-ls-item-toggle:after,
+.wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  border: 0px;
+  position: absolute;
+  top: calc(50% - 0.4em);
+  right: 5px;
+  color: #000000; }
+
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
   .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {
