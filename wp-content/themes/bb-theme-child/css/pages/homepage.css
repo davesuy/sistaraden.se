@@ -1,0 +1,31 @@
+.black-stripe {
+  background-color: transparent; }
+  .black-stripe .fl-row-fixed-width {
+    position: relative; }
+    .black-stripe .fl-row-fixed-width:before {
+      content: "";
+      background: url(../svg/dstripe/home-stripes.svg) repeat scroll 0 0 transparent;
+      background-size: cover;
+      position: absolute;
+      width: 100%;
+      height: 660px;
+      z-index: 1;
+      top: 378px; }
+
+.sr-parallax-content .sr-parallax-content-col {
+  position: relative;
+  z-index: 1; }
+  .sr-parallax-content .sr-parallax-content-col:after {
+    content: "";
+    background: url(/wp-content/uploads/2019/06/hero-stripe.png) no-repeat scroll 0 0 transparent;
+    background-size: contain;
+    position: absolute;
+    height: 229px;
+    max-width: 356px;
+    width: 100%;
+    top: 85px;
+    left: 0;
+    z-index: -1; }
+
+.home-tool-section-con .fl-col .fl-col-content .uabb-photo-img {
+  width: 99px; }
