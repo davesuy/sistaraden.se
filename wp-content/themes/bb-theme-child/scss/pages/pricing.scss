@@ -11,7 +11,7 @@
 		&:after {
 			content: "";
 		    background: url(../svg/dstripe/pris-stripe.svg) repeat scroll 0 0 transparent;
-		    background-size: contain;
+		    background-size: cover;
 		    position: absolute;
 		    height: 296px;
 		    max-width: 636px;
@@ -26,7 +26,7 @@
 		&:after {
 			content: "";
 		    background: url(../svg/dstripe/pris-stripe.svg) repeat scroll 0 0 transparent;
-		    background-size: contain;
+		    background-size: cover;
 		    position: absolute;
 		    height: 254px;
 		    max-width: 636px;
@@ -99,5 +99,9 @@
 .page-id-409  {
 	.fl-row-content {
 		position: relative;
+	}
+
+	.z-index-frnt {
+		 position: unset;
 	}
 }
