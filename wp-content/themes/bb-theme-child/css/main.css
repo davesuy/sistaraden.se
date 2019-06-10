@@ -2494,14 +2494,16 @@ Copyright (c) 2015 Daniel Eden
   right: 5px;
   color: #000000; }
 
-.no-gutters {
-  padding: 5px;
-  margin: 0px; }
-
-#sr-parallax-section .sr-parallax-content {
-  width: 80%;
-  position: relative;
-  right: 25%; }
+.card-hover-animation .fl-col-content:hover {
+  webkit-box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
+  -o-box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
+  box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
+  -webkit-transition: -webkit-box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+  -moz-transition: -moz-box-shadow 200ms ease-in-out, -moz-transform 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  will-change: box-shadow;
+  transform: scale(1.08); }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
@@ -2814,7 +2816,7 @@ max-height: 178px !important;*/ }
   padding-bottom: 10px; }
 
 .no-gutters {
-  padding: 10px;
+  padding: 5px;
   margin: 0px; }
 
 .thick-border {
@@ -2952,6 +2954,9 @@ max-height: 178px !important;*/ }
     margin: 10px auto;
     border-bottom: 3px solid #000; }
 
+.home .fl-page-content {
+  background-color: #F4F7F6; }
+
 .black-stripe {
   background-color: transparent; }
   .black-stripe .fl-row-fixed-width {
@@ -2966,20 +2971,38 @@ max-height: 178px !important;*/ }
       z-index: 1;
       top: 378px; }
 
-.sr-parallax-content .sr-parallax-content-col {
+#sr-parallax-section .sr-parallax-content {
   position: relative;
-  z-index: 1; }
-  .sr-parallax-content .sr-parallax-content-col:after {
-    content: "";
-    background: url(/wp-content/uploads/2019/06/hero-stripe.png) no-repeat scroll 0 0 transparent;
-    background-size: contain;
-    position: absolute;
-    height: 229px;
-    max-width: 356px;
-    width: 100%;
-    top: 85px;
-    left: 0;
-    z-index: -1; }
+  right: 38%;
+  width: 100%; }
+  #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
+    position: relative;
+    left: 30px; }
+  #sr-parallax-section .sr-parallax-content .sr-parallax-content-col {
+    position: relative;
+    z-index: 1; }
+    #sr-parallax-section .sr-parallax-content .sr-parallax-content-col:after {
+      content: "";
+      background: url(/wp-content/uploads/2019/06/hero-stripe.png) no-repeat scroll 0 0 transparent;
+      background-size: contain;
+      position: absolute;
+      height: 229px;
+      max-width: 356px;
+      width: 100%;
+      top: 85px;
+      left: 0;
+      z-index: -1; }
+    #sr-parallax-section .sr-parallax-content .sr-parallax-content-col .fl-col-content {
+      max-width: 552px; }
 
 .home-tool-section-con .fl-col .fl-col-content .uabb-photo-img {
+  width: 48px; }
+
+.home-tool-section-con .fl-col .fl-col-content:hover .uabb-photo-img {
+  width: 48px; }
+
+.home-tool-section-con .fl-col .fl-col-content:hover .sr-big-icon .uabb-photo-img {
+  width: 99px; }
+
+.home-tool-section-con .fl-col .fl-col-content .sr-big-icon .uabb-photo-img {
   width: 99px; }
