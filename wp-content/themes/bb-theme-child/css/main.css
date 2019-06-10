@@ -2310,14 +2310,6 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-@media (max-width: 1440px) {
-  #sr-header-con .fl-module-menu #menu-main-menu a {
-    padding-left: 12px;
-    padding-right: 12px; }
-  #sr-header-con a.fl-button {
-    padding-left: 12px;
-    padding-right: 12px; } }
-
 .red-stripe {
   position: relative; }
   .red-stripe:before {
@@ -3060,3 +3052,24 @@ header #sr-header-con .fl-row-content-wrap {
 
 .home-tool-section-con .fl-col .fl-col-content .uabb-photo-img {
   width: 99px; }
+
+@media (max-width: 1440px) {
+  #sr-header-con .fl-module-menu #menu-main-menu a {
+    padding-left: 12px;
+    padding-right: 12px; }
+  #sr-header-con a.fl-button {
+    padding-left: 12px;
+    padding-right: 12px; } }
+
+@media (max-width: 575px) {
+  .blue-stripe:before {
+    bottom: -15px;
+    height: 236px; }
+  .pricing-column-wrapper .pricing-column-con:nth-child(1):after {
+    width: 500px; }
+  .pricing-column-wrapper .pricing-column-con:nth-child(2):after {
+    z-index: -1;
+    width: 247px;
+    right: -10px;
+    left: inherit;
+    bottom: 690px; } }
