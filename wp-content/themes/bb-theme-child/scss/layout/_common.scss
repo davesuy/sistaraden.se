@@ -147,7 +147,7 @@
 	.fl-heading {
 
 		.fl-heading-text {
-			background: #D8E5E8;
+			background: #F4F7F6;
 			/*padding: 10px 20px;*/
 		}
 
@@ -224,6 +224,38 @@
 	.wpml-ls-item-toggle{
 	    background-color:transparent !important;
 	}
+
+	a {
+		&.wpml-ls-item-toggle{
+			&:after{
+				font-family: "Font Awesome 5 Free";
+			    content: "\f078";
+			    display: inline-block;
+			    padding-right: 3px;
+			    vertical-align: middle;
+			    font-weight: 900;
+			    border: 0px;
+			    position: absolute;
+			    top: calc(50% - 0.4em);
+			    right: 5px;
+			    color: #000000;
+			}
+		}
+
+	}
+}
+
+.no-gutters {
+    padding: 5px;
+    margin: 0px;
+}
+
+#sr-parallax-section{
+	.sr-parallax-content{
+	    width: 80%;
+	    position: relative;
+	    right: 25%;
+	}
 }
 
 form#loginform {
@@ -266,3 +298,4 @@ form#loginform {
 header {
 	#sr-header-con .fl-row-content-wrap { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
 }
+
