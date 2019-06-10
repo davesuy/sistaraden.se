@@ -106,7 +106,7 @@
 
 	&:before {
 		content: "";
-		background: url(#{$svg_dir}/dstripe/dstripe-home01.svg) repeat scroll 0 0 transparent;
+		background: url(#{$svg_dir}/dstripe/hallbara-stripes.svg) repeat scroll 0 0 transparent;
 		background-size: cover;
 	    position: absolute;
 	    height: 333px;
@@ -170,7 +170,7 @@
 
 		.fl-col {
 			z-index: unset;
-		
+
 		}
 
 	}
@@ -217,6 +217,7 @@
 		min-width: 100px;
 		text-align: center;
 	}
+
 	.wpml-ls-sub-menu{
 		border: none;
 	}
@@ -255,5 +256,60 @@
 	    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 	    will-change: box-shadow;
 	    transform: scale(1.08);
+	    }
+}
+
+.no-gutters {
+    padding: 5px;
+    margin: 0px;
+}
+
+#sr-parallax-section{
+	.sr-parallax-content{
+	    width: 80%;
+	    position: relative;
+	    right: 25%;
 	}
 }
+
+form#loginform {
+	p:not(.login-remember):not([type="submit"]) { position: relative; }
+
+	p:not(.login-remember):not([type="submit"]) input {
+	    position: relative;
+	    padding: 12px 0px 5px 0;
+	    width: 100%;
+	    outline: 0;
+	    border: 0;
+	    transition: box-shadow 150ms ease-out;
+	}
+
+	p:not(.login-remember):not([type="submit"]) label {
+		position: absolute;
+		left: 10px;
+		top: 30%;
+		transition: transform 150ms ease-out, font-size 150ms ease-out;
+		z-index: 1;
+	}
+
+	.focused label {
+		transform: translateY(-80%);
+		font-size: .75em;
+	}
+}
+
+.esg-filters {
+	.eg-search-wrapper .eg-search-input {
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+	}
+}
+
+.esg-media-cover-wrapper {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	.esg-entry-content { box-shadow: unset !important; }
+}
+
+header {
+	#sr-header-con .fl-row-content-wrap { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+}
+
