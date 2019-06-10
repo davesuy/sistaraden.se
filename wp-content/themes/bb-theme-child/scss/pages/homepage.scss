@@ -1,5 +1,11 @@
 @import '../global/variables';
 
+.home{
+	.fl-page-content{
+		background-color: #F4F7F6;
+	}
+}
+
 .black-stripe {
 	background-color: transparent;
 
@@ -20,32 +26,68 @@
     }
 }
 
-.sr-parallax-content{
-	.sr-parallax-content-col{
-		position: relative;
-	    z-index: 1;
+#sr-parallax-section{
+	.sr-parallax-content{
+	    position: relative;
+	    right: 38%;
+	    width: 100%;
 
-	    &:after {
-	    	content: "";
-		    background: url(/wp-content/uploads/2019/06/hero-stripe.png) no-repeat scroll 0 0 transparent;
-		    background-size: contain;
-		    position: absolute;
-		    height: 229px;
-		    max-width: 356px;
-		    width: 100%;
-		    top: 85px;
-		    left: 0;
-		    z-index: -1;
+	    .sr-prallax-content-heading-col{
+	    	position: relative;
+    		left: 30px;
 	    }
+		.sr-parallax-content-col{
+			position: relative;
+		    z-index: 1;
+
+		    &:after {
+		    	content: "";
+			    background: url(/wp-content/uploads/2019/06/hero-stripe.png) no-repeat scroll 0 0 transparent;
+			    background-size: contain;
+			    position: absolute;
+			    height: 229px;
+			    max-width: 356px;
+			    width: 100%;
+			    top: 85px;
+			    left: 0;
+			    z-index: -1;
+		    }
+
+		    .fl-col-content{
+		    	max-width: 552px;
+		    }
+		}
 	}
 }
+
 
 .home-tool-section-con {
 	.fl-col{
 		 .fl-col-content{
 		 	.uabb-photo-img{
-		 		width: 99px;
+		 		width: 48px;
 		 	}
-		 }
+
+		 	&:hover{
+			 	.uabb-photo-img{
+				    width: 48px;
+				}
+
+				.sr-big-icon {
+					.uabb-photo-img{
+					    width: 99px;
+					}
+				}
+			}
+			.sr-big-icon{
+				.uabb-photo-img{
+				    width: 99px;
+				}
+			}
+
+			.fl-module-image-icon{
+
+			}
+		}
 	}
 }

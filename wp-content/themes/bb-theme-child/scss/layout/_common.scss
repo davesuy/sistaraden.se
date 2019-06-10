@@ -245,6 +245,20 @@
 	}
 }
 
+.card-hover-animation{
+	.fl-col-content:hover{
+	    webkit-box-shadow: 0px 0px 10px 1px rgba(168,168,168,0.9);
+	    -moz-box-shadow: 0px 0px 10px 1px rgba(168,168,168,0.9);
+	    -o-box-shadow: 0px 0px 10px 1px rgba(168,168,168,0.9);
+	    box-shadow: 0px 0px 10px 1px rgba(168,168,168,0.9);
+	    -webkit-transition: -webkit-box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
+	    -moz-transition: -moz-box-shadow 200ms ease-in-out, -moz-transform 200ms ease-in-out;
+	    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+	    will-change: box-shadow;
+	    transform: scale(1.08);
+	    }
+}
+
 .no-gutters {
     padding: 5px;
     margin: 0px;
