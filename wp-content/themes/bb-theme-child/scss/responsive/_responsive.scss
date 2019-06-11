@@ -96,8 +96,10 @@ $breakpoint: map-get($breakpoints, sm);
 
 
     &:before {
-      bottom: -15px;
-      height: 236px;
+         bottom: 36px;
+        height: 192px;
+        width: 500px;
+        left: -23px;
 
     }
     
