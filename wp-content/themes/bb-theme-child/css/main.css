@@ -3101,8 +3101,10 @@ header #sr-header-con .fl-row-content-wrap {
 
 @media (max-width: 575px) {
   .blue-stripe:before {
-    bottom: -15px;
-    height: 236px; }
+    bottom: 36px;
+    height: 192px;
+    width: 500px;
+    left: -23px; }
   .pricing-column-wrapper .pricing-column-con:nth-child(1):after {
     width: 500px; }
   .pricing-column-wrapper .pricing-column-con:nth-child(2):after {
@@ -3110,4 +3112,6 @@ header #sr-header-con .fl-row-content-wrap {
     width: 247px;
     right: -10px;
     left: inherit;
-    bottom: 690px; } }
+    bottom: 690px; }
+  .page-id-409 .fl-page-content {
+    overflow: hidden; } }
