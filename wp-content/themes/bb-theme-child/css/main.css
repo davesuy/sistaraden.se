@@ -3108,4 +3108,7 @@ header #sr-header-con .fl-row-content-wrap {
     left: inherit;
     bottom: 690px; }
   .page-id-409 .fl-page-content {
-    overflow: hidden; } }
+    overflow: hidden; }
+  body .esg-filters .esg-filter-wrapper .esg-filterbutton {
+    max-width: 140px;
+    margin-bottom: 26px; } }

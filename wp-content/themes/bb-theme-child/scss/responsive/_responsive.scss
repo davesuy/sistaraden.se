@@ -141,8 +141,22 @@ $breakpoint: map-get($breakpoints, sm);
 
   }
 
+  body {
 
- 
+    .esg-filters {
+
+      .esg-filter-wrapper {
+
+        .esg-filterbutton {
+            max-width: 140px;
+            margin-bottom: 26px;
+          }
+      }
+
+    }
+    
+  }
+
 
 }
 
