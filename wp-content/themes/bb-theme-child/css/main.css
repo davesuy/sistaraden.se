@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2556,6 +2556,52 @@ header #sr-header-con .fl-row-content-wrap {
   position: absolute;
   left: 0;
   color: #000000; }
+
+.application-form-container .gform_widget {
+  background: #FFFFFF;
+  padding: 50px; }
+
+.application-form-container h2.widgettitle {
+  text-transform: uppercase; }
+
+.application-form-container .gform_widget .gfield input:not([type='submit']) {
+  border: 1px solid #EBEBEB;
+  background: #FFFFFF;
+  border-radius: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16); }
+
+.application-form-container .gform_widget .gfield input[type='submit'] {
+  text-transform: uppercase;
+  padding: 15px;
+  width: 172px;
+  border-radius: 0;
+  margin: 0 auto;
+  display: block; }
+
+.application-form-container .top-instruction {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 32px;
+  color: #222222; }
+
+.application-form-container .bottom-instruction {
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 14px;
+  color: #000000;
+  text-align: center;
+  margin-top: 25px; }
+
+.application-form-container .bottom-greetings {
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 29.3px;
+  color: #1D121A;
+  text-align: center;
+  margin-top: 25px; }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
