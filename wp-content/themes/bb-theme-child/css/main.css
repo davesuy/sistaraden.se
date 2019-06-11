@@ -3117,4 +3117,14 @@ header #sr-header-con .fl-row-content-wrap {
     overflow: hidden; }
   body .esg-filters .esg-filter-wrapper .esg-filterbutton {
     max-width: 140px;
-    margin-bottom: 26px; } }
+    margin-bottom: 26px; }
+  body .green-stripe.green-stripe-center:before {
+    height: 217px;
+    max-width: 100%;
+    width: 500px;
+    left: -25px;
+    margin-left: 0; }
+  .single .fl-module-content.fl-node-content,
+  .page-child .fl-module-content.fl-node-content {
+    z-index: 9999;
+    position: relative; } }
