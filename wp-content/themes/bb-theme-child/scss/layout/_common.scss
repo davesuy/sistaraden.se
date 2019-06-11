@@ -315,3 +315,16 @@ header {
 
 .employee-fifty-percent-width { width: 612px; }
 .employee-eighty-percent-width { width: 846px; }
+
+.back-link::before {
+	font-family: "Font Awesome 5 Free";
+    content: "\f053";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    border: 0px;
+    position: absolute;
+    left: 0;
+    color: #000000;
+}

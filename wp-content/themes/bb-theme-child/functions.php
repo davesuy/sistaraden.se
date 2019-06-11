@@ -15,10 +15,10 @@ function add_sistaraden_scripts() {
 
   wp_enqueue_style( 'main', get_stylesheet_directory_uri() . '/css/main.css', array(), '1.1', 'all');
   wp_enqueue_style('fullpage-css', get_stylesheet_directory_uri() . '/css/fullpage.css', '3.0.5', true);
- 
+
   wp_enqueue_script('scrolloverflow.min.js', get_stylesheet_directory_uri() . '/js/scrolloverflow.min.js', array ( 'jquery' ), '0.1.2', true);
-  
-  
+
+
 
   wp_enqueue_script('fullpage-js', get_stylesheet_directory_uri() . '/js/fullpage.js', array ( 'jquery' ), '3.0.5', true);
   wp_enqueue_script('fullpage.extensions.min.js', get_stylesheet_directory_uri() . '/js/fullpage.extensions.min.js', array ( 'jquery' ), '3.0.5', true);
@@ -28,7 +28,7 @@ function add_sistaraden_scripts() {
 
 
   wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/js/custom_script.js', array ( 'jquery' ), 1.1, true);
- 
+
 }
 add_action( 'wp_enqueue_scripts', 'add_sistaraden_scripts' );
 
@@ -47,14 +47,14 @@ function esgrid_meta_func( $atts ) {
 	$date = get_the_date( 'F j Y',  $atts['id']);
 	$post_tags = get_the_tags($atts['id']);
 
-	
+
 
 	$separator = ', ';
 	$post_tags_output = "";
 
 	if ( $post_tags ) {
 	    foreach( $post_tags as $tag ) {
-	    		$tag_output[] = '<a href="'. get_tag_link($tag->term_id) . '">#'. $tag->name . '</a>'; 
+	    		$tag_output[] = '<a href="'. get_tag_link($tag->term_id) . '">#'. $tag->name . '</a>';
 	    }
 
 
@@ -64,7 +64,7 @@ function esgrid_meta_func( $atts ) {
 
 	$output = "<div class='esgrid-wrapper'>";
 	$output .= '<p class="esgrid-meta-text">'.$author_name.' - '.$date.'</p>';
-	$output .= '<p class="esgrid-tag-text">'.$post_tags_output.'<p>'; 
+	$output .= '<p class="esgrid-tag-text">'.$post_tags_output.'<p>';
 	$output .= "</div>";
 
 	return $output;
@@ -169,6 +169,101 @@ function portfolio_category() {
 add_action( 'init', 'portfolio_category', 0 );
 
 
+// Register Job Custom Post Type
+function sr_job() {
+
+	$labels = array(
+		'name'                  => _x( 'Jobs', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Job', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Jobs', 'text_domain' ),
+		'name_admin_bar'        => __( 'Job', 'text_domain' ),
+		'archives'              => __( 'Job Archives', 'text_domain' ),
+		'attributes'            => __( 'Job Attributes', 'text_domain' ),
+		'parent_item_colon'     => __( 'Parent Job:', 'text_domain' ),
+		'all_items'             => __( 'All Jobs', 'text_domain' ),
+		'add_new_item'          => __( 'Add New Job', 'text_domain' ),
+		'add_new'               => __( 'Add New Job', 'text_domain' ),
+		'new_item'              => __( 'New Job', 'text_domain' ),
+		'edit_item'             => __( 'Edit Job', 'text_domain' ),
+		'update_item'           => __( 'Update Job', 'text_domain' ),
+		'view_item'             => __( 'View Job', 'text_domain' ),
+		'view_items'            => __( 'View Jobs', 'text_domain' ),
+		'search_items'          => __( 'Search Job', 'text_domain' ),
+		'not_found'             => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+		'featured_image'        => __( 'Featured Image', 'text_domain' ),
+		'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+		'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+		'insert_into_item'      => __( 'Insert into job', 'text_domain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this job', 'text_domain' ),
+		'items_list'            => __( 'Jobs list', 'text_domain' ),
+		'items_list_navigation' => __( 'Jobs list navigation', 'text_domain' ),
+		'filter_items_list'     => __( 'Filter jobs list', 'text_domain' ),
+	);
+	$args = array(
+		'label'                 => __( 'Job', 'text_domain' ),
+		'description'           => __( 'Lists of Sistaraden Jobs', 'text_domain' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'trackbacks', 'revisions', 'custom-fields', 'page-attributes', 'post-formats' ),
+		'taxonomies'            => array( 'job_category' ),
+		'hierarchical'          => true,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'job', $args );
+
+}
+add_action( 'init', 'sr_job', 0 );
+
+// Register Custom Taxonomy
+function job_category() {
+
+	$labels = array(
+		'name'                       => _x( 'Job Categories', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Job Category', 'Taxonomy Singular Name', 'text_domain' ),
+		'menu_name'                  => __( 'Job Category', 'text_domain' ),
+		'all_items'                  => __( 'All Categories', 'text_domain' ),
+		'parent_item'                => __( 'Parent Job Category', 'text_domain' ),
+		'parent_item_colon'          => __( 'Parent Job Category:', 'text_domain' ),
+		'new_item_name'              => __( 'New Job Category', 'text_domain' ),
+		'add_new_item'               => __( 'Add New Job Category', 'text_domain' ),
+		'edit_item'                  => __( 'Edit Job Category', 'text_domain' ),
+		'update_item'                => __( 'Update Job Category', 'text_domain' ),
+		'view_item'                  => __( 'View Job Category', 'text_domain' ),
+		'separate_items_with_commas' => __( 'Separate job categories with commas', 'text_domain' ),
+		'add_or_remove_items'        => __( 'Add or remove job categories', 'text_domain' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'text_domain' ),
+		'popular_items'              => __( 'Popular Job Categories', 'text_domain' ),
+		'search_items'               => __( 'Search Job Categories', 'text_domain' ),
+		'not_found'                  => __( 'Not Found', 'text_domain' ),
+		'no_terms'                   => __( 'No job categories', 'text_domain' ),
+		'items_list'                 => __( 'Job Categories list', 'text_domain' ),
+		'items_list_navigation'      => __( 'Job Categories list navigation', 'text_domain' ),
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'job_category', array( 'job' ), $args );
+
+}
+add_action( 'init', 'job_category', 0 );
+
 function add_last_nav_item($items) {
 
 	$last_items = "";
@@ -176,7 +271,7 @@ function add_last_nav_item($items) {
 	if ( wp_is_mobile() ) {
 
 		 $last_items = do_shortcode('[fl_builder_insert_layout slug="mobile-elements"]');
-	} 
+	}
 
 
 	if(!empty($last_items )) {
@@ -190,7 +285,7 @@ function add_last_nav_item($items) {
 	}
 
 
-	
+
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
 
@@ -216,7 +311,7 @@ $a = shortcode_atts( array(
 	'label_log_in' => esc_attr( $a['label_log_in'] ),
 	'value_remember' => $a['remember_checked']
 	);
-	
+
 	return wp_login_form( $args );
 }
 add_shortcode( 'login_form', 'wpabsolute_login_form_shortcode' );
