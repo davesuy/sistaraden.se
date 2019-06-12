@@ -264,14 +264,6 @@
     margin: 0px;
 }
 
-#sr-parallax-section{
-	.sr-parallax-content{
-	    width: 80%;
-	    position: relative;
-	    right: 25%;
-	}
-}
-
 form#loginform {
 	p:not(.login-remember):not([type="submit"]) { position: relative; }
 
@@ -313,3 +305,15 @@ header {
 	#sr-header-con .fl-row-content-wrap { box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
 }
 
+.fl-builder-content {
+	.fl-node-5cde6693c835a {
+		a{
+			&.fl-button {
+			    padding-top: 40px;
+			    padding-right:40;
+			    padding-bottom: 40px;
+			    padding-left: 40;
+			}
+		}
+	}
+}

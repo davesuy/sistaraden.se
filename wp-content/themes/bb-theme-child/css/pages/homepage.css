@@ -17,8 +17,8 @@
 
 #sr-parallax-section .sr-parallax-content {
   position: relative;
-  right: 38%;
-  width: 100%; }
+  left: 5%;
+  width: 50%; }
   #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
     position: relative;
     left: 30px; }
@@ -38,6 +38,8 @@
       z-index: -1; }
     #sr-parallax-section .sr-parallax-content .sr-parallax-content-col .fl-col-content {
       max-width: 552px; }
+      #sr-parallax-section .sr-parallax-content .sr-parallax-content-col .fl-col-content > div:not(.fl-module-separator) {
+        background-color: #ffffff; }
 
 .home-tool-section-con .fl-col .fl-col-content .uabb-photo-img {
   width: 48px; }
@@ -50,3 +52,6 @@
 
 .home-tool-section-con .fl-col .fl-col-content .sr-big-icon .uabb-photo-img {
   width: 99px; }
+
+.home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
+  min-height: 70px; }
