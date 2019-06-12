@@ -406,8 +406,11 @@ header {
 	    width: 456px;
 	    display: block;
 	    margin: 0 auto;
-	    padding: 40px 40px 65px;
+	    padding: 40px 60px 65px;
 	    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	    background: #FFFFFF;
+	    position: relative;
+	    z-index: 2;
 
 	    h2 {
 	        font-family: 'Roboto Condensed', sans-serif;
@@ -422,8 +425,7 @@ header {
 	    .sr-sep {
 	        width: 114px;
 	        border-bottom: 4px solid #000000;
-	        margin-top: 45px;
-	        margin-bottom: 51.5px;
+	        margin: 45px auto 51.5px;
 	    }
 	    p {
 	        font-family: 'Roboto Condensed', sans-serif;
@@ -433,6 +435,17 @@ header {
 	        color: #2F2F2F;
 	        text-align: center;
 	    }
+	}
+	.violet-background { position: relative; }
+	.violet-background::before {
+		content: ' ';
+	    background: url(/sistaraden/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+	    color: white;
+	    width: 270px;
+	    height: 191px;
+	    position: absolute;
+	    top: -27px;
+	    left: -42px;
 	}
 
 	.paragraph-group > .fl-col-content {
