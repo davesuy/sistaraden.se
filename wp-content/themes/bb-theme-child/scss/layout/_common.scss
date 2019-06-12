@@ -387,17 +387,58 @@ header {
 	}
 }
 
-.violet-background::after {
-	content: ' ';
-    background: url('/wp-content/uploads/2019/06/purple-strip-kontakt.png'); /* with class ModalCarrot ??*/;
-    color: white;
-    width: 378px;
-    height: 50px;
-    margin: 0 auto;
-}
-
 .job-template-default {
 	.fl-page-content .container { width: unset; }
 	.fl-page-content .container article header, .fl-post-meta-bottom { display: none; }
 	.fl-content{ margin: 40px 0 0 !important; }
+
+	.violet-background::after {
+		content: ' ';
+	    background: url('/wp-content/uploads/2019/06/purple-strip-kontakt.png'); /* with class ModalCarrot ??*/;
+	    color: white;
+	    width: 378px;
+	    height: 50px;
+	    margin: 0 auto;
+	}
+}
+.analyze-seo-thank-you {
+	.thank-you-emoji-container {
+	    width: 456px;
+	    display: block;
+	    margin: 0 auto;
+	    padding: 40px 40px 65px;
+	    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+	    h2 {
+	        font-family: 'Roboto Condensed', sans-serif;
+	        font-weight: 700;
+	        font-size: 2.375rem;
+	        line-height: 44px;
+	        color: #2F2F2F;
+	        text-transform: uppercase;
+	        text-align: center;
+	        margin-bottom: 35px;
+	    }
+	    .sr-sep {
+	        width: 114px;
+	        border-bottom: 4px solid #000000;
+	        margin-top: 45px;
+	        margin-bottom: 51.5px;
+	    }
+	    p {
+	        font-family: 'Roboto Condensed', sans-serif;
+	        font-weight: 400;
+	        font-size: 1.875rem;
+	        line-height: 35px;
+	        color: #2F2F2F;
+	        text-align: center;
+	    }
+	}
+
+	.paragraph-group > .fl-col-content {
+		width: 846px;
+	    display: block;
+	    margin-left: auto !important;
+	    margin-right: auto !important;
+	}
 }
