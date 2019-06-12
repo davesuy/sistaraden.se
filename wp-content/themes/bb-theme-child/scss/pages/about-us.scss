@@ -81,8 +81,8 @@
 
 }
 
-.about-us-card p { position: relative; }
-.about-us-card p::before {
+.about-us-card > p { position: relative; }
+.about-us-card > p::before {
     content: "";
     width: 100%;
     height: 100%;

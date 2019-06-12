@@ -3093,10 +3093,10 @@ header #sr-header-con .fl-row-content-wrap {
     .about-us-card .about-us-card-labels .about-us-card-title {
       font-size: 1.75rem; }
 
-.about-us-card p {
+.about-us-card > p {
   position: relative; }
 
-.about-us-card p::before {
+.about-us-card > p::before {
   content: "";
   width: 100%;
   height: 100%;
