@@ -2649,6 +2649,10 @@ header #sr-header-con .fl-row-content-wrap {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 35px; }
+  .analyze-seo-thank-you .thank-you-emoji-container img {
+    width: 200px;
+    display: block;
+    margin: 0 auto; }
   .analyze-seo-thank-you .thank-you-emoji-container .sr-sep {
     width: 114px;
     border-bottom: 4px solid #000000;
@@ -2666,13 +2670,12 @@ header #sr-header-con .fl-row-content-wrap {
 
 .analyze-seo-thank-you .violet-background::before {
   content: ' ';
-  background: url(/sistaraden/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  background: url(/wp-content/uploads/2019/06/purple-strip-kontakt.png);
   color: white;
   width: 270px;
   height: 191px;
   position: absolute;
-  top: -27px;
-  left: -42px; }
+  top: -27px; }
 
 .analyze-seo-thank-you .paragraph-group > .fl-col-content {
   width: 846px;

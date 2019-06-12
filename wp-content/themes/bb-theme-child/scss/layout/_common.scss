@@ -422,6 +422,11 @@ header {
 	        text-align: center;
 	        margin-bottom: 35px;
 	    }
+	    img {
+	    	width: 200px;
+	    	display: block;
+	    	margin: 0 auto;
+	    }
 	    .sr-sep {
 	        width: 114px;
 	        border-bottom: 4px solid #000000;
@@ -439,13 +444,12 @@ header {
 	.violet-background { position: relative; }
 	.violet-background::before {
 		content: ' ';
-	    background: url(/sistaraden/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+	    background: url(/wp-content/uploads/2019/06/purple-strip-kontakt.png);
 	    color: white;
 	    width: 270px;
 	    height: 191px;
 	    position: absolute;
 	    top: -27px;
-	    left: -42px;
 	}
 
 	.paragraph-group > .fl-col-content {
