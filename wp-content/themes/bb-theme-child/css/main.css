@@ -2568,9 +2568,11 @@ header #sr-header-con .fl-row-content-wrap {
   border: 1px solid #EBEBEB;
   background: #FFFFFF;
   border-radius: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16); }
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+  height: 47px;
+  padding: 10px !important; }
 
-.application-form-container .gform_widget .gfield input[type='submit'] {
+.application-form-container .gform_widget .gform_footer input[type='submit'] {
   text-transform: uppercase;
   padding: 15px;
   width: 172px;
@@ -2618,6 +2620,15 @@ header #sr-header-con .fl-row-content-wrap {
   width: 378px;
   height: 50px;
   margin: 0 auto; }
+
+.job-template-default .fl-page-content .container {
+  width: unset; }
+
+.job-template-default .fl-page-content .container article header, .job-template-default .fl-post-meta-bottom {
+  display: none; }
+
+.job-template-default .fl-content {
+  margin: 40px 0 0 !important; }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }

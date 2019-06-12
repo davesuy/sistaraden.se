@@ -340,8 +340,10 @@ header {
 		background: #FFFFFF;
 		border-radius: 0;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
+		height: 47px;
+		padding: 10px !important;
 	}
-	.gform_widget .gfield input[type='submit'] {
+	.gform_widget .gform_footer input[type='submit'] {
 		text-transform: uppercase;
 		padding: 15px;
 		width: 172px;
@@ -391,4 +393,10 @@ header {
     width: 378px;
     height: 50px;
     margin: 0 auto;
+}
+
+.job-template-default {
+	.fl-page-content .container { width: unset; }
+	.fl-page-content .container article header, .fl-post-meta-bottom { display: none; }
+	.fl-content{ margin: 40px 0 0 !important; }
 }
