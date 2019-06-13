@@ -2712,7 +2712,7 @@ header #sr-header-con .fl-row-content-wrap {
     font-weight: 500;
     font-size: 1.125rem;
     line-height: 26px;
-    text-align: right;
+    text-align: center;
     padding: 20px 0px 5px 0px;
     margin-left: auto;
     margin-right: auto; }
@@ -2792,15 +2792,21 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 30px auto 0; }
 
+.page-not-found-container #notice-container {
+  position: relative; }
+
+.page-not-found-container #notice-container .fl-col-content {
+  position: relative;
+  z-index: 1; }
+
 .page-not-found-container #notice-container::after {
   content: ' ';
   background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
   color: white;
-  height: 271px;
-  width: 60px;
+  height: 191px;
+  width: 270px;
   margin: 0 auto;
-  position: absolute;
-  top: 212px;
+  top: -15px;
   right: -60px; }
 
 @media screen and (max-width: 959px) {
@@ -2822,25 +2828,25 @@ header #sr-header-con .fl-row-content-wrap {
   .application-form-container .gform_widget {
     padding: 20px; }
   .job-template-default .violet-background::after {
-    width: 100%; } }
+    width: 100%; }
+  .page-not-found-container #notice-container::before {
+    content: ' ';
+    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+    color: white;
+    height: 191px;
+    width: 270px;
+    margin: 0 auto;
+    position: absolute;
+    top: -50px;
+    left: 0; }
+  .page-not-found-container #notice-container::after {
+    display: none; } }
 
 @media screen and (max-width: 479px) {
   #sharpspringform code {
     width: 97%;
     padding: 0 20px; }
   #sharpspringform code::before, #sharpspringform code::after {
-    display: none; }
-  .page-not-found-container #notice-container::before {
-    content: ' ';
-    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
-    color: white;
-    height: 271px;
-    width: 60px;
-    margin: 0 auto;
-    position: absolute;
-    top: 212px;
-    right: -60px; }
-  .page-not-found-container #notice-container::after {
     display: none; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {

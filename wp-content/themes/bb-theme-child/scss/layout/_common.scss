@@ -615,15 +615,16 @@ header {
 }
 
 .page-not-found-container {
+	#notice-container { position: relative; }
+	#notice-container .fl-col-content { position: relative; z-index: 1; }
 	#notice-container::after {
 		content: ' ';
 	    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
 	    color: white;
-	    height: 271px;
-	    width: 60px;
+	    height: 191px;
+	    width: 270px;
 	    margin: 0 auto;
-	    position: absolute;
-	    top: 212px;
+	    top: -15px;
 	    right: -60px;
 	}
 }
@@ -646,6 +647,21 @@ header {
 
     .application-form-container .gform_widget { padding: 20px; }
     .job-template-default .violet-background::after { width: 100%; }
+
+	.page-not-found-container {
+		#notice-container::before {
+			content: ' ';
+		    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+		    color: white;
+		    height: 191px;
+		    width: 270px;
+		    margin: 0 auto;
+		    position: absolute;
+		    top: -50px;
+		    left: 0;
+		}
+		#notice-container::after { display: none; }
+	}
 }
 @media screen and (max-width: 479px)  {
     #sharpspringform {
@@ -656,20 +672,5 @@ header {
 		code::before, code::after {
 			display: none;
 		}
-	}
-
-	.page-not-found-container {
-		#notice-container::before {
-			content: ' ';
-		    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
-		    color: white;
-		    height: 271px;
-		    width: 60px;
-		    margin: 0 auto;
-		    position: absolute;
-		    top: 212px;
-		    right: -60px;
-		}
-		#notice-container::after { display: none; }
 	}
 }
