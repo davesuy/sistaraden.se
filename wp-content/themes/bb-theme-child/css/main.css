@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2687,7 +2687,6 @@ header #sr-header-con .fl-row-content-wrap {
   margin-left: auto !important;
   margin-right: auto !important; }
 
-
 #cookie-consent-banner .cookieconsent {
   color: #fff;
   text-align: center;
@@ -2793,6 +2792,16 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 30px auto 0; }
 
+.page-not-found-container #notice-container::after {
+  content: ' ';
+  background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  color: white;
+  height: 271px;
+  width: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 212px;
+  right: -60px; }
 
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
@@ -2813,15 +2822,26 @@ header #sr-header-con .fl-row-content-wrap {
   .application-form-container .gform_widget {
     padding: 20px; }
   .job-template-default .violet-background::after {
-    width: 100%; }
-  #sharpspringform code {
-    width: 97%;
-    padding: 0 20px; } }
+    width: 100%; } }
 
 @media screen and (max-width: 479px) {
   #sharpspringform code {
     width: 97%;
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  #sharpspringform code::before, #sharpspringform code::after {
+    display: none; }
+  .page-not-found-container #notice-container::before {
+    content: ' ';
+    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+    color: white;
+    height: 271px;
+    width: 60px;
+    margin: 0 auto;
+    position: absolute;
+    top: 212px;
+    right: -60px; }
+  .page-not-found-container #notice-container::after {
+    display: none; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
