@@ -39,7 +39,7 @@
     opacity: 1; }
   .about-us-card .about-us-card-labels {
     text-align: right;
-    position: relative;
+    position: absolute;
     max-width: 241px;
     right: 5%;
     top: 70%;
