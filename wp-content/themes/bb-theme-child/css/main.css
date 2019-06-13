@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2683,6 +2683,65 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin-left: auto !important;
   margin-right: auto !important; }
+
+#cookie-consent-banner .cookieconsent {
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  background-color: #3A5048;
+  min-height: 217px; }
+  #cookie-consent-banner .cookieconsent .container.cookie-consent-container {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+    #cookie-consent-banner .cookieconsent .container.cookie-consent-container .row {
+      margin: 0px; }
+  #cookie-consent-banner .cookieconsent .buttons {
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    margin-left: auto;
+    margin-right: auto; }
+  #cookie-consent-banner .cookieconsent p {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 26px;
+    text-align: right;
+    padding: 20px 0px 5px 0px;
+    margin-left: auto;
+    margin-right: auto; }
+    #cookie-consent-banner .cookieconsent p a {
+      font-family: Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 1.125rem;
+      line-height: 26px;
+      color: #ffffff; }
+  #cookie-consent-banner .cookieconsent button.primary-btn.yes-btn {
+    font-family: Roboto Condensed, sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 24px;
+    background-color: #1D121B;
+    border-color: #1D121B;
+    border-radius: 0;
+    color: #ffffff;
+    padding: 15px 30px; }
+  #cookie-consent-banner .cookieconsent button.secondary-btn.no-btn {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 29.3px;
+    background: none;
+    border: none;
+    color: #f5f5f5;
+    text-decoration: underline;
+    border-radius: 0;
+    margin: 20px 20px 20px 50px;
+    padding: 0;
+    font-size: 15px; }
 
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
