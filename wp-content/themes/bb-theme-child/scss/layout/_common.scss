@@ -465,6 +465,16 @@ header {
 	}
 }
 
+#sharpspringform {
+	code {
+		width: 80%;
+	    display: block;
+	    margin: 0 auto;
+	    padding: 0 58px;
+	    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	}
+}
+
 @media screen and (max-width: 959px)  {
 	.analyze-seo-thank-you {
 		.thank-you-emoji-container { width: 80%; }
