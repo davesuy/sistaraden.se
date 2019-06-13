@@ -29,8 +29,8 @@
 #sr-parallax-section{
 	.sr-parallax-content{
 	    position: relative;
-	    right: 38%;
-	    width: 100%;
+	    left:5%;
+	    width: 50%;
 
 	    .sr-prallax-content-heading-col{
 	    	position: relative;
@@ -55,11 +55,14 @@
 
 		    .fl-col-content{
 		    	max-width: 552px;
+
+		    	> div:not(.fl-module-separator) {
+				    background-color: #ffffff;
+				}
 		    }
 		}
 	}
 }
-
 
 .home-tool-section-con {
 	.fl-col{
@@ -85,9 +88,10 @@
 				}
 			}
 
-			.fl-module-image-icon{
-
+			.fl-module-image-icon {
+			    min-height: 70px;
 			}
+
 		}
 	}
 }
