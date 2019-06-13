@@ -2546,6 +2546,9 @@ header #sr-header-con .fl-row-content-wrap {
 .employee-eighty-percent-width {
   width: 846px; }
 
+.back-link {
+  position: relative; }
+
 .back-link::before {
   font-family: "Font Awesome 5 Free";
   content: "\f053";
@@ -2684,6 +2687,7 @@ header #sr-header-con .fl-row-content-wrap {
   margin-left: auto !important;
   margin-right: auto !important; }
 
+
 #cookie-consent-banner .cookieconsent {
   color: #fff;
   text-align: center;
@@ -2743,6 +2747,51 @@ header #sr-header-con .fl-row-content-wrap {
     padding: 0;
     font-size: 15px; }
 
+#sharpspringform code {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding: 0 58px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
+
+#sharpspringform code::before {
+  content: ' ';
+  background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  color: white;
+  height: 271px;
+  width: 70px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 70px;
+  left: -70px;
+  transform: rotate(180deg); }
+
+#sharpspringform code::after {
+  content: ' ';
+  background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  color: white;
+  height: 271px;
+  width: 70px;
+  margin: 0 auto;
+  position: absolute;
+  top: 212px;
+  right: -70px; }
+
+#test-sharpspring-today-cta .fl-cta-button a {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  width: 172px;
+  padding: 15px;
+  background: #1D121B;
+  display: block;
+  margin: 30px auto 0; }
+
+
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
     width: 80%; }
@@ -2758,6 +2807,10 @@ header #sr-header-con .fl-row-content-wrap {
     top: -50px; }
   .employee-fifty-percent-width,
   .employee-eighty-percent-width {
+    width: 100%; }
+  .application-form-container .gform_widget {
+    padding: 20px; }
+  .job-template-default .violet-background::after {
     width: 100%; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
@@ -2963,7 +3016,7 @@ header #sr-header-con .fl-row-content-wrap {
   position: relative; }
   .single-post-stripe:after {
     content: "";
-    background: url(../images/dstripe/post-stripe.png) no-repeat scroll 0 0 transparent;
+    background: url(../images/dstripe/hero-stripe.png) no-repeat scroll 0 0 transparent;
     background-size: contain;
     position: absolute;
     height: 175px;
@@ -3046,7 +3099,18 @@ header #sr-header-con .fl-row-content-wrap {
   .single-post-stripe.single-post-stripe-right:after {
     right: 0; }
   .single-post-stripe-left-photo .fl-photo-content:after {
-    bottom: 0; } }
+    bottom: 0; }
+  .single-post-stripe.single-post-stripe-right:after {
+    right: 0;
+    width: 500px;
+    max-width: 100%;
+    bottom: -345px;
+    background-repeat: repeat;
+    background-size: cover; }
+  .single-post .fl-page-content {
+    overflow: hidden; }
+  .sr-single-post-wrapper .fl-row-content-wrap {
+    min-height: 300px; } }
 
 .pricing-column-wrapper .pricing-column-con > .fl-node-content .fl-col-group {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
@@ -3155,7 +3219,7 @@ header #sr-header-con .fl-row-content-wrap {
     opacity: 1; }
   .about-us-card .about-us-card-labels {
     text-align: right;
-    position: relative;
+    position: absolute;
     max-width: 241px;
     right: 5%;
     top: 70%;
@@ -3169,9 +3233,9 @@ header #sr-header-con .fl-row-content-wrap {
       text-transform: uppercase; }
     .about-us-card .about-us-card-labels .about-us-card-title {
       font-size: 1.75rem; }
-  .about-us-card .about-us-card > p {
+  .about-us-card > p {
     position: relative; }
-  .about-us-card .about-us-card > p::before {
+  .about-us-card > p::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -3338,6 +3402,10 @@ header #sr-header-con .fl-row-content-wrap {
   #sr-header-con .fl-module-menu #menu-main-menu a {
     padding-left: 12px;
     padding-right: 12px; }
+  #sr-header-con .fl-module-menu #menu-main-menu-de a,
+  #sr-header-con .fl-module-menu #menu-main-menu-en a {
+    padding-left: 22px;
+    padding-right: 22px; }
   #sr-header-con a.fl-button {
     padding-left: 12px;
     padding-right: 12px; } }

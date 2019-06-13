@@ -39,7 +39,7 @@
     opacity: 1; }
   .about-us-card .about-us-card-labels {
     text-align: right;
-    position: relative;
+    position: absolute;
     max-width: 241px;
     right: 5%;
     top: 70%;
@@ -53,9 +53,9 @@
       text-transform: uppercase; }
     .about-us-card .about-us-card-labels .about-us-card-title {
       font-size: 1.75rem; }
-  .about-us-card .about-us-card > p {
+  .about-us-card > p {
     position: relative; }
-  .about-us-card .about-us-card > p::before {
+  .about-us-card > p::before {
     content: "";
     width: 100%;
     height: 100%;

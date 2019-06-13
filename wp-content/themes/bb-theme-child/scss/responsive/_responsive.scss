@@ -69,19 +69,24 @@ $breakpoint: map-get($breakpoints, sm);
 
 			#menu-main-menu {
 
-		
+
 				a {
 					padding-left: 12px;
 					padding-right: 12px;
 				}
+			}
 
-			
-
-			} 
+      #menu-main-menu-de,
+      #menu-main-menu-en {
+        a {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+      }
 
 		}
 
-	
+
 		a.fl-button {
 			padding-left: 12px;
 			padding-right: 12px;
@@ -107,7 +112,7 @@ $breakpoint: map-get($breakpoints, sm);
       margin-left: auto;
       margin-right: auto;
   }
-  
+
   #sr-parallax-section {
     .sr-parallax-content {
         position: relative;
@@ -146,7 +151,7 @@ $breakpoint: map-get($breakpoints, sm);
 
 @include respond-below(xs) {
 
-  .blue-stripe { 
+  .blue-stripe {
 
 
     &:before {
@@ -156,7 +161,7 @@ $breakpoint: map-get($breakpoints, sm);
         left: -23px;
 
     }
-    
+
   }
 
   .pricing-column-wrapper {
@@ -178,7 +183,7 @@ $breakpoint: map-get($breakpoints, sm);
             right: -10px;
             left: inherit;
             bottom: 690px;
-            
+
 
           }
 
@@ -187,7 +192,7 @@ $breakpoint: map-get($breakpoints, sm);
 
   }
 
-  
+
 }
 
 @include respond-below(s) {
@@ -200,7 +205,7 @@ $breakpoint: map-get($breakpoints, sm);
         padding-left: 0px !important;
     }
   }
-    
+
     .subscription-form {
 
       .fl-form-button {
@@ -217,7 +222,7 @@ $breakpoint: map-get($breakpoints, sm);
             }
       }
     }
-    
+
     .about-us-card {
         height: 334px;
         overflow: visible;
@@ -248,7 +253,7 @@ $breakpoint: map-get($breakpoints, sm);
         }
 
     }
-        
+
     .blue-stripe{
 
       &.blue-stripe-custom{
@@ -299,7 +304,7 @@ $breakpoint: map-get($breakpoints, sm);
       }
 
     }
-    
+
     .wpml-ls-legacy-dropdown {
 
       li {
@@ -317,7 +322,7 @@ $breakpoint: map-get($breakpoints, sm);
       }
 
     }
-    
+
     #menu-language-switcher a.wpml-ls-item-toggle:after, #menu-language-switcher-de a.wpml-ls-item-toggle:after, #menu-language-switcher-en a.wpml-ls-item-toggle:after, .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after {
         font-family: "Font Awesome 5 Free";
         content: "\f078";
@@ -332,7 +337,7 @@ $breakpoint: map-get($breakpoints, sm);
         color: #ffffff;
         font-size: 25px;
     }
-    
+
     .black-stripe {
 
         .fl-row-fixed-width{
@@ -346,12 +351,12 @@ $breakpoint: map-get($breakpoints, sm);
               height: 660px;
               z-index: 1;
               top: 1460px;
-            } 
+            }
 
         }
 
     }
-  
+
   .page-id-409 {
 
     .fl-page-content {
@@ -384,8 +389,8 @@ $breakpoint: map-get($breakpoints, sm);
     margin-left: 0;
   }
 
-  .single, 
-  .page-child { 
+  .single,
+  .page-child {
     .fl-module-content.fl-node-content {
       z-index: 9999;
       position: relative;
@@ -393,7 +398,7 @@ $breakpoint: map-get($breakpoints, sm);
 
   }
 
-  
+
 
 }
 
@@ -438,7 +443,7 @@ $breakpoint: map-get($breakpoints, sm);
       }
 
     }
-    
+
     #sr-parallax-section {
 
       .sr-parallax-content {
