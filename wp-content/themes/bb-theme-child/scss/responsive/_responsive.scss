@@ -78,8 +78,10 @@ $breakpoint: map-get($breakpoints, sm);
 
       #menu-main-menu-de,
       #menu-main-menu-en {
-          padding-left: 22px;
-          padding-right: 22px;
+        a {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
       }
 
 		}
