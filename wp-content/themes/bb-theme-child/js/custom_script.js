@@ -94,6 +94,40 @@ jQuery(document).ready(function( $ ) {
       $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle( "slow");
     });
 
+
+    //Coookie Consent Banner
+	$("body").on("click", "#cookie-consent-banner .cookieconsent .buttons .no-btn", function() {
+        $("#cookie-consent-banner ").hide();
+    });
+    
+    $("body").on("click", "#cookie-consent-banner  .cookieconsent .buttons .yes-btn", function() {
+        setLocalCookie('username','newuser',1);
+        $("#cookie-consent-banner").hide();
+    });
+    
+    function setLocalCookie(cname, cvalue, exdays) {
+      var d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires="+d.toUTCString();
+      console.log(expires);
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+    
+    function getCookie(cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
 });
 
 ! function(n) {
