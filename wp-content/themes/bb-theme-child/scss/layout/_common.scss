@@ -463,3 +463,14 @@ header {
 	    margin-right: auto !important;
 	}
 }
+
+@media screen and (max-width: 768px)  {
+    .analyze-seo-thank-you {
+        .paragraph-group > .fl-col-content {
+            width: 90%;
+        }
+
+        > fl-row-content-wrap { background: transparent; }
+        .violet-background::before { top: -70px; }
+    }
+}
