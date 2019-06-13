@@ -320,6 +320,7 @@ header {
 .employee-fifty-percent-width { width: 612px; }
 .employee-eighty-percent-width { width: 846px; }
 
+.back-link { position: relative; }
 .back-link::before {
 	font-family: "Font Awesome 5 Free";
     content: "\f053";
@@ -479,4 +480,7 @@ header {
 
     .employee-fifty-percent-width,
     .employee-eighty-percent-width { width: 100%; }
+
+    .application-form-container .gform_widget { padding: 20px; }
+    .job-template-default .violet-background::after { width: 100%; }
 }

@@ -2546,6 +2546,9 @@ header #sr-header-con .fl-row-content-wrap {
 .employee-eighty-percent-width {
   width: 846px; }
 
+.back-link {
+  position: relative; }
+
 .back-link::before {
   font-family: "Font Awesome 5 Free";
   content: "\f053";
@@ -2699,6 +2702,10 @@ header #sr-header-con .fl-row-content-wrap {
     top: -50px; }
   .employee-fifty-percent-width,
   .employee-eighty-percent-width {
+    width: 100%; }
+  .application-form-container .gform_widget {
+    padding: 20px; }
+  .job-template-default .violet-background::after {
     width: 100%; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
