@@ -2684,14 +2684,19 @@ header #sr-header-con .fl-row-content-wrap {
   margin-left: auto !important;
   margin-right: auto !important; }
 
-@media screen and (max-width: 768px) {
-  .analyze-seo-thank-you .thank-you-emoji-container,
+@media screen and (max-width: 959px) {
+  .analyze-seo-thank-you .thank-you-emoji-container {
+    width: 80%; }
   .analyze-seo-thank-you .paragraph-group > .fl-col-content {
+    width: 90%; } }
+
+@media screen and (max-width: 768px) {
+  .analyze-seo-thank-you .thank-you-emoji-container {
     width: 90%; }
   .analyze-seo-thank-you > .fl-row-content-wrap {
     background: transparent; }
   .analyze-seo-thank-you .violet-background::before {
-    top: -70px; } }
+    top: -50px; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
