@@ -352,14 +352,14 @@ function cookie_consent_banner () {
 	        
        
 	    echo '<div id="cookie-consent-banner"><div class="cookieconsent full-width"><div class="container cookie-consent-container"><div class="row"><p>';
-		echo _e("Vi använder cookies. Genom att använda vår hemsida accepterar du hanteringen av dessa enligt rådande ");
+		echo _e("We use cookies. When using our website you consent to the use of cookies according to our ");
 		echo '<a href="'.$policyLink.'" target="_blank">';
-		echo _e("integritetspolicy");
+		echo _e("Privacy Policy");
 		echo '</a></p></div><div class="row"><div class="buttons">';		
 		echo '<button class="primary-btn yes-btn" onclick="window.runKoiTracking()">';
-		echo _e('Jag accepterar');
+		echo _e('I agree');
 		echo '</button><button class="secondary-btn no-btn" onclick="window.removeKoiConsent()">';
-		echo _e('Nej tack');
+		echo _e('No, thank you');
 		echo '</button></div></div></div></div></div>';
 	}
 }
