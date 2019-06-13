@@ -2694,6 +2694,43 @@ header #sr-header-con .fl-row-content-wrap {
   padding: 0 58px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
 
+#sharpspringform code::before {
+  content: ' ';
+  background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  color: white;
+  height: 271px;
+  width: 70px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 70px;
+  left: -70px;
+  transform: rotate(180deg); }
+
+#sharpspringform code::after {
+  content: ' ';
+  background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  color: white;
+  height: 271px;
+  width: 70px;
+  margin: 0 auto;
+  position: absolute;
+  top: 212px;
+  right: -70px; }
+
+#test-sharpspring-today-cta .fl-cta-button a {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  width: 172px;
+  padding: 15px;
+  background: #1D121B;
+  display: block;
+  margin: 30px auto 0; }
+
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
     width: 80%; }
