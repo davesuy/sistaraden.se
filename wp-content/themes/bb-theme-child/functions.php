@@ -30,6 +30,7 @@ function add_sistaraden_scripts() {
   wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/js/custom_script.js', array ( 'jquery' ), 1.1, true);
 
 }
+
 add_action( 'wp_enqueue_scripts', 'add_sistaraden_scripts' );
 
 // Essential Grid Shortcodes
@@ -127,6 +128,7 @@ function sr_portfolio() {
 	register_post_type( 'portfolio', $args );
 
 }
+
 add_action( 'init', 'sr_portfolio', 0 );
 
 // Register Custom Taxonomy
@@ -166,6 +168,7 @@ function portfolio_category() {
 	register_taxonomy( 'portfolio_category', array( 'portfolio' ), $args );
 
 }
+
 add_action( 'init', 'portfolio_category', 0 );
 
 
@@ -223,6 +226,7 @@ function sr_job() {
 	register_post_type( 'job', $args );
 
 }
+
 add_action( 'init', 'sr_job', 0 );
 
 // Register Custom Taxonomy
@@ -262,6 +266,7 @@ function job_category() {
 	register_taxonomy( 'job_category', array( 'job' ), $args );
 
 }
+
 add_action( 'init', 'job_category', 0 );
 
 function add_last_nav_item($items) {
@@ -287,6 +292,7 @@ function add_last_nav_item($items) {
 
 
 }
+
 add_filter('wp_nav_menu_items','add_last_nav_item');
 
 // Login Page
@@ -314,4 +320,21 @@ $a = shortcode_atts( array(
 
 	return wp_login_form( $args );
 }
+
 add_shortcode( 'login_form', 'wpabsolute_login_form_shortcode' );
+
+//Page Slug Body Class
+
+function add_slug_body_class( $classes ) {
+	
+	global $post;
+
+	if ( isset( $post ) ) {
+
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+
+	return $classes;
+}
+
+add_filter( 'body_class', 'add_slug_body_class' );
