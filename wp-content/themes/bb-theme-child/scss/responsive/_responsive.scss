@@ -67,19 +67,20 @@ $breakpoint: map-get($breakpoints, sm);
 
 		.fl-module-menu {
 
-			#menu-main-menu,
-      #menu-main-menu-de,
-      #menu-main-menu-en {
+			#menu-main-menu {
 
 
 				a {
 					padding-left: 12px;
 					padding-right: 12px;
 				}
-
-
-
 			}
+
+      #menu-main-menu-de,
+      #menu-main-menu-en {
+          padding-left: 22px;
+          padding-right: 22px;
+      }
 
 		}
 
