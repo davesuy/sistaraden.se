@@ -466,11 +466,12 @@ header {
 
 @media screen and (max-width: 768px)  {
     .analyze-seo-thank-you {
+    	.thank-you-emoji-container,
         .paragraph-group > .fl-col-content {
             width: 90%;
         }
 
-        > fl-row-content-wrap { background: transparent; }
+        > .fl-row-content-wrap { background: transparent; }
         .violet-background::before { top: -70px; }
     }
 }
