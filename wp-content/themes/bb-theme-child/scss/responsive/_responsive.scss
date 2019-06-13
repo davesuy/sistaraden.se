@@ -450,6 +450,18 @@ $breakpoint: map-get($breakpoints, sm);
 
     }
 
+    #sr-parallax-section {
+
+      .sr-parallax-content {
+
+        .sr-prallax-content-heading-col {
+            position: initial;
+        }
+
+      }
+
+    }
+
     #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
         left: 0;
     }
