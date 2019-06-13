@@ -2992,11 +2992,13 @@ header #sr-header-con .fl-row-content-wrap {
     right: 0;
     width: 500px;
     max-width: 100%;
-    bottom: -295px;
+    bottom: -345px;
     background-repeat: repeat;
     background-size: cover; }
   .single-post .fl-page-content {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .sr-single-post-wrapper .fl-row-content-wrap {
+    min-height: 300px; } }
 
 .pricing-column-wrapper .pricing-column-con > .fl-node-content .fl-col-group {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
