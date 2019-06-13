@@ -140,7 +140,7 @@
   position: relative; }
   .single-post-stripe:after {
     content: "";
-    background: url(../images/dstripe/post-stripe.png) no-repeat scroll 0 0 transparent;
+    background: url(../images/dstripe/hero-stripe.png) no-repeat scroll 0 0 transparent;
     background-size: contain;
     position: absolute;
     height: 175px;
@@ -228,6 +228,8 @@
     right: 0;
     width: 500px;
     max-width: 100%;
-    bottom: -287px;
+    bottom: -295px;
     background-repeat: repeat;
-    background-size: cover; } }
+    background-size: cover; }
+  .single-post .fl-page-content {
+    overflow: hidden; } }
