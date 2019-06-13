@@ -150,8 +150,10 @@ $breakpoint: map-get($breakpoints, sm);
 
 
     &:before {
-      bottom: -15px;
-      height: 236px;
+         bottom: 36px;
+        height: 192px;
+        width: 500px;
+        left: -23px;
 
     }
     
@@ -184,8 +186,8 @@ $breakpoint: map-get($breakpoints, sm);
 
 
   }
-
-}
+  
+  }
 
 @include respond-below(s) {
 
@@ -348,6 +350,49 @@ $breakpoint: map-get($breakpoints, sm);
         }
 
     }
+  
+  .page-id-409 {
+
+    .fl-page-content {
+        overflow: hidden;
+    }
+
+  }
+
+  body {
+
+    .esg-filters {
+
+      .esg-filter-wrapper {
+
+        .esg-filterbutton {
+            max-width: 140px;
+            margin-bottom: 26px;
+          }
+      }
+
+    }
+
+  }
+
+  body .green-stripe.green-stripe-center:before {
+    height: 217px;
+    max-width: 100%;
+    width: 500px;
+    left: -25px;
+    margin-left: 0;
+  }
+
+  .single, 
+  .page-child { 
+    .fl-module-content.fl-node-content {
+      z-index: 9999;
+      position: relative;
+    }
+
+  }
+
+
 
 }
 
