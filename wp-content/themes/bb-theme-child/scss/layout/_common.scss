@@ -472,17 +472,18 @@ header {
 	    margin: 0 auto;
 	    padding: 0 58px;
 	    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+	    position: relative;
 	}
 	code::before {
 		content: ' ';
 	    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
 	    color: white;
 	    height: 271px;
-	    width: 70px;
+	    width: 60px;
 	    margin: 0 auto;
 	    position: absolute;
 	    bottom: 70px;
-	    left: -70px;
+	    left: -60px;
 	    transform: rotate(180deg);
 	}
 	code::after {
@@ -490,11 +491,11 @@ header {
 	    background: url(https://wordpress-266183-841321.cloudwaysapps.com/wp-content/uploads/2019/06/purple-strip-kontakt.png);
 	    color: white;
 	    height: 271px;
-	    width: 70px;
+	    width: 60px;
 	    margin: 0 auto;
 	    position: absolute;
 	    top: 212px;
-	    right: -70px;
+	    right: -60px;
 	}
 }
 
@@ -509,6 +510,7 @@ header {
 	    text-transform: uppercase;
 	    width: 172px;
 	    padding: 15px;
+	    border-radius: 0;
 	    background: #1D121B;
 	    display: block;
 	    margin: 30px auto 0;
@@ -533,4 +535,19 @@ header {
 
     .application-form-container .gform_widget { padding: 20px; }
     .job-template-default .violet-background::after { width: 100%; }
+
+    #sharpspringform {
+		code {
+			width: 97%;
+		    padding: 0 20px;
+		}
+	}
+}
+@media screen and (max-width: 479px)  {
+    #sharpspringform {
+		code {
+			width: 97%;
+		    padding: 0 20px;
+		}
+	}
 }
