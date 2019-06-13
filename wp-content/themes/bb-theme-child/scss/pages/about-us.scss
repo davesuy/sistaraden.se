@@ -77,21 +77,18 @@
         }
     }
 
-   .hover-overlay {
-}
+    > p { position: relative; }
+    > p::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(62, 66, 70, 0.29);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 
-.about-us-card > p { position: relative; }
-.about-us-card > p::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgba(62, 66, 70, 0.29);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
- .hover-overlay {
+    .hover-overlay {
           opacity: 1;
 
           transition: .5s ease;
