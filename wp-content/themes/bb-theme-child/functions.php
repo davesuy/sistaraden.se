@@ -336,7 +336,7 @@ function add_slug_body_class( $classes ) {
 
         $output_lang = 'german-language';
 
-    }elseif($language == "en") {
+    }elseif($current_language == "en") {
 
          $output_lang = 'english-language';
 
