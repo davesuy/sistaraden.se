@@ -2873,6 +2873,29 @@ header #sr-header-con .fl-row-content-wrap {
   z-index: 100000;
   width: 100% !important; }
 
+#menu-main-menu li a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #0a0a0a;
+  transition: width 0.4s;
+  margin-top: 4px; }
+
+#menu-main-menu li a:hover:after {
+  width: 100%;
+  transition: width 0.2s; }
+
+#menu-main-menu .current-menu-item a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #0a0a0a;
+  transition: width 0.4s;
+  margin-top: 4px;
+  width: 100%; }
+
 /* Sistaraden Custom CSS Horizontal Scrolling */
 #fullpage .section {
   width: 100%; }
