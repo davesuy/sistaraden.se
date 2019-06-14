@@ -2879,7 +2879,7 @@ header #sr-header-con .fl-row-content-wrap {
   content: "";
   display: block;
   width: 0;
-  height: 4px;
+  height: 3px;
   background: #0a0a0a;
   transition: width 0.4s;
   margin-top: 4px; }
@@ -2896,7 +2896,7 @@ header #sr-header-con .fl-row-content-wrap {
   content: "";
   display: block;
   width: 0;
-  height: 4px;
+  height: 3px;
   background: #0a0a0a;
   transition: width 0.4s;
   margin-top: 4px;
