@@ -364,3 +364,33 @@ function cookie_consent_banner () {
 	}
 }
 add_shortcode('cookie-consent-banner', 'cookie_consent_banner');
+
+// wpml shortcodes --------------------
+ 
+add_shortcode( 'wpml_language', 'wpml_find_language');
+ 
+ 
+/* ---------------------------------------------------------------------------
+ 
+ * Shortcode [wpml_language language="en"] [/wpml_language]
+ 
+ * --------------------------------------------------------------------------- */
+ 
+function wpml_find_language( $attr, $content = null ){
+     
+    extract(shortcode_atts(array(
+ 
+        'language' => '',
+ 
+    ), $attr));
+     
+    $current_language = ICL_LANGUAGE_CODE;
+     
+    if($current_language == $language){
+        $output = do_shortcode($content);
+    }else{
+        $output = "";
+    }
+         
+    return $output;
+}
