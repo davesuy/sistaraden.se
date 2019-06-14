@@ -329,9 +329,27 @@ function add_slug_body_class( $classes ) {
 	
 	global $post;
 
+
+    $current_language = ICL_LANGUAGE_CODE;
+     
+    if($current_language == 'de'){
+
+        $output_lang = 'german-language';
+
+    }elseif($language == "en") {
+
+         $output_lang = 'english-language';
+
+    } else {
+
+    	$output_lang = 'swedish-language';
+
+    }
+
 	if ( isset( $post ) ) {
 
 		$classes[] = $post->post_type . '-' . $post->post_name;
+		$classes[] = $output_lang;
 	}
 
 	return $classes;
