@@ -376,20 +376,24 @@ add_shortcode( 'wpml_language', 'wpml_find_language');
  
  * --------------------------------------------------------------------------- */
  
-function wpml_find_language( $attr, $content = null ){
-     
-    extract(shortcode_atts(array(
+function wpml_find_language( $atts, $content = null ) {
  
-        'language' => '',
- 
-    ), $attr));
-     
+   $a = shortcode_atts( array(
+		'language' => 'se'
+	), $atts );
+    
+    $language = $a['language'];
+
     $current_language = ICL_LANGUAGE_CODE;
      
     if($current_language == $language){
+
         $output = do_shortcode($content);
-    }else{
-        $output = "";
+
+    }elseif($language == "se") {
+
+         $output = do_shortcode($content);
+
     }
          
     return $output;
