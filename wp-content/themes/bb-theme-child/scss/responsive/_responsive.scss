@@ -76,7 +76,13 @@ $breakpoint: map-get($breakpoints, sm);
 				}
 			}
 
-      #menu-main-menu-de,
+      #menu-main-menu-de {
+        a {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+      }
+
       #menu-main-menu-en {
         a {
             padding-left: 15px;

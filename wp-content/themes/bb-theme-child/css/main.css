@@ -3479,7 +3479,9 @@ header #sr-header-con .fl-row-content-wrap {
   #sr-header-con .fl-module-menu #menu-main-menu a {
     padding-left: 10px;
     padding-right: 10px; }
-  #sr-header-con .fl-module-menu #menu-main-menu-de a,
+  #sr-header-con .fl-module-menu #menu-main-menu-de a {
+    padding-left: 15px;
+    padding-right: 15px; }
   #sr-header-con .fl-module-menu #menu-main-menu-en a {
     padding-left: 15px;
     padding-right: 15px; }
