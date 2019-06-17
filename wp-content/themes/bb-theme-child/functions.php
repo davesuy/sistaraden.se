@@ -359,26 +359,28 @@ add_filter( 'body_class', 'add_slug_body_class' );
 
 function cookie_consent_banner () {
 
-	if(!isset($_COOKIE['username']) || strcmp($_COOKIE['koiCookieConsent'],'0') == 0){
-		 if(ICL_LANGUAGE_CODE=='sv'){
-		 	$policyLink = esc_url('https://info.sistaraden.se/datapolicy'); 
-		 } 
-        	
-	    if(ICL_LANGUAGE_CODE=='de'){
-	    	$policyLink = esc_url('http://info.sistaraden.se/datapolicy-english/'); 
-	    } 
-	        
-       
-	    echo '<div id="cookie-consent-banner"><div class="cookieconsent full-width"><div class="container cookie-consent-container"><div class="row"><p>';
-		echo _e("We use cookies. When using our website you consent to the use of cookies according to our ");
-		echo '<a href="'.$policyLink.'" target="_blank">';
-		echo _e("Privacy Policy");
-		echo '</a></p></div><div class="row"><div class="buttons">';		
-		echo '<button class="primary-btn yes-btn" onclick="window.runKoiTracking()">';
-		echo _e('I agree');
-		echo '</button><button class="secondary-btn no-btn" onclick="window.removeKoiConsent()">';
-		echo _e('No, thank you');
-		echo '</button></div></div></div></div></div>';
+	if(!empty($_COOKIE['koiCookieConsent'])) {
+		if(!isset($_COOKIE['username']) || strcmp($_COOKIE['koiCookieConsent'],'0') == 0){
+			 if(ICL_LANGUAGE_CODE=='sv'){
+			 	$policyLink = esc_url('https://info.sistaraden.se/datapolicy'); 
+			 } 
+	        	
+		    if(ICL_LANGUAGE_CODE=='de'){
+		    	$policyLink = esc_url('http://info.sistaraden.se/datapolicy-english/'); 
+		    } 
+		        
+	       
+		    echo '<div id="cookie-consent-banner"><div class="cookieconsent full-width"><div class="container cookie-consent-container"><div class="row"><p>';
+			echo _e("We use cookies. When using our website you consent to the use of cookies according to our ");
+			echo '<a href="'.$policyLink.'" target="_blank">';
+			echo _e("Privacy Policy");
+			echo '</a></p></div><div class="row"><div class="buttons">';		
+			echo '<button class="primary-btn yes-btn" onclick="window.runKoiTracking()">';
+			echo _e('I agree');
+			echo '</button><button class="secondary-btn no-btn" onclick="window.removeKoiConsent()">';
+			echo _e('No, thank you');
+			echo '</button></div></div></div></div></div>';
+		}
 	}
 }
 add_shortcode('cookie-consent-banner', 'cookie_consent_banner');
