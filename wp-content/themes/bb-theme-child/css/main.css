@@ -2850,15 +2850,23 @@ header #sr-header-con .fl-row-content-wrap {
     left: 0; }
   .page-not-found-container #notice-container::after {
     display: none; }
-  #sharpspring-features ul li {
-    width: 100%; } }
+  #sharpspring-features ul {
+    padding-inline-start: 0;
+    width: 45%;
+    display: block;
+    margin: 0 auto; }
+    #sharpspring-features ul li {
+      width: 100%;
+      margin: 10px 0; } }
 
 @media screen and (max-width: 479px) {
   #sharpspringform code {
     width: 97%;
     padding: 0 20px; }
   #sharpspringform code::before, #sharpspringform code::after {
-    display: none; } }
+    display: none; }
+  #sharpspring-features ul {
+    width: 100%; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }

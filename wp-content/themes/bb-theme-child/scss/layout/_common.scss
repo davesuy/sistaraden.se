@@ -685,8 +685,14 @@ header {
 
 	#sharpspring-features {
 		ul {
+			padding-inline-start: 0;
+			width: 45%;
+			display: block;
+			margin: 0 auto;
+
 			li {
 				width: 100%;
+				margin: 10px 0;
 			}
 		}
 	}
@@ -699,6 +705,12 @@ header {
 		}
 		code::before, code::after {
 			display: none;
+		}
+	}
+
+	#sharpspring-features {
+		ul {
+			width: 100%;
 		}
 	}
 }
