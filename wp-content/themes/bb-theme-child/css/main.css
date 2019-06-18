@@ -2809,10 +2809,10 @@ header #sr-header-con .fl-row-content-wrap {
   top: -15px;
   right: -60px; }
 
-#sharpspring-features ul {
+#sharpspring-features .fl-module-content ul {
   list-style-type: none; }
-  #sharpspring-features ul li {
-    width: 33%;
+  #sharpspring-features .fl-module-content ul li {
+    width: 32.9%;
     display: inline-block;
     vertical-align: top;
     margin: 30px 0; }
@@ -2822,7 +2822,7 @@ header #sr-header-con .fl-row-content-wrap {
     width: 80%; }
   .analyze-seo-thank-you .paragraph-group > .fl-col-content {
     width: 90%; }
-  #sharpspring-features ul li {
+  #sharpspring-features .fl-module-content ul li {
     width: 49%; } }
 
 @media screen and (max-width: 768px) {
@@ -2850,12 +2850,12 @@ header #sr-header-con .fl-row-content-wrap {
     left: 0; }
   .page-not-found-container #notice-container::after {
     display: none; }
-  #sharpspring-features ul {
+  #sharpspring-features .fl-module-content ul {
     padding-inline-start: 0;
     width: 45%;
     display: block;
     margin: 0 auto; }
-    #sharpspring-features ul li {
+    #sharpspring-features .fl-module-content ul li {
       width: 100%;
       margin: 10px 0; } }
 
@@ -2865,7 +2865,7 @@ header #sr-header-con .fl-row-content-wrap {
     padding: 0 20px; }
   #sharpspringform code::before, #sharpspringform code::after {
     display: none; }
-  #sharpspring-features ul {
+  #sharpspring-features .fl-module-content ul {
     width: 100%; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
