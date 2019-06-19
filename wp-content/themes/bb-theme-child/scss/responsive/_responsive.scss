@@ -84,8 +84,26 @@ $breakpoint: map-get($breakpoints, sm);
 
       }
 
+
+      .header-german-button,
+      .header-english-button { 
+
+        a.fl-button {
+
+          font-size: 14px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+        }
+
+      }
+
+
     }
+
   }
+
+
 
 }
 

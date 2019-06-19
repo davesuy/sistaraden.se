@@ -3501,7 +3501,12 @@ header #sr-header-con .fl-row-content-wrap {
   body #sr-header-con .fl-module-menu #menu-main-menu-en a {
     padding-left: 8px;
     padding-right: 8px;
-    font-size: 13px; } }
+    font-size: 13px; }
+  body #sr-header-con .header-german-button a.fl-button,
+  body #sr-header-con .header-english-button a.fl-button {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px; } }
 
 @media (max-width: 1440px) {
   #sr-header-con .fl-module-menu #menu-main-menu a {
