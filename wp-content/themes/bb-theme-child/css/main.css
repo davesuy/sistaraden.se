@@ -3568,7 +3568,9 @@ header #sr-header-con .fl-row-content-wrap {
     margin-top: 20px; }
   #menu-footer-menu li, #menu-footer-menu-de li, #menu-footer-menu-en li {
     flex-basis: 50%;
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+  .blue-stripe:before {
+    bottom: -18px; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {

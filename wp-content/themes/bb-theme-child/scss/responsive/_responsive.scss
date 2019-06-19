@@ -235,6 +235,11 @@ $breakpoint: map-get($breakpoints, sm);
     text-transform: uppercase;
   }
 
+
+  .blue-stripe:before {
+    bottom: -18px;
+  }
+
 }
 
 @include respond-below(xs) {
