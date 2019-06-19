@@ -61,6 +61,9 @@ $breakpoint: map-get($breakpoints, sm);
 
 // Start CSS
 
+
+
+
 @include respond-below(lp) {
 
 	#sr-header-con {
@@ -112,8 +115,54 @@ $breakpoint: map-get($breakpoints, sm);
   }
 }
 
+@include respond-below(l) {
+
+  body {
+
+    #sr-header-con {
+
+      .fl-module-menu {
+
+         #menu-main-menu,
+         #menu-main-menu-de,
+         #menu-main-menu-en {
+
+            a {
+              padding-left: 8px;
+              padding-right: 8px;
+              font-size: 13px;
+            }
+
+         }
+
+      }
+
+
+      .header-german-button,
+      .header-english-button { 
+
+        a.fl-button {
+
+          font-size: 14px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+
+}
+
 @include respond-below(sm) {
-  .about-us-card{
+
+  .about-us-card {
       width: 263px;
       margin-left: auto;
       margin-right: auto;
@@ -153,9 +202,65 @@ $breakpoint: map-get($breakpoints, sm);
 
   }
 
+  .fl-builder-content {
+
+    .sr-footer-con {
+
+      .footer-col-1 {
+        clear: none;
+        width: 40% !important;
+      }
+
+      .footer-col-2 {
+        clear: none;
+        float: left;
+      }
+
+    }
+
+  }
+
+  ul#menu-footer-menu, ul#menu-footer-menu-de, ul#menu-footer-menu-en {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+
+  #menu-footer-menu li, #menu-footer-menu-de li, #menu-footer-menu-en li {
+    flex-basis: 50%;
+    text-transform: uppercase;
+  }
+
+
+  .blue-stripe:before {
+    bottom: -18px;
+  }
+
 }
 
 @include respond-below(xs) {
+
+  .fl-builder-content {
+
+      .sr-footer-con {
+
+        .footer-col-1 {
+ 
+          width: 100% !important;
+        }
+
+        .footer-col-2 {
+          clear: none;
+          float: left;
+        }
+
+      }
+      
+  }
 
   .blue-stripe {
 

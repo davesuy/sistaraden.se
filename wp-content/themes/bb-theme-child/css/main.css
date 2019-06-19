@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -3518,6 +3518,19 @@ header #sr-header-con .fl-row-content-wrap {
     left: 5%;
     width: 90% !important; } }
 
+@media (max-width: 1024px) {
+  body #sr-header-con .fl-module-menu #menu-main-menu a,
+  body #sr-header-con .fl-module-menu #menu-main-menu-de a,
+  body #sr-header-con .fl-module-menu #menu-main-menu-en a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 13px; }
+  body #sr-header-con .header-german-button a.fl-button,
+  body #sr-header-con .header-english-button a.fl-button {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px; } }
+
 @media (max-width: 768px) {
   .about-us-card {
     width: 263px;
@@ -3541,9 +3554,33 @@ header #sr-header-con .fl-row-content-wrap {
       width: 100%;
       top: -30px;
       left: 0;
-      z-index: -1; } }
+      z-index: -1; }
+  .fl-builder-content .sr-footer-con .footer-col-1 {
+    clear: none;
+    width: 40% !important; }
+  .fl-builder-content .sr-footer-con .footer-col-2 {
+    clear: none;
+    float: left; }
+  ul#menu-footer-menu, ul#menu-footer-menu-de, ul#menu-footer-menu-en {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-left: 10%;
+    margin-top: 20px; }
+  #menu-footer-menu li, #menu-footer-menu-de li, #menu-footer-menu-en li {
+    flex-basis: 50%;
+    text-transform: uppercase; }
+  .blue-stripe:before {
+    bottom: -18px; } }
 
 @media (max-width: 575px) {
+  .fl-builder-content .sr-footer-con .footer-col-1 {
+    width: 100% !important; }
+  .fl-builder-content .sr-footer-con .footer-col-2 {
+    clear: none;
+    float: left; }
   .blue-stripe:before {
     bottom: 36px;
     height: 192px;
