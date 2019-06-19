@@ -2814,11 +2814,12 @@ header #sr-header-con .fl-row-content-wrap {
   #sharpspring-features .fl-module-content ul li {
     width: 32.9%;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     margin: 30px 0; }
-    #sharpspring-features .fl-module-content ul li img {
-      width: 40px !important;
-      height: auto !important; }
+
+#sharpspring-features img {
+  width: 40px !important;
+  height: auto !important; }
 
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
