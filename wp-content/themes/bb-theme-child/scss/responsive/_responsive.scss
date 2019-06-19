@@ -64,26 +64,29 @@ $breakpoint: map-get($breakpoints, sm);
 
 @include respond-below(l) {
 
-  #sr-header-con {
+  body {
 
-    .fl-module-menu {
+    #sr-header-con {
 
-       #menu-main-menu,
-       #menu-main-menu-de,
-       #menu-main-menu-en {
+      .fl-module-menu {
 
-          a {
-            padding-left: 8px;
-            padding-right: 8px;
-            font-size: 14px;
-          }
+         #menu-main-menu,
+         #menu-main-menu-de,
+         #menu-main-menu-en {
 
-       }
+            a {
+              padding-left: 8px;
+              padding-right: 8px;
+              font-size: 13px;
+            }
+
+         }
+
+      }
 
     }
-
   }
-  
+
 }
 
 @include respond-below(lp) {
