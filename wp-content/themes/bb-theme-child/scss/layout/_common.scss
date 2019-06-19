@@ -638,6 +638,11 @@ header {
 			display: inline-block;
 			vertical-align: top;
 			margin: 30px 0;
+
+			img {
+				width: 40px !important;
+				height: auto !important;
+			}
 		}
 	}
 }
