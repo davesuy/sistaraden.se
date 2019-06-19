@@ -217,12 +217,45 @@ $breakpoint: map-get($breakpoints, sm);
       }
 
     }
-    
+
+  }
+
+  ul#menu-footer-menu, ul#menu-footer-menu-de, ul#menu-footer-menu-en {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-left: 10%;
+    margin-top: 20px;
+  }
+
+  #menu-footer-menu li, #menu-footer-menu-de li, #menu-footer-menu-en li {
+    flex-basis: 50%;
+    text-transform: uppercase;
   }
 
 }
 
 @include respond-below(xs) {
+
+  .fl-builder-content {
+
+      .sr-footer-con {
+
+        .footer-col-1 {
+ 
+          width: 100% !important;
+        }
+
+        .footer-col-2 {
+          clear: none;
+          float: left;
+        }
+
+      }
+      
+  }
 
   .blue-stripe {
 
