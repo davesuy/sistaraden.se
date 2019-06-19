@@ -629,10 +629,31 @@ header {
 	}
 }
 
+#sharpspring-features {
+	.fl-module-content ul {
+		list-style-type: none;
+
+		li {
+			width: 32.9%;
+			display: inline-block;
+			vertical-align: top;
+			margin: 30px 0;
+		}
+	}
+}
+
 @media screen and (max-width: 959px)  {
 	.analyze-seo-thank-you {
 		.thank-you-emoji-container { width: 80%; }
 		.paragraph-group > .fl-col-content { width: 90%; }
+	}
+
+	#sharpspring-features {
+		.fl-module-content ul {
+			li {
+				width: 49%;
+			}
+		}
 	}
 }
 @media screen and (max-width: 768px)  {
@@ -661,6 +682,20 @@ header {
 		}
 		#notice-container::after { display: none; }
 	}
+
+	#sharpspring-features {
+		.fl-module-content ul {
+			padding-inline-start: 0;
+			width: 45%;
+			display: block;
+			margin: 0 auto;
+
+			li {
+				width: 100%;
+				margin: 10px 0;
+			}
+		}
+	}
 }
 @media screen and (max-width: 479px)  {
     #sharpspringform {
@@ -670,6 +705,12 @@ header {
 		}
 		code::before, code::after {
 			display: none;
+		}
+	}
+
+	#sharpspring-features {
+		.fl-module-content ul {
+			width: 100%;
 		}
 	}
 }

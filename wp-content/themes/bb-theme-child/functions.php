@@ -416,3 +416,40 @@ function wpml_find_language( $atts, $content = null ) {
          
     return $output;
 }
+
+function hook_tracking_code (){
+	?>
+		<script>
+		(function () {
+      var checkConsent = function () {
+        var results = document.cookie.match('(^|;) ?koiCookieConsent=([^;]*)(;|$)');
+        if (!results || !results[2]) return;
+        return decodeURIComponent(results[2]) === "1";
+      };
+      var setCookie = function (v) {
+        var expires = (new Date((new Date()).getTime() + 324000000000));
+        document.cookie = 'koiCookieConsent=' + v + '; expires=' + expires.toUTCString();
+      };
+      window.runKoiTracking = function () {
+        if (window.koiTrackingRan) return;
+        if (!checkConsent()) setCookie('1');
+        window.koiTrackingRan = true;
+        var ss = document.createElement('script');
+        ss.type = 'text/javascript'; ss.async = true;
+        ss.src = 'https://KOI-3Z5541FJ9K.marketingautomation.services/client/ss.js?ver=1.1.1';
+        var scr = document.getElementsByTagName('script')[0];
+        scr.parentNode.insertBefore(ss, scr);
+      };
+      window.removeKoiConsent = function () {
+        setCookie('0');
+      };
+      if (checkConsent()) {
+        runKoiTracking();
+      }
+    })();</script>
+
+	<?php
+} 
+add_action('wp_head', 'hook_tracking_code');
+
+?>
