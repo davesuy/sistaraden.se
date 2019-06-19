@@ -3495,19 +3495,6 @@ header #sr-header-con .fl-row-content-wrap {
     position: relative;
     top: -45px; } }
 
-@media (max-width: 1024px) {
-  body #sr-header-con .fl-module-menu #menu-main-menu a,
-  body #sr-header-con .fl-module-menu #menu-main-menu-de a,
-  body #sr-header-con .fl-module-menu #menu-main-menu-en a {
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 13px; }
-  body #sr-header-con .header-german-button a.fl-button,
-  body #sr-header-con .header-english-button a.fl-button {
-    font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px; } }
-
 @media (max-width: 1440px) {
   #sr-header-con .fl-module-menu #menu-main-menu a {
     padding-left: 10px;
@@ -3527,6 +3514,19 @@ header #sr-header-con .fl-row-content-wrap {
     position: relative;
     left: 5%;
     width: 90% !important; } }
+
+@media (max-width: 1024px) {
+  body #sr-header-con .fl-module-menu #menu-main-menu a,
+  body #sr-header-con .fl-module-menu #menu-main-menu-de a,
+  body #sr-header-con .fl-module-menu #menu-main-menu-en a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 13px; }
+  body #sr-header-con .header-german-button a.fl-button,
+  body #sr-header-con .header-english-button a.fl-button {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px; } }
 
 @media (max-width: 768px) {
   .about-us-card {
@@ -3551,7 +3551,13 @@ header #sr-header-con .fl-row-content-wrap {
       width: 100%;
       top: -30px;
       left: 0;
-      z-index: -1; } }
+      z-index: -1; }
+  .fl-builder-content .sr-footer-con .footer-col-1 {
+    clear: none;
+    width: 40% !important; }
+  .fl-builder-content .sr-footer-con .footer-col-2 {
+    clear: none;
+    float: left; } }
 
 @media (max-width: 575px) {
   .blue-stripe:before {

@@ -62,50 +62,7 @@ $breakpoint: map-get($breakpoints, sm);
 // Start CSS
 
 
-@include respond-below(l) {
 
-  body {
-
-    #sr-header-con {
-
-      .fl-module-menu {
-
-         #menu-main-menu,
-         #menu-main-menu-de,
-         #menu-main-menu-en {
-
-            a {
-              padding-left: 8px;
-              padding-right: 8px;
-              font-size: 13px;
-            }
-
-         }
-
-      }
-
-
-      .header-german-button,
-      .header-english-button { 
-
-        a.fl-button {
-
-          font-size: 14px;
-          padding-top: 10px;
-          padding-bottom: 10px;
-
-        }
-
-      }
-
-
-    }
-
-  }
-
-
-
-}
 
 @include respond-below(lp) {
 
@@ -158,8 +115,54 @@ $breakpoint: map-get($breakpoints, sm);
   }
 }
 
+@include respond-below(l) {
+
+  body {
+
+    #sr-header-con {
+
+      .fl-module-menu {
+
+         #menu-main-menu,
+         #menu-main-menu-de,
+         #menu-main-menu-en {
+
+            a {
+              padding-left: 8px;
+              padding-right: 8px;
+              font-size: 13px;
+            }
+
+         }
+
+      }
+
+
+      .header-german-button,
+      .header-english-button { 
+
+        a.fl-button {
+
+          font-size: 14px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+        }
+
+      }
+
+
+    }
+
+  }
+
+
+
+}
+
 @include respond-below(sm) {
-  .about-us-card{
+
+  .about-us-card {
       width: 263px;
       margin-left: auto;
       margin-right: auto;
@@ -197,6 +200,24 @@ $breakpoint: map-get($breakpoints, sm);
 
     }
 
+  }
+
+  .fl-builder-content {
+
+    .sr-footer-con {
+
+      .footer-col-1 {
+        clear: none;
+        width: 40% !important;
+      }
+
+      .footer-col-2 {
+        clear: none;
+        float: left;
+      }
+
+    }
+    
   }
 
 }
