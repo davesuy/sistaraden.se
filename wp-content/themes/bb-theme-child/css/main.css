@@ -2857,7 +2857,10 @@ header #sr-header-con .fl-row-content-wrap {
     margin: 0 auto; }
     #sharpspring-features .fl-module-content ul li {
       width: 100%;
-      margin: 10px 0; } }
+      margin: 10px 0; }
+      #sharpspring-features .fl-module-content ul li img {
+        width: 40px !important;
+        height: auto !important; } }
 
 @media screen and (max-width: 479px) {
   #sharpspringform code {
