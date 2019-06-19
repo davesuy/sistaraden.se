@@ -24,7 +24,13 @@
     max-width: 305px;
     font-size: 24px;
     font-family: Roboto Condensed;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border: 2px solid #000;
+    font-weight: 700; }
+    #sistaraden-login-wrapper .login-submit #wp-submit:hover {
+      background: #fff;
+      border: 2px solid #000;
+      color: #000; }
   #sistaraden-login-wrapper .login-submit:after {
     content: "";
     background: #000;

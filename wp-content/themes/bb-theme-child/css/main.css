@@ -2782,11 +2782,13 @@ header #sr-header-con .fl-row-content-wrap {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
   width: 172px;
   padding: 15px;
   border-radius: 0;
+  background: #1D121B;
   display: block;
   margin: 30px auto 0; }
 
@@ -3417,7 +3419,13 @@ header #sr-header-con .fl-row-content-wrap {
     max-width: 305px;
     font-size: 24px;
     font-family: Roboto Condensed;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border: 2px solid #000;
+    font-weight: 700; }
+    #sistaraden-login-wrapper .login-submit #wp-submit:hover {
+      background: #fff;
+      border: 2px solid #000;
+      color: #000; }
   #sistaraden-login-wrapper .login-submit:after {
     content: "";
     background: #000;
