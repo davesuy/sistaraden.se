@@ -169,6 +169,7 @@ $breakpoint: map-get($breakpoints, sm);
   }
 
   #sr-parallax-section {
+
     .sr-parallax-content {
         position: relative;
         left: 0;
@@ -238,6 +239,11 @@ $breakpoint: map-get($breakpoints, sm);
 
   .blue-stripe:before {
     bottom: -18px;
+  }
+
+  .single-post-stripe.single-post-stripe-right:after {
+      width: 100%;
+      bottom: -275px;
   }
 
 }
