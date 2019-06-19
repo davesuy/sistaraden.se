@@ -3495,6 +3495,14 @@ header #sr-header-con .fl-row-content-wrap {
     position: relative;
     top: -45px; } }
 
+@media (max-width: 1024px) {
+  #sr-header-con .fl-module-menu #menu-main-menu a,
+  #sr-header-con .fl-module-menu #menu-main-menu-de a,
+  #sr-header-con .fl-module-menu #menu-main-menu-en a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px; } }
+
 @media (max-width: 1440px) {
   #sr-header-con .fl-module-menu #menu-main-menu a {
     padding-left: 10px;

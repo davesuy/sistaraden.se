@@ -83,8 +83,7 @@ $breakpoint: map-get($breakpoints, sm);
     }
 
   }
-
-
+  
 }
 
 @include respond-below(lp) {
