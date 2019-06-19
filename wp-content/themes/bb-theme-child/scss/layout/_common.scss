@@ -636,14 +636,14 @@ header {
 		li {
 			width: 32.9%;
 			display: inline-block;
-			vertical-align: top;
+			vertical-align: middle;
 			margin: 30px 0;
-
-			img {
-				width: 40px !important;
-				height: auto !important;
-			}
 		}
+	}
+
+	img {
+		width: 40px !important;
+		height: auto !important;
 	}
 }
 
