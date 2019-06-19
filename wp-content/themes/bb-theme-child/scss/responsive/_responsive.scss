@@ -61,6 +61,32 @@ $breakpoint: map-get($breakpoints, sm);
 
 // Start CSS
 
+
+@include respond-below(l) {
+
+  #sr-header-con {
+
+    .fl-module-menu {
+
+       #menu-main-menu,
+       #menu-main-menu-de,
+       #menu-main-menu-en {
+
+          a {
+            padding-left: 8px;
+            padding-right: 8px;
+            font-size: 14px;
+          }
+
+       }
+
+    }
+
+  }
+
+
+}
+
 @include respond-below(lp) {
 
 	#sr-header-con {
