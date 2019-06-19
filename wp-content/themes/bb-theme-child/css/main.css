@@ -3570,7 +3570,10 @@ header #sr-header-con .fl-row-content-wrap {
     flex-basis: 50%;
     text-transform: uppercase; }
   .blue-stripe:before {
-    bottom: -18px; } }
+    bottom: -18px; }
+  .single-post-stripe.single-post-stripe-right:after {
+    width: 100%;
+    bottom: -275px; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {
