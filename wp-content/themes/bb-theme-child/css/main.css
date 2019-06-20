@@ -2696,10 +2696,11 @@ header #sr-header-con .fl-row-content-wrap {
   right: 0;
   left: 0;
   background-color: #3A5048;
-  min-height: 217px; }
+  max-height: 217px; }
   #cookie-consent-banner .cookieconsent .container.cookie-consent-container {
     padding-top: 40px;
-    padding-bottom: 40px; }
+    padding-bottom: 40px;
+    max-height: 217px; }
     #cookie-consent-banner .cookieconsent .container.cookie-consent-container .row {
       margin: 0px; }
   #cookie-consent-banner .cookieconsent .buttons {
@@ -3734,10 +3735,27 @@ header #sr-header-con .fl-row-content-wrap {
     width: 500px;
     left: -25px;
     margin-left: 0; }
+  body .green-stripe.green-stripe-center.green-stripe-responsive-425:before {
+    max-width: 100%;
+    width: 80vw;
+    height: 60vw;
+    bottom: -20px;
+    left: 15px;
+    margin-left: 0; }
   .single .fl-module-content.fl-node-content,
   .page-child .fl-module-content.fl-node-content {
     z-index: 9999;
-    position: relative; } }
+    position: relative; }
+  #cookie-consent-banner .cookieconsent p {
+    font-size: 1rem;
+    padding: 5px; }
+  #cookie-consent-banner .cookieconsent .buttons {
+    padding: 0px 0px 20px 0px; }
+  #cookie-consent-banner .cookieconsent button.primary-btn.yes-btn {
+    font-size: 1rem; }
+  #cookie-consent-banner .cookieconsent .container.cookie-consent-container {
+    padding-top: 10px;
+    padding-bottom: 10px; } }
 
 @media (max-width: 320px) {
   .about-us-card .about-us-card-labels {

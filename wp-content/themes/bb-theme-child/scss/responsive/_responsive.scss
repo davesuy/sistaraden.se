@@ -525,14 +525,33 @@ $breakpoint: map-get($breakpoints, sm);
 
     }
 
-  }
+    .green-stripe{
 
-  body .green-stripe.green-stripe-center:before {
-    height: 217px;
-    max-width: 100%;
-    width: 500px;
-    left: -25px;
-    margin-left: 0;
+        &.green-stripe-center{
+
+          &:before {
+            height: 217px;
+            max-width: 100%;
+            width: 500px;
+            left: -25px;
+            margin-left: 0;
+          }
+
+          &.green-stripe-responsive-425{
+
+              &:before{
+                  max-width: 100%;
+                  width: 80vw;
+                  height: 60vw;
+                  bottom: -20px;
+                  left: 15px;
+                  margin-left: 0;
+              }
+          }
+
+        }
+    }
+
   }
 
   .single,
@@ -543,6 +562,40 @@ $breakpoint: map-get($breakpoints, sm);
     }
 
   }
+
+  #cookie-consent-banner {
+
+    .cookieconsent {
+
+      p {
+        font-size: 1rem;
+        padding: 5px;
+      }
+
+
+     .buttons {
+        padding: 0px 0px 20px 0px;
+      }
+
+      button{
+        &.primary-btn{
+          &.yes-btn{
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .container{
+          &.cookie-consent-container {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+      }
+
+    }
+  }
+
+
 
 
 
