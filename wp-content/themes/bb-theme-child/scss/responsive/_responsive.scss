@@ -105,15 +105,7 @@ $breakpoint: map-get($breakpoints, sm);
 
 }
 
-@include respond-below(l) {
-  #sr-parallax-section {
-    .sr-parallax-content {
-        position: relative;
-        left: 5%;
-        width: 90% !important;
-    }
-  }
-}
+
 
 @include respond-below(l) {
 
@@ -152,6 +144,19 @@ $breakpoint: map-get($breakpoints, sm);
       }
 
 
+    }
+
+    #sr-parallax-section {
+      .sr-parallax-content {
+          position: relative;
+          left: 5%;
+          width: 90% !important;
+      }
+    }
+
+
+    .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle {
+      top: -8px;
     }
 
   }
@@ -245,6 +250,31 @@ $breakpoint: map-get($breakpoints, sm);
       width: 100%;
       bottom: -275px;
   }
+
+  #sr-mobile-menu {
+
+    width: 100%;
+    z-index: 99;
+     position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    background: #fff;
+  }
+
+  #sr-mobile-menu.nav-down {
+
+  }
+
+  #sr-mobile-menu.nav-up {
+    top: -120px;
+  }
+
+  body .fl-page-content {
+      padding-top: 100px; 
+  }
+
+    
+
 
 }
 
@@ -449,7 +479,7 @@ $breakpoint: map-get($breakpoints, sm);
         font-weight: 900;
         border: 0px;
         position: absolute;
-        top: calc(50% - 0.4em);
+        top: calc(50% - 0.75em);
         left: 67px;
         color: #ffffff;
         font-size: 25px;

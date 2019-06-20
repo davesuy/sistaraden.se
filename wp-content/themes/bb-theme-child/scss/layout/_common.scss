@@ -186,6 +186,8 @@
 
 }
 
+
+
 #menu-language-switcher,
 #menu-language-switcher-de,
 #menu-language-switcher-en,
@@ -236,7 +238,7 @@
 			    font-weight: 900;
 			    border: 0px;
 			    position: absolute;
-			    top: calc(50% - 0.4em);
+			    top: calc(50% - 0.75em);
 			    right: 5px;
 			    color: #000000;
 			}
@@ -648,6 +650,7 @@ header {
 }
 
 #test-sharpspring-today-cta .fl-cta-button a {
+
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -662,7 +665,11 @@ header {
   display: block;
   margin: 30px auto 0; 
 
-  }
+ }
+
+
+
+/* PAGE STY */
 
 @media screen and (max-width: 959px)  {
 	.analyze-seo-thank-you {
@@ -719,6 +726,7 @@ header {
 		}
 	}
 }
+
 @media screen and (max-width: 479px)  {
     #sharpspringform {
 		code {
