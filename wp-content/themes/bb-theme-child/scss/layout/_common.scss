@@ -186,6 +186,26 @@
 
 }
 
+#sr-header-con {
+	#menu-language-switcher,
+	#menu-language-switcher-de,
+	#menu-language-switcher-en,
+	.wpml-ls-legacy-dropdown {
+
+
+	a {
+		
+		&.wpml-ls-item-toggle{
+
+			&:after {
+				  top: calc(50% - 0.75em);
+
+			}
+		}
+	}
+
+}
+
 #menu-language-switcher,
 #menu-language-switcher-de,
 #menu-language-switcher-en,
@@ -236,7 +256,7 @@
 			    font-weight: 900;
 			    border: 0px;
 			    position: absolute;
-			    top: calc(50% - 0.75em);
+			    top: calc(50% - 0.4em);
 			    right: 5px;
 			    color: #000000;
 			}
