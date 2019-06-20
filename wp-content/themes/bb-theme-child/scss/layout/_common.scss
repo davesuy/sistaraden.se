@@ -479,13 +479,14 @@ header {
 	    right: 0;
 	    left: 0;
 	    background-color: #3A5048;
-	    min-height: 217px;
+	    max-height: 217px;
 
 	    .container{
 
 	    	&.cookie-consent-container{
 			    padding-top: 40px;
 			    padding-bottom: 40px;
+			    max-height: 217px;
 
 			    .row{
 				    margin: 0px
