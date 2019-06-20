@@ -105,19 +105,7 @@ $breakpoint: map-get($breakpoints, sm);
 
 }
 
-@include respond-below(l) {
-  #sr-parallax-section {
-    .sr-parallax-content {
-        position: relative;
-        left: 5%;
-        width: 90% !important;
-    }
-  }
 
-  .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle {
-      top: -8px;
-  }
-}
 
 @include respond-below(l) {
 
@@ -156,6 +144,19 @@ $breakpoint: map-get($breakpoints, sm);
       }
 
 
+    }
+
+    #sr-parallax-section {
+      .sr-parallax-content {
+          position: relative;
+          left: 5%;
+          width: 90% !important;
+      }
+    }
+
+
+    .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle {
+      top: -8px;
     }
 
   }
