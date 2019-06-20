@@ -2,18 +2,43 @@ jQuery(document).ready(function( $ ) {
 
 	/* Sticky Mobile Header */
 
-	var div_top = $('#sr-mobile-menu').offset().top;
+	// Hide header on scroll down
+	var didScroll;
+	var lastScrollTop = 0;
+	var delta = 5;
+	var navbarHeight = $('#sr-mobile-menu').outerHeight();
 
-	$(window).scroll(function() {
-	    var window_top = $(window).scrollTop() - 0;
-	    if (window_top > div_top) {
-	        if (!$('#sr-mobile-menu').is('.sticky')) {
-	            $('#sr-mobile-menu').addClass('sticky');
-	        }
-	    } else {
-	        $('#sr-mobile-menu').removeClass('sticky');
-	    }
+	$(window).scroll(function(event){
+	    didScroll = true;
 	});
+
+	setInterval(function() {
+	    if (didScroll) {
+	        hasScrolled();
+	        didScroll = false;
+	    }
+	}, 250);
+
+	function hasScrolled() {
+	    var st = $(this).scrollTop();
+	    
+	    // Make scroll more than delta
+	    if(Math.abs(lastScrollTop - st) <= delta)
+	        return;
+	    
+	    // If scrolled down and past the navbar, add class .nav-up.
+	    if (st > lastScrollTop && st > navbarHeight){
+	        // Scroll Down
+	        $('#sr-mobile-menu').removeClass('nav-down').addClass('nav-up');
+	    } else {
+	        // Scroll Up
+	        if(st + $(window).height() < $(document).height()) {
+	            $('#sr-mobile-menu').removeClass('nav-up').addClass('nav-down');
+	        }
+	    }
+	  
+	    lastScrollTop = st;
+	}
 
 	/* Grid Animate */
 

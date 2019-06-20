@@ -3601,11 +3601,14 @@ header #sr-header-con .fl-row-content-wrap {
   #sr-mobile-menu {
     width: 100%;
     z-index: 99;
-    position: static;
-    background: #fff; }
-  #sr-mobile-menu.sticky {
     position: fixed;
-    top: 0; } }
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    background: #fff; }
+  #sr-mobile-menu.nav-up {
+    top: -120px; }
+  body .fl-page-content {
+    padding-top: 100px; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {
