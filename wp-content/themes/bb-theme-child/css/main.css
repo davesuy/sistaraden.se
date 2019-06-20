@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2834,6 +2834,14 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 30px auto 0; }
 
+#menu-footer-menu li a {
+  width: fit-content;
+  margin-left: auto; }
+
+.footer-col-1 .footer-link .fl-button {
+  width: fit-content;
+  margin-right: auto; }
+
 /* PAGE STY */
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
@@ -3290,7 +3298,8 @@ header #sr-header-con .fl-row-content-wrap {
 .about-us-card {
   height: 334px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  padding-top: 12px; }
   .about-us-card img {
     transition: transform .5s ease;
     opacity: 1;
@@ -3303,7 +3312,7 @@ header #sr-header-con .fl-row-content-wrap {
     content: "";
     position: absolute;
     top: 0px;
-    left: 12px;
+    left: 0px;
     background: #000001;
     width: 0;
     -webkit-transition: width 0.5s;
@@ -3312,7 +3321,7 @@ header #sr-header-con .fl-row-content-wrap {
     -o-transition: width 0.5s; }
   .about-us-card:hover:before {
     height: 4px;
-    width: 92%; }
+    width: 100%; }
   .about-us-card:hover img {
     /*transform: scale(1.2);*/ }
   .about-us-card:hover .about-us-card-labels {

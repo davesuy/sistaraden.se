@@ -127,11 +127,13 @@ jQuery(document).ready(function( $ ) {
 	//***** Mobile Menu ****//
 	$( "#sr-mobile-menu .sr-mobile-menu-toggle img" ).click(function() {
       $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle("slow");
+      $("#sr-mobile-menu").css('position', 'relative');
     });
 
 
     $( "#sr-mobile-menu .sr-mobile-menu-close img" ).click(function() {
       $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle( "slow");
+       $("#sr-mobile-menu").css('position', 'fixed');
     });
 
 
@@ -167,6 +169,35 @@ jQuery(document).ready(function( $ ) {
       }
       return "";
     }
+
+    (function($){
+
+        $(function() {
+        
+        	clickColumn();
+        
+        });
+        
+     /*
+      * Make a BeaverBuilder Column clickable.
+      * There must be a link tag in the column element.
+      * Add the CSS class .click-col in the Column Settins Advanced Tab CSS value
+      */
+      
+      function clickColumn() {
+    
+    	$('.click-col').css('cursor', 'pointer');
+    	$('.click-col').on('click touchstart mouseup', function(event){
+    		$(this).find('a')[0].click();
+    	});
+    
+    	$('.click-col a').on('click touchstart mouseup', function(event){
+    		event.stopPropagation();
+    	});	
+    	
+      }
+      
+    })(jQuery);
 
 });
 

@@ -8,7 +8,8 @@
 .about-us-card {
   height: 334px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  padding-top: 12px; }
   .about-us-card img {
     transition: transform .5s ease;
     opacity: 1;
@@ -21,7 +22,7 @@
     content: "";
     position: absolute;
     top: 0px;
-    left: 12px;
+    left: 0px;
     background: #000001;
     width: 0;
     -webkit-transition: width 0.5s;
@@ -30,7 +31,7 @@
     -o-transition: width 0.5s; }
   .about-us-card:hover:before {
     height: 4px;
-    width: 92%; }
+    width: 100%; }
   .about-us-card:hover img {
     /*transform: scale(1.2);*/ }
   .about-us-card:hover .about-us-card-labels {
