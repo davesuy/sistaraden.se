@@ -2834,6 +2834,7 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 30px auto 0; }
 
+/* PAGE STY */
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
     width: 80%; }
@@ -3596,7 +3597,15 @@ header #sr-header-con .fl-row-content-wrap {
     bottom: -18px; }
   .single-post-stripe.single-post-stripe-right:after {
     width: 100%;
-    bottom: -275px; } }
+    bottom: -275px; }
+  #sr-mobile-menu {
+    width: 100%;
+    z-index: 99;
+    position: static;
+    background: #fff; }
+  #sr-mobile-menu.sticky {
+    position: fixed;
+    top: 0; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {

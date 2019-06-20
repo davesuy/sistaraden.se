@@ -1,5 +1,20 @@
 jQuery(document).ready(function( $ ) {
 
+	/* Sticky Mobile Header */
+
+	var div_top = $('#sr-mobile-menu').offset().top;
+
+	$(window).scroll(function() {
+	    var window_top = $(window).scrollTop() - 0;
+	    if (window_top > div_top) {
+	        if (!$('#sr-mobile-menu').is('.sticky')) {
+	            $('#sr-mobile-menu').addClass('sticky');
+	        }
+	    } else {
+	        $('#sr-mobile-menu').removeClass('sticky');
+	    }
+	});
+
 	/* Grid Animate */
 
 	var boxWidth = $('.esg-grid .mainul li.eg-sistaraden-wrapper .eg-sistaraden-element-0-a a').width();

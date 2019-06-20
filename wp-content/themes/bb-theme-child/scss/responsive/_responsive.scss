@@ -251,6 +251,20 @@ $breakpoint: map-get($breakpoints, sm);
       bottom: -275px;
   }
 
+  #sr-mobile-menu {
+
+    width: 100%;
+    z-index: 99;
+    position: static;
+    background: #fff;
+  }
+
+  #sr-mobile-menu.sticky {
+      position: fixed;
+      top: 0;
+  }
+
+
 }
 
 @include respond-below(xs) {
