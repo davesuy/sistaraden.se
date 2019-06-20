@@ -69,11 +69,18 @@
 .english-language .home-tool-section-con .fl-col .fl-col-content .fl-module.fl-module-separator .fl-separator {
   width: 80px; }
 
+@media screen and (max-width: 768px) {
+  .home .fl-page-content {
+    padding-top: 50px; }
+  .sr-parallax-content {
+    left: 0 !important; } }
+
 @media screen and (max-width: 425px) {
-  body #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
-    left: 0; }
   .home.fl-builder-mobile .fl-node-5cfab81f16ac8 > .fl-row-content-wrap {
     background-position: -503px 7px !important; }
   body #sr-parallax-section .sr-parallax-content {
     position: relative;
-    top: -45px; } }
+    top: -45px;
+    width: 100% !important; }
+    body #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
+      left: 0 !important; } }
