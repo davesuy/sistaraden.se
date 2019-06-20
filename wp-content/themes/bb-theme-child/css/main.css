@@ -3533,12 +3533,6 @@ header #sr-header-con .fl-row-content-wrap {
     padding-right: 12px; } }
 
 @media (max-width: 1024px) {
-  #sr-parallax-section .sr-parallax-content {
-    position: relative;
-    left: 5%;
-    width: 90% !important; } }
-
-@media (max-width: 1024px) {
   body #sr-header-con .fl-module-menu #menu-main-menu a,
   body #sr-header-con .fl-module-menu #menu-main-menu-de a,
   body #sr-header-con .fl-module-menu #menu-main-menu-en a {
@@ -3549,7 +3543,13 @@ header #sr-header-con .fl-row-content-wrap {
   body #sr-header-con .header-english-button a.fl-button {
     font-size: 14px;
     padding-top: 10px;
-    padding-bottom: 10px; } }
+    padding-bottom: 10px; }
+  body #sr-parallax-section .sr-parallax-content {
+    position: relative;
+    left: 5%;
+    width: 90% !important; }
+  body .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle {
+    top: -8px; } }
 
 @media (max-width: 768px) {
   .about-us-card {
@@ -3689,7 +3689,7 @@ header #sr-header-con .fl-row-content-wrap {
     font-weight: 900;
     border: 0px;
     position: absolute;
-    top: calc(50% - 0.4em);
+    top: calc(50% - 0.75em);
     left: 67px;
     color: #ffffff;
     font-size: 25px; }
