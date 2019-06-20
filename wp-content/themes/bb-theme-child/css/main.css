@@ -2834,6 +2834,14 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 30px auto 0; }
 
+#menu-footer-menu li a {
+  width: fit-content;
+  margin-left: auto; }
+
+.footer-col-1 .footer-link .fl-button {
+  width: fit-content;
+  margin-right: auto; }
+
 /* PAGE STY */
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {

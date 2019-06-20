@@ -667,6 +667,24 @@ header {
 
  }
 
+#menu-footer-menu {
+	li {
+	  a {
+	    width: fit-content;
+	    margin-left: auto;
+	  }
+	}
+}
+
+.footer-col-1 {
+	.footer-link {
+		.fl-button{
+		    width: fit-content;
+		    margin-right: auto;
+		}
+	}
+}
+
 
 
 /* PAGE STY */
