@@ -161,12 +161,6 @@
 }
 
 @media screen and (max-width: 425px)  {
-
-  body #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
-      left: 0;
-      width: 100% !important;
-  }
-
   .home.fl-builder-mobile .fl-node-5cfab81f16ac8 > .fl-row-content-wrap {
         background-position: -503px 7px !important;
   }
@@ -174,6 +168,9 @@
   body #sr-parallax-section .sr-parallax-content {
       position: relative;
       top: -45px;
+      width: 100% !important;
+
+      .sr-prallax-content-heading-col { left: 0 !important; }
   }
 
 
