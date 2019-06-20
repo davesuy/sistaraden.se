@@ -580,7 +580,8 @@ $breakpoint: map-get($breakpoints, sm);
       button{
         &.primary-btn{
           &.yes-btn{
-            font-size: 1rem;
+              font-size: 1rem;
+              padding: 10px;
           }
         }
       }
