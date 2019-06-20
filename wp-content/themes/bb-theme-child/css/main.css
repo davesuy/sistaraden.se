@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -3225,8 +3225,7 @@ header #sr-header-con .fl-row-content-wrap {
   max-width: 636px;
   width: 100%;
   top: 156px;
-  left: -70px;
-  z-index: -1; }
+  left: -70px; }
 
 .pricing-column-wrapper .pricing-column-con:nth-child(2):after {
   content: "";
@@ -3237,8 +3236,7 @@ header #sr-header-con .fl-row-content-wrap {
   max-width: 636px;
   width: 100%;
   bottom: -55px;
-  right: 225px;
-  z-index: -1; }
+  right: 225px; }
 
 .pricing-column-wrapper .pricing-column-middle {
   position: inherit;
@@ -3246,12 +3244,10 @@ header #sr-header-con .fl-row-content-wrap {
   margin-top: -120px;
   z-index: 2; }
 
-.pricing-column-wrapper .pricing-column-con {
-  z-index: 2; }
-  .pricing-column-wrapper .pricing-column-con ul {
-    list-style-image: url("../images/list-style-icon.png"); }
-    .pricing-column-wrapper .pricing-column-con ul li {
-      padding-bottom: 20px; }
+.pricing-column-wrapper .pricing-column-con ul {
+  list-style-image: url("../images/list-style-icon.png"); }
+  .pricing-column-wrapper .pricing-column-con ul li {
+    padding-bottom: 20px; }
 
 .custom-made-wrapper .custom-made-con {
   position: relative; }
