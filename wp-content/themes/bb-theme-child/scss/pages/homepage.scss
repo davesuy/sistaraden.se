@@ -3,7 +3,6 @@
 .home{
 	.fl-page-content{
 		background-color: #F4F7F6;
-		margin-top: 50px;
 	}
 }
 
@@ -153,6 +152,11 @@
 
 }
 @media screen and (max-width: 768px) {
+	.home{
+		.fl-page-content{
+			padding-top: 50px;
+		}
+	}
 	.sr-parallax-content{ left: 0 !important; }
 }
 
@@ -160,6 +164,7 @@
 
   body #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
       left: 0;
+      width: 100% !important;
   }
 
   .home.fl-builder-mobile .fl-node-5cfab81f16ac8 > .fl-row-content-wrap {
