@@ -18,6 +18,7 @@
 		    width: 100%;
 		    top: 156px;
 		    left: -70px;
+		    z-index: unset;
 		}
 	}
 
@@ -32,6 +33,7 @@
 		    width: 100%;
 		    bottom: -55px;
 		    right: 225px;
+		    z-index: unset;
 		}
 	}
 
@@ -45,10 +47,11 @@
 		position: inherit;
     	top: 0;
     	margin-top: -120px;
-    	z-index: 2
+    	z-index: unset;
 	}
 
 	.pricing-column-con {
+		z-index: unset;
 
 		ul {
 			 list-style-image: url('../images/list-style-icon.png');

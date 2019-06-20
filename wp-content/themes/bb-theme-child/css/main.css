@@ -3226,7 +3226,8 @@ header #sr-header-con .fl-row-content-wrap {
   max-width: 636px;
   width: 100%;
   top: 156px;
-  left: -70px; }
+  left: -70px;
+  z-index: unset; }
 
 .pricing-column-wrapper .pricing-column-con:nth-child(2):after {
   content: "";
@@ -3237,18 +3238,21 @@ header #sr-header-con .fl-row-content-wrap {
   max-width: 636px;
   width: 100%;
   bottom: -55px;
-  right: 225px; }
+  right: 225px;
+  z-index: unset; }
 
 .pricing-column-wrapper .pricing-column-middle {
   position: inherit;
   top: 0;
   margin-top: -120px;
-  z-index: 2; }
+  z-index: unset; }
 
-.pricing-column-wrapper .pricing-column-con ul {
-  list-style-image: url("../images/list-style-icon.png"); }
-  .pricing-column-wrapper .pricing-column-con ul li {
-    padding-bottom: 20px; }
+.pricing-column-wrapper .pricing-column-con {
+  z-index: unset; }
+  .pricing-column-wrapper .pricing-column-con ul {
+    list-style-image: url("../images/list-style-icon.png"); }
+    .pricing-column-wrapper .pricing-column-con ul li {
+      padding-bottom: 20px; }
 
 .custom-made-wrapper .custom-made-con {
   position: relative; }
