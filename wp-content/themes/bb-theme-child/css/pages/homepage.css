@@ -1,5 +1,6 @@
 .home .fl-page-content {
-  background-color: #F4F7F6; }
+  background-color: #F4F7F6;
+  margin-top: 50px; }
 
 .black-stripe {
   background-color: transparent; }
@@ -68,6 +69,10 @@
 
 .english-language .home-tool-section-con .fl-col .fl-col-content .fl-module.fl-module-separator .fl-separator {
   width: 80px; }
+
+@media screen and (max-width: 768px) {
+  .sr-parallax-content {
+    left: 0 !important; } }
 
 @media screen and (max-width: 425px) {
   body #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {

@@ -3,6 +3,7 @@
 .home{
 	.fl-page-content{
 		background-color: #F4F7F6;
+		margin-top: 50px;
 	}
 }
 
@@ -93,10 +94,10 @@
 			}
 
 			.fl-module.fl-module-separator {
-			
+
 				 .fl-separator {
 				 		margin-top: 5px;
-				 	
+
 				 }
 			}
 
@@ -141,7 +142,7 @@
 				.fl-module.fl-module-separator {
 
 					 .fl-separator {
-					 	
+
 					 		width: 80px;
 					 }
 				}
@@ -151,7 +152,9 @@
 	}
 
 }
-
+@media screen and (max-width: 768px) {
+	.sr-parallax-content{ left: 0 !important; }
+}
 
 @media screen and (max-width: 425px)  {
 
