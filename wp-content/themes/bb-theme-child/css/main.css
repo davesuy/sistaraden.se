@@ -3440,6 +3440,8 @@ header #sr-header-con .fl-row-content-wrap {
   .visiting-address {
     background: #FFFFFF;
     padding: 20px; }
+    .visiting-address h2.fl-heading {
+      line-height: 44px !important; }
     .visiting-address h2.fl-heading > span {
       background: transparent;
       padding: unset !important; } }
