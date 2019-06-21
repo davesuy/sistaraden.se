@@ -173,6 +173,10 @@ $breakpoint: map-get($breakpoints, sm);
     min-height: 80px;
   }
 
+  .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 210px;
+  }
+  
 }
 
 @include respond-below(sm) {

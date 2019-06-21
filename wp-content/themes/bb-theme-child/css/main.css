@@ -3578,7 +3578,9 @@ header #sr-header-con .fl-row-content-wrap {
   body .home-tool-section-con .fl-module.fl-module-heading:nth-child(1) {
     min-height: 85px; }
   .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
-    min-height: 80px; } }
+    min-height: 80px; }
+  .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 210px; } }
 
 @media (max-width: 768px) {
   .about-us-card {
