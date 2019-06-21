@@ -3785,7 +3785,7 @@ header #sr-header-con .fl-row-content-wrap {
     padding-top: 10px;
     padding-bottom: 10px; }
   body .home-tool-section-con h5.fl-heading {
-    padding: 0 !important; } }
+    padding: 0 5px !important; } }
 
 @media (max-width: 320px) {
   .about-us-card .about-us-card-labels {
