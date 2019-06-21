@@ -2822,6 +2822,12 @@ header #sr-header-con .fl-row-content-wrap {
   width: 40px !important;
   height: auto !important; }
 
+#icon-text-section .icon-text-container {
+  text-align: center; }
+  #icon-text-section .icon-text-container img {
+    height: 40px;
+    width: auto; }
+
 #test-sharpspring-today-cta .fl-cta-button a {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;

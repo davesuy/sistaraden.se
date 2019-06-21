@@ -650,8 +650,18 @@ header {
 	}
 }
 
-#test-sharpspring-today-cta .fl-cta-button a {
+#icon-text-section {
+	.icon-text-container {
+		text-align: center;
 
+		img {
+			height: 40px;
+			width: auto;
+		}
+	}
+}
+
+#test-sharpspring-today-cta .fl-cta-button a {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
   font-size: 20px;
@@ -664,9 +674,9 @@ header {
   border-radius: 0;
 
   display: block;
-  margin: 30px auto 0; 
+  margin: 30px auto 0;
 
- }
+}
 
 #menu-footer-menu {
 	li {
