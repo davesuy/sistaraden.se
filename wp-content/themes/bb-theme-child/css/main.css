@@ -3095,6 +3095,9 @@ header #sr-header-con .fl-row-content-wrap {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161); }
 
+.esg-grid .no-filter-message {
+  bottom: -68px; }
+
 /* Single Post */
 .sr-single-post-info-con .esgrid-meta-text {
   color: #fff;
