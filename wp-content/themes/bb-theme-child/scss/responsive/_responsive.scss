@@ -161,7 +161,9 @@ $breakpoint: map-get($breakpoints, sm);
 
   }
 
-
+  body .home-tool-section-con h5.fl-heading {
+    min-height: 44px;
+  }
 
 }
 

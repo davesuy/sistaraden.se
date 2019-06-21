@@ -3572,7 +3572,9 @@ header #sr-header-con .fl-row-content-wrap {
     left: 5%;
     width: 90% !important; }
   body .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle {
-    top: -8px; } }
+    top: -8px; }
+  body .home-tool-section-con h5.fl-heading {
+    min-height: 44px; } }
 
 @media (max-width: 768px) {
   .about-us-card {
