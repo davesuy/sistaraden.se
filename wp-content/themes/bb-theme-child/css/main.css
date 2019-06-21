@@ -2791,7 +2791,8 @@ header #sr-header-con .fl-row-content-wrap {
   border-radius: 0;
   background: #1D121B;
   display: block;
-  margin: 30px auto 0; }
+  margin: 30px auto 0;
+  border: 1px solid #000001; }
 
 #test-sharpspring-today-cta .fl-cta-button a:hover {
   border: 1px solid #000001; }
