@@ -161,7 +161,21 @@ $breakpoint: map-get($breakpoints, sm);
 
   }
 
+  body .home-tool-section-con h5.fl-heading {
+    min-height: 44px;
+  }
 
+  body .home-tool-section-con .fl-module.fl-module-heading:nth-child(1) {
+    min-height: 85px;
+  }
+
+  .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
+    min-height: 80px;
+  }
+
+  .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 220px;
+  }
 
 }
 
@@ -273,7 +287,9 @@ $breakpoint: map-get($breakpoints, sm);
   }
 
     
-
+  .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 210px;
+  }
 
 }
 
@@ -336,6 +352,19 @@ $breakpoint: map-get($breakpoints, sm);
      }
 
 
+  }
+
+  body .home-tool-section-con .fl-heading {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 220px;
+  }
+
+  .swedish-language .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 220px;
   }
 
 
@@ -580,7 +609,8 @@ $breakpoint: map-get($breakpoints, sm);
       button{
         &.primary-btn{
           &.yes-btn{
-            font-size: 1rem;
+              font-size: 1rem;
+              padding: 10px;
           }
         }
       }
@@ -596,7 +626,9 @@ $breakpoint: map-get($breakpoints, sm);
   }
 
 
-
+  body .home-tool-section-con h5.fl-heading {
+        padding: 0 5px !important;
+  }
 
 
 }
