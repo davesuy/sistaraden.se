@@ -18,3 +18,20 @@
 		}
     }
 }
+.visiting-address {
+    h2.fl-heading > span {
+        background: #FFFFFF;
+        padding: 20px 60px;
+    }
+}
+
+@media screen and (max-width: 959px)  and (min-width: 769px) {
+    .visiting-address {
+        background: #FFFFFF;
+
+        h2.fl-heading > span {
+            background: transparent;
+            padding: 40px 20px;
+        }
+    }
+}
