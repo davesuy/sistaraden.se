@@ -353,6 +353,10 @@ $breakpoint: map-get($breakpoints, sm);
     padding-right: 15px !important;
   }
 
+  .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 210px;
+  }
+
 
 }
 
@@ -612,7 +616,9 @@ $breakpoint: map-get($breakpoints, sm);
   }
 
 
-
+  body .home-tool-section-con h5.fl-heading {
+    padding: 0 !important;
+  }
 
 
 }
