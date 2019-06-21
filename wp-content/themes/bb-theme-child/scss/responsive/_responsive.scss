@@ -174,9 +174,9 @@ $breakpoint: map-get($breakpoints, sm);
   }
 
   .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 210px;
+    min-height: 220px;
   }
-  
+
 }
 
 @include respond-below(sm) {
