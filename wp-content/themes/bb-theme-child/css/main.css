@@ -2793,9 +2793,9 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 30px auto 0; }
 
-#test-sharpspring-today-cta .fl-cta-button a {
+#test-sharpspring-today-cta .fl-cta-button a:hover {
   border: 1px solid #000001; }
-  #test-sharpspring-today-cta .fl-cta-button a span {
+  #test-sharpspring-today-cta .fl-cta-button a:hover span {
     color: #000001; }
 
 .page-not-found-container #notice-container {
