@@ -17,4 +17,5 @@
     background: #FFFFFF;
     padding: 40px 20px; }
     .visiting-address h2.fl-heading > span {
-      background: transparent; } }
+      background: transparent;
+      padding: unset !important; } }
