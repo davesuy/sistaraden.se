@@ -3574,7 +3574,9 @@ header #sr-header-con .fl-row-content-wrap {
   body .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle {
     top: -8px; }
   body .home-tool-section-con h5.fl-heading {
-    min-height: 44px; } }
+    min-height: 44px; }
+  body .home-tool-section-con .fl-module.fl-module-heading:nth-child(1) {
+    min-height: 85px; } }
 
 @media (max-width: 768px) {
   .about-us-card {

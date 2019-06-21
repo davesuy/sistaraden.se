@@ -165,6 +165,10 @@ $breakpoint: map-get($breakpoints, sm);
     min-height: 44px;
   }
 
+  body .home-tool-section-con .fl-module.fl-module-heading:nth-child(1) {
+    min-height: 85px;
+  }
+
 }
 
 @include respond-below(sm) {
