@@ -25,13 +25,13 @@
     }
 }
 
-@media screen and (max-width: 959px)  and (min-width: 769px) {
+@media screen and (max-width: 959px) {
     .visiting-address {
         background: #FFFFFF;
+        padding: 40px 20px;
 
         h2.fl-heading > span {
             background: transparent;
-            padding: 40px 20px;
         }
     }
 }
