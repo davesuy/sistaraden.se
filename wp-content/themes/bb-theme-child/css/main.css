@@ -3656,7 +3656,10 @@ header #sr-header-con .fl-row-content-wrap {
     width: 247px;
     right: -10px;
     left: inherit;
-    bottom: 690px; } }
+    bottom: 690px; }
+  body .home-tool-section-con .fl-heading {
+    padding-left: 15px !important;
+    padding-right: 15px !important; } }
 
 @media (max-width: 425px) {
   .sr-contact-address-section > .fl-row-content-wrap {
