@@ -2858,6 +2858,17 @@ header #sr-header-con .fl-row-content-wrap {
   margin-right: auto; }
 
 /* PAGE STY */
+@media screen and (max-width: 959px) and (min-width: 769px) {
+  #sharpspringform code {
+    width: 90%;
+    padding: 0 30px; }
+  #sharpspringform code::before {
+    width: 30px;
+    left: -30px; }
+  #sharpspringform code::after {
+    width: 30px;
+    right: -30px; } }
+
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
     width: 80%; }
