@@ -3663,7 +3663,9 @@ header #sr-header-con .fl-row-content-wrap {
     padding-left: 15px !important;
     padding-right: 15px !important; }
   .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 210px; } }
+    min-height: 210px; }
+  .swedish-language .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 220px; } }
 
 @media (max-width: 425px) {
   .sr-contact-address-section > .fl-row-content-wrap {
