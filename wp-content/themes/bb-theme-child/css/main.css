@@ -3636,7 +3636,9 @@ header #sr-header-con .fl-row-content-wrap {
   #sr-mobile-menu.nav-up {
     top: -120px; }
   body .fl-page-content {
-    padding-top: 100px; } }
+    padding-top: 100px; }
+  .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 210px; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {
