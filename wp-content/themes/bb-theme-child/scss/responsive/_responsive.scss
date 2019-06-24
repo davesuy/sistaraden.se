@@ -103,6 +103,19 @@ $breakpoint: map-get($breakpoints, sm);
 
 	}
 
+  #s-footer-con {
+
+    .footer-last {
+      width: 31%;
+    }
+
+    .footer-second-last {
+          width: 22%;
+    }
+    
+  }
+  
+
 }
 
 
