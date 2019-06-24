@@ -3709,7 +3709,10 @@ header #sr-header-con .fl-row-content-wrap {
   #s-footer-con .footer-second-last {
     width: inherit !important; }
   #s-footer-con .footer-last {
-    width: inherit !important; } }
+    width: inherit !important; }
+  #s-footer-con .fl-row-content-wrap {
+    padding-right: inherit !important;
+    padding-left: inherit !important; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {

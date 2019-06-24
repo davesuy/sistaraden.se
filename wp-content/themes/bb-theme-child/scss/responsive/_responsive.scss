@@ -330,6 +330,11 @@ $breakpoint: map-get($breakpoints, sm);
        width: inherit !important;
   }
 
+  #s-footer-con .fl-row-content-wrap {
+    padding-right: inherit !important;
+    padding-left: inherit !important;
+  }
+
 
 }
 
