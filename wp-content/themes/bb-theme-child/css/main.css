@@ -3705,7 +3705,11 @@ header #sr-header-con .fl-row-content-wrap {
   body .fl-page-content {
     padding-top: 100px; }
   .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 210px; } }
+    min-height: 210px; }
+  #s-footer-con .footer-last {
+    width: 26.73% !important; }
+  #s-footer-con .footer-last {
+    width: 26.6% !important; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {
