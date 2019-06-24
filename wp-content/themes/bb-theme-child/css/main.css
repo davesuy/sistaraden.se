@@ -3663,7 +3663,7 @@ header #sr-header-con .fl-row-content-wrap {
     flex-basis: 50%;
     text-transform: uppercase; }
   .blue-stripe:before {
-    bottom: 0x; }
+    bottom: 0; }
   .single-post-stripe.single-post-stripe-right:after {
     width: 100%;
     bottom: -275px; }
