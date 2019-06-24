@@ -121,17 +121,7 @@ $breakpoint: map-get($breakpoints, sm);
 
 @include respond-below(lh) {
 
-    #s-footer-con {
 
-    .footer-last {
-      width: 31% !important;
-    }
-
-    .footer-second-last {
-          width: 22% !important;
-    }
-    
-  }
 
 }
 
