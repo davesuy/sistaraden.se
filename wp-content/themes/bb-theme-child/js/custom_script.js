@@ -127,13 +127,13 @@ jQuery(document).ready(function( $ ) {
 	//***** Mobile Menu ****//
 	$( "#sr-mobile-menu .sr-mobile-menu-toggle img" ).click(function() {
       $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle("slow");
-      $("#sr-mobile-menu").css('position', 'relative');
+      //$("#sr-mobile-menu").css('position', 'relative');
     });
 
 
     $( "#sr-mobile-menu .sr-mobile-menu-close img" ).click(function() {
       $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle( "slow");
-       $("#sr-mobile-menu").css('position', 'fixed');
+       //$("#sr-mobile-menu").css('position', 'fixed');
     });
 
 
