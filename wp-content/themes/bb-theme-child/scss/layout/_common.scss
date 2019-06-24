@@ -796,6 +796,15 @@ header {
 			}
 		}
 	}
+
+	.custom-size-534x268 {
+		.fl-photo {
+			img{
+			    width: 534px;
+			    height: auto;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 479px)  {
