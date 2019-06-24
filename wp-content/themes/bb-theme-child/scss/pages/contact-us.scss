@@ -20,15 +20,16 @@
 }
 .visiting-address {
     h2.fl-heading > span {
-        background: #FFFFFF;
+        background: #F4F7F6;
         padding: 20px 60px;
     }
 }
 
 @media screen and (max-width: 959px) {
     .visiting-address {
-        background: #FFFFFF;
-        padding: 20px;
+        width: 90% !important;
+        background: #F4F7F6;
+        padding: 20px 0;
 
         h2.fl-heading {
             line-height: 44px !important;
@@ -37,5 +38,11 @@
             background: transparent;
             padding: unset !important;
         }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .visiting-address {
+        width: 100% !important;
     }
 }
