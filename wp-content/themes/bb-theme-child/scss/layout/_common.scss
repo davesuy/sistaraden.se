@@ -706,7 +706,21 @@ header {
 	}
 }
 
+.custom-size-534x268 {
+	.fl-photo {
+		img{
+		    width: 534px;
+		    height: 268px !important;
+		}
+	}
+}
 
+.ss-partner-certification-badge {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
 
 /* PAGE STY */
 
@@ -779,6 +793,15 @@ header {
 			li {
 				width: 100%;
 				margin: 10px 0;
+			}
+		}
+	}
+
+	.custom-size-534x268 {
+		.fl-photo {
+			img{
+			    width: 534px;
+			    height: auto !important;
 			}
 		}
 	}
