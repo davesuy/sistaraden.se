@@ -599,12 +599,13 @@ $breakpoint: map-get($breakpoints, sm);
 
       p {
         font-size: 1rem;
-        padding: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
       }
 
 
      .buttons {
-        padding: 0px 0px 20px 0px;
+        padding: 0px;
       }
 
       button{

@@ -3828,9 +3828,10 @@ header #sr-header-con .fl-row-content-wrap {
     position: relative; }
   #cookie-consent-banner .cookieconsent p {
     font-size: 1rem;
-    padding: 5px; }
+    padding: 10px;
+    margin-bottom: 10px; }
   #cookie-consent-banner .cookieconsent .buttons {
-    padding: 0px 0px 20px 0px; }
+    padding: 0px; }
   #cookie-consent-banner .cookieconsent button.primary-btn.yes-btn {
     font-size: 1rem;
     padding: 10px; }
