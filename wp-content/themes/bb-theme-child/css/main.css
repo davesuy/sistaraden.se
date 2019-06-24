@@ -3614,6 +3614,11 @@ header #sr-header-con .fl-row-content-wrap {
   #s-footer-con .footer-second-last {
     width: 17% !important; } }
 
+@media (max-width: 1280px) {
+  #s-footer-con .fl-row-content-wrap {
+    padding-right: 160px !important;
+    padding-left: 160px !important; } }
+
 @media (max-width: 1024px) {
   body #sr-header-con .fl-module-menu #menu-main-menu a,
   body #sr-header-con .fl-module-menu #menu-main-menu-de a,

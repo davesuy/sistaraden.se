@@ -121,7 +121,15 @@ $breakpoint: map-get($breakpoints, sm);
 
 @include respond-below(lh) {
 
+    #s-footer-con {
 
+        .fl-row-content-wrap {
+            padding-right: 160px !important;
+            padding-left: 160px !important;
+        }
+
+    
+  }
 
 }
 
