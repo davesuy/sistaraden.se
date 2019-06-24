@@ -3644,7 +3644,11 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
     min-height: 80px; }
   .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 220px; } }
+    min-height: 220px; }
+  #s-footer-con .footer-last {
+    width: 31% !important; }
+  #s-footer-con .footer-second-last {
+    width: 22% !important; } }
 
 @media (max-width: 768px) {
   .about-us-card {

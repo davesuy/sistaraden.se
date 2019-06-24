@@ -204,6 +204,18 @@ $breakpoint: map-get($breakpoints, sm);
     min-height: 220px;
   }
 
+   #s-footer-con {
+
+    .footer-last {
+      width: 31% !important;
+    }
+
+    .footer-second-last {
+          width: 22% !important;
+    }
+    
+  }
+
 }
 
 @include respond-below(sm) {
