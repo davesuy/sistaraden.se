@@ -3644,7 +3644,11 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
     min-height: 80px; }
   .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 220px; } }
+    min-height: 220px; }
+  #s-footer-con .footer-last {
+    width: 31% !important; }
+  #s-footer-con .footer-second-last {
+    width: 22% !important; } }
 
 @media (max-width: 768px) {
   .about-us-card {
@@ -3705,7 +3709,14 @@ header #sr-header-con .fl-row-content-wrap {
   body .fl-page-content {
     padding-top: 100px; }
   .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 210px; } }
+    min-height: 210px; }
+  #s-footer-con .footer-second-last {
+    width: inherit !important; }
+  #s-footer-con .footer-last {
+    width: inherit !important; }
+  #s-footer-con .fl-row-content-wrap {
+    padding-right: inherit !important;
+    padding-left: inherit !important; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {
@@ -3885,3 +3896,7 @@ header #sr-header-con .fl-row-content-wrap {
     position: initial; }
   #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
     position: initial; } }
+
+@media (max-width: 360px) {
+  #sr-mobile-menu.nav-up {
+    top: -379px; } }

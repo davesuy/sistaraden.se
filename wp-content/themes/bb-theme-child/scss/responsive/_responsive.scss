@@ -1,6 +1,7 @@
 // A map of breakpoints.
 $breakpoints: (
   ss: 321px,
+  su: 361px,
   s: 426px,
   xs: 576px,
   sm: 769px,
@@ -204,6 +205,18 @@ $breakpoint: map-get($breakpoints, sm);
     min-height: 220px;
   }
 
+   #s-footer-con {
+
+    .footer-last {
+      width: 31% !important;
+    }
+
+    .footer-second-last {
+          width: 22% !important;
+    }
+    
+  }
+
 }
 
 @include respond-below(sm) {
@@ -318,6 +331,23 @@ $breakpoint: map-get($breakpoints, sm);
   .home-tool-section-con .fl-col-content.fl-node-content {
     min-height: 210px;
   }
+
+
+
+  #s-footer-con .footer-second-last {
+
+       width: inherit !important;
+  }
+
+  #s-footer-con .footer-last {
+       width: inherit !important;
+  }
+
+  #s-footer-con .fl-row-content-wrap {
+    padding-right: inherit !important;
+    padding-left: inherit !important;
+  }
+
 
 }
 
@@ -731,5 +761,11 @@ $breakpoint: map-get($breakpoints, sm);
 
 }
 
+@include respond-below(su) {
 
+  #sr-mobile-menu.nav-up {
+      top: -379px;
+  }
+
+}
 
