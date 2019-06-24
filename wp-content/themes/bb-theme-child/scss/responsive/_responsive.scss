@@ -272,6 +272,7 @@ $breakpoint: map-get($breakpoints, sm);
     top: 0;
     transition: top 0.3s ease-in-out;
     background: #fff;
+        z-index: 99999;
   }
 
   #sr-mobile-menu.nav-down {

@@ -3673,7 +3673,8 @@ header #sr-header-con .fl-row-content-wrap {
     position: fixed;
     top: 0;
     transition: top 0.3s ease-in-out;
-    background: #fff; }
+    background: #fff;
+    z-index: 99999; }
   #sr-mobile-menu.nav-up {
     top: -209px; }
   body .fl-page-content {
