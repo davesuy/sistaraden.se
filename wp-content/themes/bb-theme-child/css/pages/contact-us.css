@@ -16,7 +16,7 @@
   .visiting-address {
     width: 90% !important;
     background: #F4F7F6;
-    padding: 20px; }
+    padding: 20px 0; }
     .visiting-address h2.fl-heading {
       line-height: 44px !important; }
     .visiting-address h2.fl-heading > span {
