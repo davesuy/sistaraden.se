@@ -3610,9 +3610,14 @@ header #sr-header-con .fl-row-content-wrap {
     padding-left: 12px;
     padding-right: 12px; }
   #s-footer-con .footer-last {
-    width: 31% !important; }
+    width: 36% !important; }
   #s-footer-con .footer-second-last {
-    width: 22% !important; } }
+    width: 17% !important; } }
+
+@media (max-width: 1280px) {
+  #s-footer-con .fl-row-content-wrap {
+    padding-right: 160px !important;
+    padding-left: 160px !important; } }
 
 @media (max-width: 1024px) {
   body #sr-header-con .fl-module-menu #menu-main-menu a,

@@ -7,6 +7,7 @@ $breakpoints: (
   md: 992px,
   l: 1025px,
   lg: 1200px,
+  lh: 1281px,
   lp: 1441px
 );
 
@@ -106,11 +107,11 @@ $breakpoint: map-get($breakpoints, sm);
   #s-footer-con {
 
     .footer-last {
-      width: 31% !important;
+      width: 36% !important;
     }
 
     .footer-second-last {
-          width: 22% !important;
+          width: 17% !important;
     }
     
   }
@@ -118,6 +119,19 @@ $breakpoint: map-get($breakpoints, sm);
 
 }
 
+@include respond-below(lh) {
+
+    #s-footer-con {
+
+        .fl-row-content-wrap {
+            padding-right: 160px !important;
+            padding-left: 160px !important;
+        }
+
+    
+  }
+
+}
 
 
 @include respond-below(l) {
