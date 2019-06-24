@@ -106,11 +106,11 @@ $breakpoint: map-get($breakpoints, sm);
   #s-footer-con {
 
     .footer-last {
-      width: 31%;
+      width: 31% !important;
     }
 
     .footer-second-last {
-          width: 22%;
+          width: 22% !important;
     }
     
   }
