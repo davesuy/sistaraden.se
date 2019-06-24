@@ -3441,11 +3441,12 @@ header #sr-header-con .fl-row-content-wrap {
   vertical-align: sub; }
 
 .visiting-address h2.fl-heading > span {
-  background: #FFFFFF;
+  background: #F4F7F6;
   padding: 20px 60px; }
 
 @media screen and (max-width: 959px) {
   .visiting-address {
+    width: 90% !important;
     background: #FFFFFF;
     padding: 20px; }
     .visiting-address h2.fl-heading {
@@ -3453,6 +3454,10 @@ header #sr-header-con .fl-row-content-wrap {
     .visiting-address h2.fl-heading > span {
       background: transparent;
       padding: unset !important; } }
+
+@media screen and (max-width: 479px) {
+  .visiting-address {
+    width: 100% !important; } }
 
 #sistaraden-login-wrapper #user_login {
   border-radius: 0;
