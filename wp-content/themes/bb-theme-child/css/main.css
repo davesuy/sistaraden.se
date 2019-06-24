@@ -2857,6 +2857,10 @@ header #sr-header-con .fl-row-content-wrap {
   width: fit-content;
   margin-right: auto; }
 
+.custom-size-534x268 .fl-photo img {
+  width: 534px;
+  height: 268px; }
+
 /* PAGE STY */
 @media screen and (max-width: 959px) and (min-width: 769px) {
   #sharpspringform code {
