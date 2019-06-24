@@ -3896,3 +3896,7 @@ header #sr-header-con .fl-row-content-wrap {
     position: initial; }
   #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
     position: initial; } }
+
+@media (max-width: 360px) {
+  #sr-mobile-menu.nav-up {
+    top: -379px; } }
