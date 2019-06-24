@@ -3707,9 +3707,9 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .fl-col-content.fl-node-content {
     min-height: 210px; }
   #s-footer-con .footer-second-last {
-    width: 26.6% !important; }
+    width: inherit !important; }
   #s-footer-con .footer-last {
-    width: 26.73% !important; } }
+    width: inherit !important; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {
