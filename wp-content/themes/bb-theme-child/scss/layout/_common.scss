@@ -710,7 +710,7 @@ header {
 	.fl-photo {
 		img{
 		    width: 534px;
-		    height: 268px;
+		    height: 268px !important;
 		}
 	}
 }
@@ -793,6 +793,15 @@ header {
 			li {
 				width: 100%;
 				margin: 10px 0;
+			}
+		}
+	}
+
+	.custom-size-534x268 {
+		.fl-photo {
+			img{
+			    width: 534px;
+			    height: auto !important;
 			}
 		}
 	}
