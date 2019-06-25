@@ -137,6 +137,16 @@
       bottom: 10%;
   }
 
+  .page-om-oss,
+  .page-uber-uns,
+  .page-about-us {
+
+    .fl-page-content {
+      overflow: hidden;
+    }
+
+  }
+
 }
 
 @media screen and (max-width: 500px)  {
