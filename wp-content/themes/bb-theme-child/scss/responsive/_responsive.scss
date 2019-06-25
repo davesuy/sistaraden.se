@@ -228,9 +228,21 @@ $breakpoint: map-get($breakpoints, sm);
         z-index: 99999;
   }
 
+  #cookie-consent-banner {
+    .cookieconsent {
+      .buttons {
+        margin-top: 28px;
+      }
+    }
+  }
+
 }
 
 @include respond-below(sm) {
+
+  .kunskap-title  {
+    top: 0;
+  }
 
   .about-us-card {
       width: 263px;
@@ -667,13 +679,15 @@ $breakpoint: map-get($breakpoints, sm);
 
       p {
         font-size: 1rem;
-        padding: 10px;
-        margin-bottom: 10px;
       }
 
 
      .buttons {
+        text-align: center;
         padding: 0px;
+        margin-top: 27px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       button{
@@ -687,8 +701,8 @@ $breakpoint: map-get($breakpoints, sm);
 
       .container{
           &.cookie-consent-container {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
           }
       }
 

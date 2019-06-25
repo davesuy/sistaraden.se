@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2705,7 +2705,8 @@ header #sr-header-con .fl-row-content-wrap {
       margin: 0px; }
   #cookie-consent-banner .cookieconsent .buttons {
     text-align: center;
-    padding: 10px 0px 20px 0px;
+    padding: 0px;
+    margin-top: 54px;
     margin-left: auto;
     margin-right: auto; }
   #cookie-consent-banner .cookieconsent p {
@@ -2714,7 +2715,8 @@ header #sr-header-con .fl-row-content-wrap {
     font-size: 1.125rem;
     line-height: 26px;
     text-align: center;
-    padding: 20px 0px 5px 0px;
+    padding: 0;
+    margin: 0;
     margin-left: auto;
     margin-right: auto; }
     #cookie-consent-banner .cookieconsent p a {
@@ -2743,7 +2745,8 @@ header #sr-header-con .fl-row-content-wrap {
     color: #f5f5f5;
     text-decoration: underline;
     border-radius: 0;
-    margin: 20px 20px 20px 50px;
+    margin: 0px;
+    margin-left: 50px;
     padding: 0;
     font-size: 15px; }
 
@@ -3024,6 +3027,10 @@ header #sr-header-con .fl-row-content-wrap {
 #fullpage .fp-slidesNav.fp-bottom {
   bottom: 180px;
   text-align: center; }
+
+.kunskap-title {
+  position: relative;
+  top: 75px; }
 
 .widget_ess_grid .widgettitle {
   font-size: 50px;
@@ -3427,7 +3434,11 @@ header #sr-header-con .fl-row-content-wrap {
   .about-us-card .about-us-card-labels {
     position: absolute;
     right: 13%;
-    bottom: 10%; } }
+    bottom: 10%; }
+  .page-om-oss .fl-page-content,
+  .page-uber-uns .fl-page-content,
+  .page-about-us .fl-page-content {
+    overflow: hidden; } }
 
 @media screen and (max-width: 500px) {
   .blue-stripe:before {
@@ -3660,9 +3671,13 @@ header #sr-header-con .fl-row-content-wrap {
     top: 0;
     transition: top 0.3s ease-in-out;
     background: #fff;
-    z-index: 99999; } }
+    z-index: 99999; }
+  #cookie-consent-banner .cookieconsent .buttons {
+    margin-top: 28px; } }
 
 @media (max-width: 768px) {
+  .kunskap-title {
+    top: 0; }
   .about-us-card {
     width: 263px;
     margin-left: auto;
@@ -3864,17 +3879,19 @@ header #sr-header-con .fl-row-content-wrap {
     z-index: 9999;
     position: relative; }
   #cookie-consent-banner .cookieconsent p {
-    font-size: 1rem;
-    padding: 10px;
-    margin-bottom: 10px; }
+    font-size: 1rem; }
   #cookie-consent-banner .cookieconsent .buttons {
-    padding: 0px; }
+    text-align: center;
+    padding: 0px;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto; }
   #cookie-consent-banner .cookieconsent button.primary-btn.yes-btn {
     font-size: 1rem;
     padding: 10px; }
   #cookie-consent-banner .cookieconsent .container.cookie-consent-container {
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
   body .home-tool-section-con h5.fl-heading {
     padding: 0 5px !important; } }
 

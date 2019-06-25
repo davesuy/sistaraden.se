@@ -1,4 +1,4 @@
-
+	
 .red-stripe {
 
 	position: relative;
@@ -498,8 +498,9 @@ header {
 
 	    .buttons {
 			text-align: center;
-			padding: 10px 0px 20px 0px;
-			margin-left: auto;
+		    padding: 0px;
+		    margin-top: 54px;
+		    margin-left: auto;
 		    margin-right: auto;
 		}
 
@@ -509,7 +510,8 @@ header {
 		    font-size: 1.125rem;
 		    line-height: 26px;
 		    text-align: center;
-		    padding: 20px 0px 5px 0px;
+		    padding: 0;
+		    margin: 0;
 		    margin-left: auto;
 		    margin-right: auto;
 
@@ -553,7 +555,8 @@ header {
 				    color: #f5f5f5;
 				    text-decoration: underline;
 				    border-radius: 0;
-				    margin: 20px 20px 20px 50px;
+				    margin: 0px;
+				    margin-left: 50px;
 				    padding: 0;
 				    font-size: 15px;
 				}
