@@ -2883,7 +2883,9 @@ header #sr-header-con .fl-row-content-wrap {
     left: -30px; }
   #sharpspringform code::after {
     width: 30px;
-    right: -30px; } }
+    right: -30px; }
+  .esg-filters .eg-search-wrapper {
+    max-width: 300px !important; } }
 
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {

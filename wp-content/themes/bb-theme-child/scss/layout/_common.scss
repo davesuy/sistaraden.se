@@ -750,6 +750,12 @@ header {
 			right: -30px;
 		}
 	}
+
+	.esg-filters {
+		.eg-search-wrapper {
+			max-width: 300px;
+		}
+	}
 }
 @media screen and (max-width: 959px)  {
 	.analyze-seo-thank-you {
@@ -812,6 +818,12 @@ header {
 			    width: 534px;
 			    height: auto !important;
 			}
+		}
+	}
+
+	.esg-filters {
+		&.esg-singlefilters {
+			text-align: left:
 		}
 	}
 }
