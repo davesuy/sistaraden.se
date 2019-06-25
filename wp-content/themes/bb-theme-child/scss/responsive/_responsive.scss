@@ -232,6 +232,10 @@ $breakpoint: map-get($breakpoints, sm);
 
 @include respond-below(sm) {
 
+  .kunskap-title  {
+    top: 0;
+  }
+
   .about-us-card {
       width: 263px;
       margin-left: auto;
