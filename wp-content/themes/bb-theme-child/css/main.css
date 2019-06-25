@@ -3648,7 +3648,15 @@ header #sr-header-con .fl-row-content-wrap {
   #s-footer-con .footer-last {
     width: 31% !important; }
   #s-footer-con .footer-second-last {
-    width: 22% !important; } }
+    width: 22% !important; }
+  #sr-mobile-menu {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    background: #fff;
+    z-index: 99999; } }
 
 @media (max-width: 768px) {
   .about-us-card {
@@ -3897,6 +3905,6 @@ header #sr-header-con .fl-row-content-wrap {
   #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
     position: initial; } }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   #sr-mobile-menu.nav-up {
-    top: -379px; } }
+    top: -415px; } }
