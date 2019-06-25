@@ -217,6 +217,17 @@ $breakpoint: map-get($breakpoints, sm);
     
   }
 
+  #sr-mobile-menu {
+
+    width: 100%;
+    z-index: 99;
+     position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    background: #fff;
+        z-index: 99999;
+  }
+
 }
 
 @include respond-below(sm) {

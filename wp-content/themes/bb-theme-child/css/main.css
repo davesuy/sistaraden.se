@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -3648,7 +3648,15 @@ header #sr-header-con .fl-row-content-wrap {
   #s-footer-con .footer-last {
     width: 31% !important; }
   #s-footer-con .footer-second-last {
-    width: 22% !important; } }
+    width: 22% !important; }
+  #sr-mobile-menu {
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s ease-in-out;
+    background: #fff;
+    z-index: 99999; } }
 
 @media (max-width: 768px) {
   .about-us-card {
