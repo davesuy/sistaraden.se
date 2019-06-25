@@ -236,6 +236,21 @@ $breakpoint: map-get($breakpoints, sm);
     }
   }
 
+  #menu-language-switcher a.wpml-ls-item-toggle:after, #menu-language-switcher-de a.wpml-ls-item-toggle:after, #menu-language-switcher-en a.wpml-ls-item-toggle:after, .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f078";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        border: 0px;
+        position: absolute;
+        top: calc(50% - 0.75em);
+        left: 67px;
+        color: #ffffff;
+        font-size: 25px;
+    }
+
 }
 
 @include respond-below(sm) {
