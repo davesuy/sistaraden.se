@@ -1,4 +1,4 @@
-	
+
 .red-stripe {
 
 	position: relative;
@@ -729,7 +729,8 @@ header {
 
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-    .page-kostnadsfri-konsultation .fl-page-content { padding-top: 100px; }
+    .page-kostnadsfri-konsultation .fl-page-content,
+    .page-consultation .fl-page-content { padding-top: 100px; }
 }
 
 @media screen and (max-width: 959px)  and (min-width: 769px) {
