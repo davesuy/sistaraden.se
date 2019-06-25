@@ -2705,7 +2705,8 @@ header #sr-header-con .fl-row-content-wrap {
       margin: 0px; }
   #cookie-consent-banner .cookieconsent .buttons {
     text-align: center;
-    padding: 10px 0px 20px 0px;
+    padding: 0px;
+    margin-top: 54px;
     margin-left: auto;
     margin-right: auto; }
   #cookie-consent-banner .cookieconsent p {
@@ -2714,7 +2715,8 @@ header #sr-header-con .fl-row-content-wrap {
     font-size: 1.125rem;
     line-height: 26px;
     text-align: center;
-    padding: 20px 0px 5px 0px;
+    padding: 0;
+    margin: 0;
     margin-left: auto;
     margin-right: auto; }
     #cookie-consent-banner .cookieconsent p a {
@@ -2743,7 +2745,8 @@ header #sr-header-con .fl-row-content-wrap {
     color: #f5f5f5;
     text-decoration: underline;
     border-radius: 0;
-    margin: 20px 20px 20px 50px;
+    margin: 0px;
+    margin-left: 50px;
     padding: 0;
     font-size: 15px; }
 
@@ -3660,7 +3663,9 @@ header #sr-header-con .fl-row-content-wrap {
     top: 0;
     transition: top 0.3s ease-in-out;
     background: #fff;
-    z-index: 99999; } }
+    z-index: 99999; }
+  #cookie-consent-banner .cookieconsent .buttons {
+    margin-top: 28px; } }
 
 @media (max-width: 768px) {
   .about-us-card {
@@ -3864,17 +3869,19 @@ header #sr-header-con .fl-row-content-wrap {
     z-index: 9999;
     position: relative; }
   #cookie-consent-banner .cookieconsent p {
-    font-size: 1rem;
-    padding: 10px;
-    margin-bottom: 10px; }
+    font-size: 1rem; }
   #cookie-consent-banner .cookieconsent .buttons {
-    padding: 0px; }
+    text-align: center;
+    padding: 0px;
+    margin-top: 27px;
+    margin-left: auto;
+    margin-right: auto; }
   #cookie-consent-banner .cookieconsent button.primary-btn.yes-btn {
     font-size: 1rem;
     padding: 10px; }
   #cookie-consent-banner .cookieconsent .container.cookie-consent-container {
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    padding-top: 20px;
+    padding-bottom: 20px; }
   body .home-tool-section-con h5.fl-heading {
     padding: 0 5px !important; } }
 
