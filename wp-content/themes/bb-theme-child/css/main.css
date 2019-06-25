@@ -2885,7 +2885,7 @@ header #sr-header-con .fl-row-content-wrap {
     width: 30px;
     right: -30px; }
   .esg-filters .eg-search-wrapper {
-    max-width: 300px !important; } }
+    max-width: 300px; } }
 
 @media screen and (max-width: 959px) {
   .analyze-seo-thank-you .thank-you-emoji-container {
@@ -2930,7 +2930,9 @@ header #sr-header-con .fl-row-content-wrap {
       margin: 10px 0; }
   .custom-size-534x268 .fl-photo img {
     width: 534px;
-    height: auto !important; } }
+    height: auto !important; }
+  .esg-filters.esg-singlefilters {
+    text-align: left; } }
 
 @media screen and (max-width: 479px) {
   #sharpspringform code {
