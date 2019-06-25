@@ -2866,6 +2866,10 @@ header #sr-header-con .fl-row-content-wrap {
   margin: 0 auto; }
 
 /* PAGE STY */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .page-kostnadsfri-konsultation .fl-page-content {
+    padding-top: 100px; } }
+
 @media screen and (max-width: 959px) and (min-width: 769px) {
   #sharpspringform code {
     width: 90%;
