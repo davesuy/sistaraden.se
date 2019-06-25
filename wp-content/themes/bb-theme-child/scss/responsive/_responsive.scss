@@ -1,7 +1,7 @@
 // A map of breakpoints.
 $breakpoints: (
   ss: 321px,
-  su: 361px,
+  su: 376px,
   s: 426px,
   xs: 576px,
   sm: 769px,
@@ -764,7 +764,7 @@ $breakpoint: map-get($breakpoints, sm);
 @include respond-below(su) {
 
   #sr-mobile-menu.nav-up {
-      top: -379px;
+      top: -415px;
   }
 
 }
