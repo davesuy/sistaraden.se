@@ -821,8 +821,8 @@ header {
 		}
 	}
 
-	.esg-filters {
-		&.esg-singlefilters {
+	#blog-posts-con {
+		.esg-singlefilters {
 			text-align: left;
 		}
 	}

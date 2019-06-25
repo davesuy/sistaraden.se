@@ -2931,7 +2931,7 @@ header #sr-header-con .fl-row-content-wrap {
   .custom-size-534x268 .fl-photo img {
     width: 534px;
     height: auto !important; }
-  .esg-filters.esg-singlefilters {
+  #blog-posts-con .esg-singlefilters {
     text-align: left; } }
 
 @media screen and (max-width: 479px) {
