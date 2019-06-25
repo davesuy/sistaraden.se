@@ -2932,7 +2932,7 @@ header #sr-header-con .fl-row-content-wrap {
     width: 534px;
     height: auto !important; }
   #blog-posts-con .esg-singlefilters {
-    text-align: left; } }
+    text-align: left !important; } }
 
 @media screen and (max-width: 479px) {
   #sharpspringform code {
