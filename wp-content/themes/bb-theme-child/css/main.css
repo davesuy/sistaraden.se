@@ -2966,7 +2966,9 @@ header #sr-header-con .fl-row-content-wrap {
   top: 0;
   background-color: #fff;
   z-index: 100000;
-  width: 100% !important; }
+  width: 100% !important;
+  overflow-y: scroll;
+  height: 100%; }
 
 #menu-main-menu li a:after,
 #menu-main-menu-de li a:after,

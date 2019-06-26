@@ -7,7 +7,7 @@
 		.fl-menu {
 
 			padding: 25px 0;
-					
+
 			background-color: rgba(10,10,10,0.75);
 
 			li {
@@ -27,11 +27,11 @@
 				border: none;
 			}
 
-			
-			
+
+
 		}
 
-	
+
 	}
 
 }
@@ -44,6 +44,8 @@
 	    background-color: #fff;
 	    z-index: 100000;
 	    width: 100% !important;
+	    overflow-y: scroll;
+	    height: 100%;
 	}
 }
 
