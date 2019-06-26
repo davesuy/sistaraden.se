@@ -2966,9 +2966,7 @@ header #sr-header-con .fl-row-content-wrap {
   top: 0;
   background-color: #fff;
   z-index: 100000;
-  width: 100% !important;
-  overflow-y: scroll;
-  height: 100%; }
+  width: 100% !important; }
 
 #menu-main-menu li a:after,
 #menu-main-menu-de li a:after,
@@ -3678,7 +3676,9 @@ header #sr-header-con .fl-row-content-wrap {
     top: 0;
     transition: top 0.3s ease-in-out;
     background: #fff;
-    z-index: 99999; }
+    z-index: 99999;
+    overflow-y: scroll;
+    height: 100%; }
   #cookie-consent-banner .cookieconsent .buttons {
     margin-top: 28px; }
   #menu-language-switcher a.wpml-ls-item-toggle:after, #menu-language-switcher-de a.wpml-ls-item-toggle:after, #menu-language-switcher-en a.wpml-ls-item-toggle:after, .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after {
