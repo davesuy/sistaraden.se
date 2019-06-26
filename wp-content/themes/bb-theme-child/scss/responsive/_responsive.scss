@@ -226,8 +226,6 @@ $breakpoint: map-get($breakpoints, sm);
     transition: top 0.3s ease-in-out;
     background: #fff;
         z-index: 99999;
-        overflow-y: scroll;
-      height: 100%;
   }
 
   #cookie-consent-banner {
