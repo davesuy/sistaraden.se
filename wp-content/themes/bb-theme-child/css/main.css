@@ -2997,27 +2997,6 @@ header #sr-header-con .fl-row-content-wrap {
   margin-top: 4px;
   width: 100%; }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
-  #sr-mobile-menu .sr-mobile-menu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100%;
-    z-index: 9999;
-    background-color: #fff; }
-    #sr-mobile-menu .sr-mobile-menu-overlay .fl-node-content {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* The main point: */
-      overflow-y: auto;
-      /* Optional but highly reccomended: enables momentum scrolling on iOS */
-      -webkit-overflow-scrolling: touch; } }
-
 /* Sistaraden Custom CSS Horizontal Scrolling */
 #fullpage .section {
   width: 100%; }
