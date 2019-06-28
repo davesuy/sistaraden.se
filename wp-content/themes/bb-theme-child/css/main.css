@@ -2962,20 +2962,11 @@ header #sr-header-con .fl-row-content-wrap {
 
 #sr-mobile-menu .sr-mobile-menu-overlay {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999; }
-  #sr-mobile-menu .sr-mobile-menu-overlay > .fl-col-content {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    background-color: #1D121A; }
+  background-color: #fff;
+  z-index: 100000;
+  width: 100% !important; }
 
 #menu-main-menu li a:after,
 #menu-main-menu-de li a:after,
@@ -3005,6 +2996,24 @@ header #sr-header-con .fl-row-content-wrap {
   transition: width 0.4s;
   margin-top: 4px;
   width: 100%; }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .sr-mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999; }
+    .sr-mobile-menu-overlay > .fl-col-content {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      background-color: #1D121A; } }
 
 /* Sistaraden Custom CSS Horizontal Scrolling */
 #fullpage .section {
