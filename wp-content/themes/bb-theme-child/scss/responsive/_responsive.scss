@@ -344,7 +344,7 @@ $breakpoint: map-get($breakpoints, sm);
 
   #sr-mobile-menu {
 
-    width: 100%;
+    width: unset;
     z-index: 99;
      position: fixed;
     top: 0;
