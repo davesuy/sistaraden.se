@@ -96,14 +96,12 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-	.sr-mobile-menu-overlay{
+	.sr-mobile-menu-overlay {
 	    display:none;
 	    position: fixed;
 	    top: 0;
 	    left: 0;
-	    width: 100%;
 	    height: 100%;
-	    z-index: 9999;
 
 	    > .fl-col-content {
 		    top: 0;
