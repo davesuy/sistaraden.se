@@ -2975,7 +2975,8 @@ header #sr-header-con .fl-row-content-wrap {
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch; }
+    -webkit-overflow-scrolling: touch;
+    background-color: #1D121A; }
 
 #menu-main-menu li a:after,
 #menu-main-menu-de li a:after,
