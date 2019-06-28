@@ -46,8 +46,7 @@
 	    height: 100%;
 	    z-index: 9999;
 
-	    .fl-col-content {
-	    	position: absolute;
+	    > .fl-col-content {
 		    top: 0;
 		    left: 0;
 		    width: 100%;
