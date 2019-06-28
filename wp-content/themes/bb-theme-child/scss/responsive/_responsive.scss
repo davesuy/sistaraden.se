@@ -729,6 +729,10 @@ $breakpoint: map-get($breakpoints, sm);
         padding: 0 5px !important;
   }
 
+  #sr-mobile-menu.nav-up {
+    top: -360px;
+  }
+
 
 }
 
