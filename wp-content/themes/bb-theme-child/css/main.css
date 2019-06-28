@@ -3743,7 +3743,7 @@ header #sr-header-con .fl-row-content-wrap {
     width: 100%;
     bottom: -275px; }
   #sr-mobile-menu {
-    width: unset;
+    width: 100%;
     z-index: 99;
     position: fixed;
     top: 0;
