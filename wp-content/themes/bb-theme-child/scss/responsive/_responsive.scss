@@ -115,6 +115,11 @@ $breakpoint: map-get($breakpoints, sm);
           width: 17% !important;
     }
 
+    .fl-row-content-wrap {
+      padding-right: 10.15625%;
+      padding-left: 10.15625%; 
+    }
+
   }
 
 
@@ -209,6 +214,7 @@ $breakpoint: map-get($breakpoints, sm);
 
     .footer-last {
       width: 31% !important;
+      margin-left: 33.33%;
     }
 
     .footer-second-last {
@@ -379,6 +385,8 @@ $breakpoint: map-get($breakpoints, sm);
 
   #s-footer-con .footer-last {
        width: inherit !important;
+       margin-left: unset;
+
   }
 
   #s-footer-con .fl-row-content-wrap {
