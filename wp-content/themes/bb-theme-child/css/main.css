@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -3649,7 +3649,10 @@ header #sr-header-con .fl-row-content-wrap {
   #s-footer-con .footer-last {
     width: 36% !important; }
   #s-footer-con .footer-second-last {
-    width: 17% !important; } }
+    width: 17% !important; }
+  #s-footer-con .fl-row-content-wrap {
+    padding-right: 10.15625%;
+    padding-left: 10.15625%; } }
 
 @media (max-width: 1280px) {
   #s-footer-con .fl-row-content-wrap {
@@ -3683,7 +3686,8 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .fl-col-content.fl-node-content {
     min-height: 220px; }
   #s-footer-con .footer-last {
-    width: 31% !important; }
+    width: 31% !important;
+    margin-left: 33.33%; }
   #s-footer-con .footer-second-last {
     width: 22% !important; }
   #sr-mobile-menu {
@@ -3773,7 +3777,8 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .fl-col-content.fl-node-content {
     min-height: 210px; }
   #s-footer-con .footer-second-last {
-    width: inherit !important; }
+    width: inherit !important;
+    margin-left: unset; }
   #s-footer-con .footer-last {
     width: inherit !important; }
   #s-footer-con .fl-row-content-wrap {
