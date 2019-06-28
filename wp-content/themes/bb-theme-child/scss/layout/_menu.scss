@@ -95,15 +95,17 @@
 
 }
 
-@media screen and (max-width: 1024px) and (min-width: 769px) {
+/* @media screen and (max-width: 1024px) and (min-width: 769px) {
 	#sr-mobile-menu {
 		.sr-mobile-menu-overlay {
+			display:none;
 		    position: fixed;
 		    top: 0;
 		    left: 0;
-		    width: 100%;
+		    width: 100% !important;
 		    height: 100%;
 		    z-index: 9999;
+		    background-color: #fff;
 
 		    .fl-node-content {
 		    	position: absolute;
@@ -118,4 +120,4 @@
 		    }
 		}
 	}
-}
+} */
