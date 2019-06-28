@@ -2997,7 +2997,7 @@ header #sr-header-con .fl-row-content-wrap {
   margin-top: 4px;
   width: 100%; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (min-width: 769px) {
   .sr-mobile-menu-overlay {
     display: none;
     position: fixed !important;
