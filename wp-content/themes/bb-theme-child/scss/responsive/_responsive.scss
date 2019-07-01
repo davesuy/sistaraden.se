@@ -394,7 +394,28 @@ $breakpoint: map-get($breakpoints, sm);
     padding-left: inherit !important;
   }
 
+    .pricing-column-wrapper{
+      .pricing-column-con{
+          max-width: 60% !important;
+          margin-left: 20%;
+          margin-right: 20%;
 
+          &:nth-child(1){
+            &:after{
+                width: 100% !important;
+                left: 63px;
+            }
+         }
+
+
+         &:nth-child(2){
+            &:after{
+              bottom: 0px;
+              right: 70px;
+          }
+        }
+      } 
+  }
 }
 
 @include respond-below(xs) {
