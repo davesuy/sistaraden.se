@@ -452,4 +452,64 @@ function hook_tracking_code (){
 } 
 add_action('wp_head', 'hook_tracking_code');
 
+function footer_ga_hook_tracking_code () {
+
+	// ANALYTICS TRACKING CODE
+
+	// DE
+
+	if ( defined( 'ICL_LANGUAGE_CODE' ) && 'sv' == ICL_LANGUAGE_CODE ) {
+
+	
+		?>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406859-1"></script>
+		<script>
+		 window.dataLayer = window.dataLayer || [];
+		 function gtag(){dataLayer.push(arguments);}
+		 gtag('js', new Date());
+
+		 gtag('config', 'UA-112406859-1');
+
+		</script>
+
+	<?php }
+	// SV language
+	else if ( defined( 'ICL_LANGUAGE_CODE' ) && 'de' == ICL_LANGUAGE_CODE ) {
+
+		 ?>
+	
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406859-2"></script>
+		<script>
+		 window.dataLayer = window.dataLayer || [];
+		 function gtag(){dataLayer.push(arguments);}
+		 gtag('js', new Date());
+
+		 gtag('config', 'UA-112406859-2');
+		 
+		</script>
+
+	<?php }
+	// EN language
+	else if ( defined( 'ICL_LANGUAGE_CODE' ) && 'en' == ICL_LANGUAGE_CODE ) {
+		
+		?>
+
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406859-3"></script>
+		<script>
+		 window.dataLayer = window.dataLayer || [];
+		 function gtag(){dataLayer.push(arguments);}
+		 gtag('js', new Date());
+
+		 gtag('config', 'UA-112406859-3');
+		 
+		</script>
+
+	<?php }
+	
+
+} 
+
+add_action('wp_footer', 'footer_ga_hook_tracking_code');
+
 ?>
