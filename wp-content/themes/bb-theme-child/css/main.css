@@ -3361,6 +3361,18 @@ header #sr-header-con .fl-row-content-wrap {
 .page-id-409 .z-index-frnt .fl-col {
   position: unset; }
 
+@media (max-width: 768px) and (min-width: 426px) {
+  .pricing-column-con {
+    max-width: 60% !important;
+    margin-left: 20%;
+    margin-right: 20%; }
+  .pricing-column-wrapper .pricing-column-con:nth-child(1):after {
+    width: 100% !important;
+    left: 63px; }
+  .pricing-column-wrapper .pricing-column-con:nth-child(2):after {
+    bottom: 0px;
+    right: 70px; } }
+
 .no-gutters {
   padding: 5px;
   margin: 0px; }
@@ -3783,17 +3795,7 @@ header #sr-header-con .fl-row-content-wrap {
     margin-left: unset; }
   #s-footer-con .fl-row-content-wrap {
     padding-right: inherit !important;
-    padding-left: inherit !important; }
-  .pricing-column-wrapper .pricing-column-con {
-    max-width: 60% !important;
-    margin-left: 20%;
-    margin-right: 20%; }
-    .pricing-column-wrapper .pricing-column-con:nth-child(1):after {
-      width: 100% !important;
-      left: 63px; }
-    .pricing-column-wrapper .pricing-column-con:nth-child(2):after {
-      bottom: 0px;
-      right: 70px; } }
+    padding-left: inherit !important; } }
 
 @media (max-width: 575px) {
   .fl-builder-content .sr-footer-con .footer-col-1 {
