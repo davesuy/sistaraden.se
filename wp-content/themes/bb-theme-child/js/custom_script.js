@@ -143,16 +143,20 @@ jQuery(document).ready(function( $ ) {
     });
     
     $("body").on("click", "#cookie-consent-banner  .cookieconsent .buttons .yes-btn", function() {
-        setLocalCookie('username','newuser',1);
+        setLocalCookie('username','newuser',2);
         $("#cookie-consent-banner").hide();
     });
     
-    function setLocalCookie(cname, cvalue, exdays) {
-      var d = new Date();
-      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-      var expires = "expires="+d.toUTCString();
-      console.log(expires);
-      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    function setLocalCookie(cname, cvalue, days) {
+        var date = new Date();
+        // Default at 365 days.
+        days = days || 365;
+    
+        // Get unix milliseconds at current time plus number of days
+        date.setTime(+ date + (days * 86400000)); //24 * 60 * 60 * 1000
+    
+        window.document.cookie = cname + "=" + cvalue + "; expires=" + date.toGMTString() + "; path=/";
+
     }
     
     function getCookie(cname) {
