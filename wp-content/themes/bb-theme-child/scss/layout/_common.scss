@@ -601,6 +601,11 @@ header {
 	}
 }
 .sharpspringform--no-border {
+	code {
+	    display: block;
+	    padding: 0px 30px;
+	    position: relative;
+	}
     code::before {
         content: ' ';
         background: url(/wp-content/uploads/2019/06/purple-strip-kontakt.png);
@@ -877,7 +882,6 @@ header {
 	}
     .sharpspringform--no-border {
         code {
-            width: 97%;
             padding: 0 20px;
         }
         code::before, code::after {

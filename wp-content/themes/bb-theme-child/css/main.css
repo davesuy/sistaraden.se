@@ -2781,6 +2781,11 @@ header #sr-header-con .fl-row-content-wrap {
   top: 212px;
   right: -60px; }
 
+.sharpspringform--no-border code {
+  display: block;
+  padding: 0px 30px;
+  position: relative; }
+
 .sharpspringform--no-border code::before {
   content: ' ';
   background: url(/wp-content/uploads/2019/06/purple-strip-kontakt.png);
@@ -2970,7 +2975,6 @@ header #sr-header-con .fl-row-content-wrap {
   #sharpspringform code::before, #sharpspringform code::after {
     display: none; }
   .sharpspringform--no-border code {
-    width: 97%;
     padding: 0 20px; }
   .sharpspringform--no-border code::before, .sharpspringform--no-border code::after {
     display: none; }
