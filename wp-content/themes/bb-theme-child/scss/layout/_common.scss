@@ -782,10 +782,6 @@ header {
 	}
 
     .sharpspringform--no-border {
-    	code {
-			width: 90%;
-		}
-
         code::before {
             width: 30px;
             left: -30px;
@@ -816,6 +812,14 @@ header {
 			}
 		}
 	}
+
+	.sharpspringform--no-border {
+    	code {
+			width: 90%;
+			margin: 0px auto;
+			display: block;
+		}
+    }
 }
 @media screen and (max-width: 768px)  {
     .analyze-seo-thank-you {
@@ -886,7 +890,7 @@ header {
 	}
     .sharpspringform--no-border {
         code {
-            padding: 0 20px;
+        	width: 97%;
         }
         code::before, code::after {
             display: none;
