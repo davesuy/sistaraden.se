@@ -2912,6 +2912,8 @@ header #sr-header-con .fl-row-content-wrap {
   #sharpspringform code::after {
     width: 30px;
     right: -30px; }
+  .sharpspringform--no-border code {
+    width: 90%; }
   .sharpspringform--no-border code::before {
     width: 30px;
     left: -30px; }

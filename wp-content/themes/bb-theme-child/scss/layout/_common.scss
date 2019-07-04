@@ -782,6 +782,10 @@ header {
 	}
 
     .sharpspringform--no-border {
+    	code {
+			width: 90%;
+		}
+
         code::before {
             width: 30px;
             left: -30px;
