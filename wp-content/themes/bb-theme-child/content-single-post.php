@@ -5,10 +5,12 @@ $thumb_size  = FLTheme::get_setting( 'fl-posts-thumb-size' );
 ?>
 <?php 
 
-do_action( 'fl_before_post' ); 
+if(get_field('show_header') == 'yes'){
+    do_action( 'fl_before_post' ); 
 
-echo do_shortcode('[fl_builder_insert_layout slug="single-post-header-top"]');
-echo do_shortcode('[fl_builder_insert_layout slug="single-post-header-mid"]');
+    echo do_shortcode('[fl_builder_insert_layout slug="single-post-header-top"]');
+    echo do_shortcode('[fl_builder_insert_layout slug="single-post-header-mid"]');
+}
 
 ?>
 <article <?php post_class( 'fl-post' ); ?> id="fl-post-<?php the_ID(); ?>" itemscope itemtype="https://schema.org/BlogPosting">
