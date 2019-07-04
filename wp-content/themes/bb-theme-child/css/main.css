@@ -334,8 +334,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -360,8 +360,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -2781,6 +2781,29 @@ header #sr-header-con .fl-row-content-wrap {
   top: 212px;
   right: -60px; }
 
+.sharpspringform--no-border code::before {
+  content: ' ';
+  background: url(/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  color: white;
+  height: 271px;
+  width: 60px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 70px;
+  left: -60px;
+  transform: rotate(180deg); }
+
+.sharpspringform--no-border code::after {
+  content: ' ';
+  background: url(/wp-content/uploads/2019/06/purple-strip-kontakt.png);
+  color: white;
+  height: 271px;
+  width: 60px;
+  margin: 0 auto;
+  position: absolute;
+  top: 212px;
+  right: -60px; }
+
 #test-sharpspring-today-cta .fl-cta-button a {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 700;
@@ -2884,6 +2907,12 @@ header #sr-header-con .fl-row-content-wrap {
   #sharpspringform code::after {
     width: 30px;
     right: -30px; }
+  .sharpspringform--no-border code::before {
+    width: 30px;
+    left: -30px; }
+  .sharpspringform--no-border code::after {
+    width: 30px;
+    right: -30px; }
   .esg-filters .eg-search-wrapper {
     max-width: 300px !important; } }
 
@@ -2939,6 +2968,11 @@ header #sr-header-con .fl-row-content-wrap {
     width: 97%;
     padding: 0 20px; }
   #sharpspringform code::before, #sharpspringform code::after {
+    display: none; }
+  .sharpspringform--no-border code {
+    width: 97%;
+    padding: 0 20px; }
+  .sharpspringform--no-border code::before, .sharpspringform--no-border code::after {
     display: none; }
   #sharpspring-features .fl-module-content ul {
     width: 100%; } }
