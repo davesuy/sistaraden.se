@@ -2973,7 +2973,9 @@ header #sr-header-con .fl-row-content-wrap {
     width: 534px;
     height: auto !important; }
   #blog-posts-con .esg-singlefilters {
-    text-align: left !important; } }
+    text-align: left !important; }
+  .fl-node-5d19fd8833128.fl-module > .fl-module-content {
+    margin-top: -15%; } }
 
 @media screen and (max-width: 479px) {
   #sharpspringform code {
@@ -2987,6 +2989,10 @@ header #sr-header-con .fl-row-content-wrap {
     display: none; }
   #sharpspring-features .fl-module-content ul {
     width: 100%; } }
+
+@media screen and (max-width: 425px) {
+  .fl-node-5d19fd8833128.fl-module > .fl-module-content {
+    margin-top: -40%; } }
 
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }

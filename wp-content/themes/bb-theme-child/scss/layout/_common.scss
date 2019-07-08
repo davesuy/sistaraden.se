@@ -882,6 +882,10 @@ header {
 			text-align: left !important;
 		}
 	}
+
+	.fl-node-5d19fd8833128.fl-module > .fl-module-content {
+	    margin-top: -15%;
+	}
 }
 
 @media screen and (max-width: 479px)  {
@@ -907,5 +911,11 @@ header {
 		.fl-module-content ul {
 			width: 100%;
 		}
+	}
+}
+
+@media screen and (max-width: 425px){
+	.fl-node-5d19fd8833128.fl-module > .fl-module-content {
+	    margin-top: -40%;
 	}
 }
