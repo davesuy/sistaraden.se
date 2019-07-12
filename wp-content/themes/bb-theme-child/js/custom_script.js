@@ -252,7 +252,7 @@ jQuery(document).ready(function( $ ) {
       $isAnimatedDown = $('.second .down-animated');
 
 	$('#fullpage').fullpage({
-		licenseKey: 'FA8BB31DD2554F35AC9CCC50CA78D1E7',
+		licenseKey: 'FA8BB31D-D2554F35-AC9CCC50-CA78D1E7',
 		sectionsColor: ['#EAF3F5', '#EAF3F5', '#EAF3F5', '#EAF3F5', '#EAF3F5', '#EAF3F5'],
 		anchors: ['firstPage', 'secondPage', '3rdPage'],
 		menu: '#menu',
