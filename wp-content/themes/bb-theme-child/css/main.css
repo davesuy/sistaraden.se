@@ -2696,7 +2696,8 @@ header #sr-header-con .fl-row-content-wrap {
   right: 0;
   left: 0;
   background-color: #3A5048;
-  max-height: 217px; }
+  max-height: 217px;
+  z-index: 99999; }
   #cookie-consent-banner .cookieconsent .container.cookie-consent-container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -3209,7 +3210,8 @@ header #sr-header-con .fl-row-content-wrap {
 .esg-grid .esg-filters:nth-of-type(2) .esg-allfilter {
   display: none; }
 
-.esg-grid .eg-sistaraden-content {
+.esg-grid .eg-sistaraden-content,
+.esg-grid .eg-landing-page-sistaraden-content {
   -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.161); }
@@ -3274,12 +3276,18 @@ header #sr-header-con .fl-row-content-wrap {
     left: -72px;
     z-index: -1; }
 
-/*.eg-sistaraden-content .eg-sistaraden-element-0-a a:before {
+/*
+
+.eg-sistaraden-content .eg-sistaraden-element-0-a a:before,
+.eg-landing-page-sistaraden-content .eg-landing-page-sistaraden-element-0-a a:before {
 	max-width: 100%;
 	width: 64px;
 
-}*/
-.eg-sistaraden-content .eg-sistaraden-element-0-a a {
+}
+
+*/
+.eg-sistaraden-content .eg-sistaraden-element-0-a a,
+.eg-landing-page-sistaraden-content .eg-landing-page-sistaraden-element-0-a a {
   width: 100%;
   border-bottom: 3px solid #000;
   position: absolute;
@@ -3311,10 +3319,12 @@ header #sr-header-con .fl-row-content-wrap {
   opacity: 1; }
 
 /* Custom Media Width and Height */
-.eg-sistaraden-content a:focus {
+.eg-sistaraden-content a:focus,
+.eg-landing-page-sistaraden-content a:focus {
   color: inherit; }
 
-.eg-sistaraden-content .eg-sistaraden-element-0-a a {
+.eg-sistaraden-content .eg-sistaraden-element-0-a a,
+.eg-landing-page-sistaraden-content .eg-landing-page-sistaraden-element-0-a a {
   position: relative; }
 
 .esg-entry-media-wrapper, .esg-entry-cover {
@@ -3325,7 +3335,8 @@ header #sr-header-con .fl-row-content-wrap {
 .esg-overflowtrick {
   overflow: visible !important; }
 
-.eg-sistaraden-content {
+.eg-sistaraden-content,
+.eg-landing-page-sistaraden-content {
   min-height: 230px !important; }
 
 @media screen and (max-width: 768px) {
