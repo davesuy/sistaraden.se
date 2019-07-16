@@ -10,7 +10,6 @@
     overflow: hidden;
     position: relative;
     padding-top: 12px;
-    box-shadow: #00000029 0px 3px 6px;
 
     img{
         transition: transform .5s ease;
@@ -20,6 +19,7 @@
         height: auto;
         transition: .5s ease;
         backface-visibility: hidden;
+        box-shadow: #00000029 0px 3px 6px;
     }
 
     &:before {
@@ -138,7 +138,7 @@
    .about-us-card {
       .about-us-card-labels {
           position: absolute;
-          right: 13%;
+          right: 5%;
           bottom: 10%;
           top: 66%;
       }

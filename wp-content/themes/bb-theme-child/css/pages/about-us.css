@@ -9,8 +9,7 @@
   height: 394px;
   overflow: hidden;
   position: relative;
-  padding-top: 12px;
-  box-shadow: #00000029 0px 3px 6px; }
+  padding-top: 12px; }
   .about-us-card img {
     transition: transform .5s ease;
     opacity: 1;
@@ -18,7 +17,8 @@
     width: 100%;
     height: auto;
     transition: .5s ease;
-    backface-visibility: hidden; }
+    backface-visibility: hidden;
+    box-shadow: #00000029 0px 3px 6px; }
   .about-us-card:before {
     content: "";
     position: absolute;
@@ -97,7 +97,7 @@
 @media screen and (max-width: 768px) {
   .about-us-card .about-us-card-labels {
     position: absolute;
-    right: 13%;
+    right: 5%;
     bottom: 10%;
     top: 66%; }
   .about-us-card .hover-overlay {
