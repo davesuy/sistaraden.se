@@ -21,11 +21,11 @@ jQuery(document).ready(function( $ ) {
 
 	function hasScrolled() {
 	    var st = $(this).scrollTop();
-	    
+
 	    // Make scroll more than delta
 	    if(Math.abs(lastScrollTop - st) <= delta)
 	        return;
-	    
+
 	    // If scrolled down and past the navbar, add class .nav-up.
 	    if (st > lastScrollTop && st > navbarHeight){
 	        // Scroll Down
@@ -36,7 +36,7 @@ jQuery(document).ready(function( $ ) {
 	            $('#sr-mobile-menu').removeClass('nav-up').addClass('nav-down');
 	        }
 	    }
-	  
+
 	    lastScrollTop = st;
 	}
 
@@ -45,14 +45,26 @@ jQuery(document).ready(function( $ ) {
 	var boxWidth = $('.esg-grid .mainul li.eg-sistaraden-wrapper .eg-sistaraden-element-0-a a').width();
 
 	$('.esg-grid .mainul li.eg-sistaraden-wrapper').mouseenter(function(){
-			$(this).find('.eg-sistaraden-element-0-a a').animate({
-				width: "220"
-			},'fast');
-		}).mouseleave(function(){
-			$(this).find('.eg-sistaraden-element-0-a a').animate({
-				width: boxWidth + 3
-			}, 'fast');
-		});
+		$(this).find('.eg-sistaraden-element-0-a a').animate({
+			width: "220"
+		},'fast');
+	}).mouseleave(function(){
+		$(this).find('.eg-sistaraden-element-0-a a').animate({
+			width: boxWidth + 3
+		}, 'fast');
+	});
+
+    var boxWidth = $('.esg-grid .mainul li.eg-sistaraden-wrapper .eg-landing-page-sistaraden-element-0-a a').width();
+
+    $('.esg-grid .mainul li.eg-sistaraden-wrapper').mouseenter(function(){
+        $(this).find('.eg-landing-page-sistaraden-element-0-a a').animate({
+            width: "220"
+        },'fast');
+    }).mouseleave(function(){
+        $(this).find('.eg-landing-page-sistaraden-element-0-a a').animate({
+            width: boxWidth + 3
+        }, 'fast');
+    });
 
 	// Placeholder for subscribe field
   	// $('#user_login').attr('placeholder', 'E-post');
@@ -141,24 +153,24 @@ jQuery(document).ready(function( $ ) {
 	$("body").on("click", "#cookie-consent-banner .cookieconsent .buttons .no-btn", function() {
         $("#cookie-consent-banner ").hide();
     });
-    
+
     $("body").on("click", "#cookie-consent-banner  .cookieconsent .buttons .yes-btn", function() {
         setLocalCookie('username','newuser',2);
         $("#cookie-consent-banner").hide();
     });
-    
+
     function setLocalCookie(cname, cvalue, days) {
         var date = new Date();
         // Default at 365 days.
         days = days || 365;
-    
+
         // Get unix milliseconds at current time plus number of days
         date.setTime(+ date + (days * 86400000)); //24 * 60 * 60 * 1000
-    
+
         window.document.cookie = cname + "=" + cvalue + "; expires=" + date.toGMTString() + "; path=/";
 
     }
-    
+
     function getCookie(cname) {
       var name = cname + "=";
       var ca = document.cookie.split(';');
@@ -177,30 +189,30 @@ jQuery(document).ready(function( $ ) {
     (function($){
 
         $(function() {
-        
+
         	clickColumn();
-        
+
         });
-        
+
      /*
       * Make a BeaverBuilder Column clickable.
       * There must be a link tag in the column element.
       * Add the CSS class .click-col in the Column Settins Advanced Tab CSS value
       */
-      
+
       function clickColumn() {
-    
+
     	$('.click-col').css('cursor', 'pointer');
     	$('.click-col').on('click', function(event){
     		$(this).find('a')[0].click();
     	});
-    
+
     	$('.click-col a').on('click', function(event){
     		event.stopPropagation();
-    	});	
-    	
+    	});
+
       }
-      
+
     })(jQuery);
 
 });
