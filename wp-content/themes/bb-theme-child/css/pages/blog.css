@@ -196,7 +196,8 @@
   transition-property: width;
   transition-duration: 0.2s; }
 
-.esg-grid .mainul li.eg-sistaraden-wrapper:after {
+.esg-grid .mainul li.eg-sistaraden-wrapper:after,
+.esg-grid .mainul li.eg-landing-page-sistaraden-wrapper:after {
   content: "";
   background: url(../images/dstripe/small-green-stripe.png) repeat scroll 0 0 transparent;
   opacity: 0;
@@ -212,7 +213,8 @@
   -o-transition: opacity 1s;
   background-size: cover; }
 
-.esg-grid .mainul li.eg-sistaraden-wrapper:hover:after {
+.esg-grid .mainul li.eg-sistaraden-wrapper:hover:after,
+.esg-grid .mainul li.eg-landing-page-sistaraden-wrapper:hover:after {
   opacity: 1; }
 
 /* Custom Media Width and Height */
