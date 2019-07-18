@@ -117,7 +117,7 @@ $breakpoint: map-get($breakpoints, sm);
 
     .fl-row-content-wrap {
       padding-right: 10.15625%;
-      padding-left: 10.15625%; 
+      padding-left: 10.15625%;
     }
 
   }
@@ -589,7 +589,6 @@ $breakpoint: map-get($breakpoints, sm);
         a {
 
           img {
-              max-width: 38.5px;
               height: auto;
               max-height: unset;
           }
