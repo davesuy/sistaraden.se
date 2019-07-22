@@ -3020,6 +3020,9 @@ header #sr-header-con .fl-row-content-wrap {
   z-index: 100000;
   width: 100% !important; }
 
+.sr-mobile-menu-toggle img {
+  width: 45px; }
+
 #menu-main-menu li a:after,
 #menu-main-menu-de li a:after,
 #menu-main-menu-en li a:after {
