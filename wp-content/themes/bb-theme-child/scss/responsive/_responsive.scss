@@ -589,6 +589,7 @@ $breakpoint: map-get($breakpoints, sm);
         a {
 
           img {
+              max-width: 38.5px;
               height: auto;
               max-height: unset;
           }

@@ -3987,6 +3987,7 @@ header #sr-header-con .fl-row-content-wrap {
       left: -100px;
       z-index: -1; }
   .wpml-ls-legacy-dropdown li a img {
+    max-width: 38.5px;
     height: auto;
     max-height: unset; }
   #menu-language-switcher a.wpml-ls-item-toggle:after, #menu-language-switcher-de a.wpml-ls-item-toggle:after, #menu-language-switcher-en a.wpml-ls-item-toggle:after, .wpml-ls-legacy-dropdown a.wpml-ls-item-toggle:after {
