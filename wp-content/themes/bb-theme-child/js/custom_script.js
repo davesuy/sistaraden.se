@@ -54,17 +54,17 @@ jQuery(document).ready(function( $ ) {
 		}, 'fast');
 	});
 
-    var boxWidth = $('.esg-grid .mainul li.eg-landing-page-sistaraden-wrapper .eg-landing-page-sistaraden-element-0-a a').width();
+    // var boxWidth = $('.esg-grid .mainul li.eg-landing-page-sistaraden-wrapper .eg-landing-page-sistaraden-element-0-a a').width();
 
-    $('.esg-grid .mainul li.eg-landing-page-sistaraden-wrapper').mouseenter(function(){
-        $(this).find('.eg-landing-page-sistaraden-element-0-a a').animate({
-            width: "220"
-        },'fast');
-    }).mouseleave(function(){
-        $(this).find('.eg-landing-page-sistaraden-element-0-a a').animate({
-            width: boxWidth + 3
-        }, 'fast');
-    });
+    // $('.esg-grid .mainul li.eg-landing-page-sistaraden-wrapper').mouseenter(function(){
+    //     $(this).find('.eg-landing-page-sistaraden-element-0-a a').animate({
+    //         width: "220"
+    //     },'fast');
+    // }).mouseleave(function(){
+    //     $(this).find('.eg-landing-page-sistaraden-element-0-a a').animate({
+    //         width: boxWidth + 3
+    //     }, 'fast');
+    // });
 
 	// Placeholder for subscribe field
   	// $('#user_login').attr('placeholder', 'E-post');
