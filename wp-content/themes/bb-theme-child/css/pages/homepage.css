@@ -69,6 +69,16 @@
 .english-language .home-tool-section-con .fl-col .fl-col-content .fl-module.fl-module-separator .fl-separator {
   width: 80px; }
 
+@media screen and (max-width: 890px) and (min-width: 769px) {
+  .home-tool-section-con-first .sr-big-icon {
+    min-height: 150px; }
+  .home-tool-section-con-first .home-tools-section-title {
+    min-height: 100px; }
+  .home-tool-section-con-first .home-tools-section-description {
+    min-height: 275px; }
+  .home-tool-section-con-first .fl-node-5cd532366b77c.fl-module > .fl-module-content {
+    margin-top: 30px !important; } }
+
 @media screen and (max-width: 768px) {
   .home .fl-page-content {
     padding-top: 50px; }
