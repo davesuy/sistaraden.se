@@ -1,4 +1,3 @@
-
 .red-stripe {
 
 	position: relative;
@@ -12,14 +11,16 @@
 	}
 
 }
-.red-stripe.red-stripe-diagonal {
-	&:before {
-		background: url(#{$images_dir:}/dstripe/red-stripe-diagonal.png) repeat scroll 0 0 transparent;
-		height: 217px;
-	    max-width: 333px;
-	    width: 100%;
-	    left: -30px;
-	    top: -20px
+.red-stripe{
+	&.red-stripe-diagonal {
+		&:before {
+			background: url(#{$images_dir:}/dstripe/red-stripe-diagonal.png) repeat scroll 0 0 transparent;
+			height: 217px;
+		    max-width: 333px;
+		    width: 100%;
+		    left: -30px;
+		    top: -20px
+		}
 	}
 }
 
@@ -258,12 +259,16 @@
 	    transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
 	    will-change: box-shadow;
 	    transform: scale(1.08);
-	    }
+	}
 }
 
 .no-gutters {
     padding: 5px;
     margin: 0px;
+}
+
+.thick-border{
+    border-top: 4px solid #222222;
 }
 
 form#loginform {
@@ -728,23 +733,6 @@ header {
 
 }
 
-#menu-footer-menu {
-	li {
-	  a {
-	    width: fit-content;
-	    margin-left: auto;
-	  }
-	}
-}
-
-.footer-col-1 {
-	.footer-link {
-		.fl-button{
-		    width: fit-content;
-		    margin-right: auto;
-		}
-	}
-}
 
 .custom-size-534x268 {
 	.fl-photo {
@@ -759,6 +747,12 @@ header {
 	img {
 		display: block;
 		margin: 0 auto;
+	}
+}
+
+.fl-page-content {
+	a{
+    	font-weight: 700;
 	}
 }
 
