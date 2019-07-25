@@ -4102,19 +4102,30 @@ header #sr-header-con .fl-row-content-wrap {
   transition: width 0.4s;
   margin-top: 4px; }
 
-.footer-col-2.footer-second-last ul li a:hover:after
-.footer-col-2.footer-second-last ul li a:after
+.footer-col-2 .footer-link .fl-button {
+  width: fit-content;
+  margin-right: auto; }
+
+.footer-col-2 .footer-link a:hover span:after {
+  width: 100%;
+  transition: width 0.2s; }
+
+.footer-col-2 .footer-link a span:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width 0.4s;
+  margin-top: 4px; }
+
 .footer-col-2.footer-second-last ul li a {
   width: fit-content !important;
   margin-left: auto; }
-  .footer-col-2.footer-second-last ul li a:hover:after
-.footer-col-2.footer-second-last ul li a:after
-.footer-col-2.footer-second-last ul li a:hover:after {
+  .footer-col-2.footer-second-last ul li a:hover:after {
     width: 100%;
     transition: width 0.2s; }
-  .footer-col-2.footer-second-last ul li a:hover:after
-.footer-col-2.footer-second-last ul li a:after
-.footer-col-2.footer-second-last ul li a span:after {
+  .footer-col-2.footer-second-last ul li a:after {
     content: "";
     display: block;
     width: 0;
@@ -4123,8 +4134,6 @@ header #sr-header-con .fl-row-content-wrap {
     transition: width 0.4s;
     margin-top: 4px; }
 
-.footer-col-2.footer-second-last ul li a:hover:after
-.footer-col-2.footer-second-last ul li a:after
 .footer-col-2 .fl-button {
   width: fit-content !important;
   margin-right: auto; }
