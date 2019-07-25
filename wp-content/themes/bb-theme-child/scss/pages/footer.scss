@@ -25,14 +25,16 @@
 		 	}
 
 		 	span {
-		 		content: "";
-			    display: block;
-			    width: 0;
-			    height: 3px;
-			    background: #fff;
-			    transition: width 0.4s;
-			    margin-top: 4px;
-		 	}
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 3px;
+                    background: #fff;
+                    transition: width 0.4s;
+                    margin-top: 4px;
+                }
+            }
 		}
 
 	}

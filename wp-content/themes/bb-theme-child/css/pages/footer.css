@@ -10,7 +10,7 @@
   width: 100%;
   transition: width 0.2s; }
 
-.footer-col-1 .footer-link a span {
+.footer-col-1 .footer-link a span:after {
   content: "";
   display: block;
   width: 0;
