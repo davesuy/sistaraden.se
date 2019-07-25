@@ -39,7 +39,8 @@
 
 	}
 }
-
+.footer-col-2.footer-second-last ul li a:hover:after
+.footer-col-2.footer-second-last ul li a:after
 .footer-col-2 {
 	&.footer-second-last {
 		ul {
@@ -56,15 +57,17 @@
 						}
 					}
 
-					&:after{
-						content: "";
-					    display: block;
-					    width: 0;
-					    height: 3px;
-					    background: #fff;
-					    transition: width 0.4s;
-					    margin-top: 4px;
-					}
+                    span {
+                        &:after {
+                            content: "";
+                            display: block;
+                            width: 0;
+                            height: 3px;
+                            background: #fff;
+                            transition: width 0.4s;
+                            margin-top: 4px;
+                        }
+                    }
 				}
 			}
 		}
