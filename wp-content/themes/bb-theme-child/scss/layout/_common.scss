@@ -756,6 +756,13 @@ header {
 	}
 }
 
+.growth-black-stripe {
+	.fl-row-fixed-width:before {
+		z-index: 0;
+		top: 200px;
+	}
+}
+
 /* PAGE STY */
 
 
