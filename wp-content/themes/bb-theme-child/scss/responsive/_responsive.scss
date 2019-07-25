@@ -64,8 +64,6 @@ $breakpoint: map-get($breakpoints, sm);
 // Start CSS
 
 
-
-
 @include respond-below(lp) {
 
 	#sr-header-con {
@@ -96,7 +94,6 @@ $breakpoint: map-get($breakpoints, sm);
       }
 
 		}
-
 
 		a.fl-button {
 			padding-left: 12px;
@@ -138,7 +135,6 @@ $breakpoint: map-get($breakpoints, sm);
   }
 
 }
-
 
 @include respond-below(l) {
 
