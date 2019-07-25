@@ -758,8 +758,8 @@ header {
 
 .growth-black-stripe {
 	.fl-row-fixed-width:before {
-		z-index: 0;
-		top: 200px;
+		z-index: 0 !important;
+		top: 200px !important;
 	}
 }
 
