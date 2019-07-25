@@ -713,6 +713,16 @@ header {
 	}
 }
 
+.growth-black-stripe {
+	.fl-row-fixed-width:before {
+		z-index: 0 !important;
+		top: 200px !important;
+	}
+	.fl-row-content-wrap {
+		margin-top: -100px !important;
+	}
+}
+
 /* PAGE STY */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
     .page-kostnadsfri-konsultation .fl-page-content,
