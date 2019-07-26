@@ -68,31 +68,3 @@
 
 .english-language .home-tool-section-con .fl-col .fl-col-content .fl-module.fl-module-separator .fl-separator {
   width: 80px; }
-
-@media screen and (max-width: 890px) and (min-width: 769px) {
-  .home-tool-section-con-first .sr-big-icon {
-    min-height: 150px; }
-  .home-tool-section-con-first .home-tools-section-title {
-    min-height: 100px; }
-  .home-tool-section-con-first .home-tools-section-description {
-    min-height: 280px; }
-  .home-tool-section-con-first .fl-node-5cd532366b77c.fl-module > .fl-module-content {
-    margin-top: 30px !important; } }
-
-@media screen and (max-width: 768px) {
-  .home .fl-page-content {
-    padding-top: 50px; }
-  .sr-parallax-content {
-    left: 0 !important; }
-  .sr-heading-bg .fl-heading .fl-heading-text {
-    padding: 0 22px;
-    width: 100%; } }
-
-@media screen and (max-width: 425px) {
-  body #sr-parallax-section .sr-parallax-content .sr-prallax-content-heading-col {
-    left: 0; }
-  .home.fl-builder-mobile .fl-node-5cfab81f16ac8 > .fl-row-content-wrap {
-    background-position: -503px 7px !important; }
-  body #sr-parallax-section .sr-parallax-content {
-    position: relative;
-    top: -45px; } }

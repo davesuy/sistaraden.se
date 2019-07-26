@@ -86,24 +86,3 @@
       border-radius: 99em;
       box-shadow: 0 3px 6px #00000029;
       width: 80px; }
-
-@media screen and (max-width: 768px) {
-  .about-us-card .about-us-card-labels {
-    position: absolute;
-    right: 5%;
-    bottom: 10%;
-    top: 66%; }
-  .about-us-card .hover-overlay {
-    top: 77%; }
-  .page-om-oss .fl-page-content,
-  .page-uber-uns .fl-page-content,
-  .page-about-us .fl-page-content {
-    overflow: hidden; } }
-
-@media screen and (max-width: 500px) {
-  .blue-stripe:before {
-    height: 300px; }
-  .about-us-card .about-us-card-labels {
-    position: absolute;
-    right: 13%;
-    bottom: 10%; } }
