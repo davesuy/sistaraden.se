@@ -989,11 +989,11 @@ $breakpoint: map-get($breakpoints, sm);
   }
   .home-tool-section-con .icon {
     display: table;
-    height: 90px;
+    height: 60px;
   }
   .home-tool-section-con .icon > div.fl-node-content {
     display: table-cell;
-    height: 90px;
+    height: 60px;
     vertical-align: middle;
   }
   .learn-more {
@@ -1004,6 +1004,9 @@ $breakpoint: map-get($breakpoints, sm);
     display: table-cell;
     height: 60px;
     vertical-align: middle;
+  }
+  .bottom-line {
+    height: 20px;
   }
 }
 
