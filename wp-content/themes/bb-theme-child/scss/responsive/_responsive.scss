@@ -997,16 +997,17 @@ $breakpoint: map-get($breakpoints, sm);
     height: 60px;
     vertical-align: middle;
   }
-  .learn-more {
+  .home-tool-section-con .learn-more {
     display: table;
     height: 60px;
+    width: 100%;
   }
-  .learn-more > div.fl-node-content {
+  .home-tool-section-con .learn-more > div.fl-node-content {
     display: table-cell;
     height: 60px;
     vertical-align: middle;
   }
-  .bottom-line {
+  .home-tool-section-con .bottom-line {
     height: 20px;
   }
 }
