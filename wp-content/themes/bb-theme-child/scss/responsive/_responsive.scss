@@ -309,7 +309,7 @@ $breakpoint: map-get($breakpoints, sm);
       margin-right: 20%;
       margin-top: 50px;
   }
- 
+
   .pricing-column-wrapper {
 
     .pricing-column-con {
@@ -357,11 +357,11 @@ $breakpoint: map-get($breakpoints, sm);
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   .page-kostnadsfri-konsultation {
     .fl-page-content {
-      padding-top: 100px; 
+      padding-top: 100px;
     }
   }
   .page-consultation {
-    .fl-page-content { 
+    .fl-page-content {
       padding-top: 100px;
     }
   }
@@ -395,12 +395,12 @@ $breakpoint: map-get($breakpoints, sm);
 
 @media screen and (max-width: 959px)  {
   .analyze-seo-thank-you {
-    .thank-you-emoji-container { 
-      width: 80%; 
+    .thank-you-emoji-container {
+      width: 80%;
     }
     .paragraph-group {
-      > .fl-col-content { 
-        width: 90%; 
+      > .fl-col-content {
+        width: 90%;
       }
     }
   }
@@ -728,7 +728,7 @@ $breakpoint: map-get($breakpoints, sm);
         left: 0;
     }
     #notice-container::after {
-      display: none; 
+      display: none;
     }
   }
 
@@ -842,8 +842,8 @@ $breakpoint: map-get($breakpoints, sm);
       padding-top: 50px;
     }
   }
-  .sr-parallax-content{ 
-    left: 0 !important; 
+  .sr-parallax-content{
+    left: 0 !important;
   }
 
   .sr-heading-bg {
@@ -876,7 +876,7 @@ $breakpoint: map-get($breakpoints, sm);
    .pricing-column-con {
     max-width: 60% !important;
     margin-left: 20%;
-    margin-right: 20%; 
+    margin-right: 20%;
   }
 
   .pricing-column-wrapper {
@@ -984,6 +984,27 @@ $breakpoint: map-get($breakpoints, sm);
     }
   }
 
+  .home-tool-section-con .title {
+    height: 90px;
+  }
+  .home-tool-section-con .icon {
+    display: table;
+    height: 90px;
+  }
+  .home-tool-section-con .icon > div.fl-node-content {
+    display: table-cell;
+    height: 90px;
+    vertical-align: middle;
+  }
+  .learn-more {
+    display: table;
+    height: 60px;
+  }
+  .learn-more > div.fl-node-content {
+    display: table-cell;
+    height: 60px;
+    vertical-align: middle;
+  }
 }
 
 @media screen and (max-width: 500px)  {
@@ -1049,7 +1070,7 @@ $breakpoint: map-get($breakpoints, sm);
       .sr-parallax-content {
         position: relative;
         top: -45px;
-        
+
         .sr-prallax-content-heading-col {
           left: 0;
         }
@@ -1397,7 +1418,7 @@ $breakpoint: map-get($breakpoints, sm);
   #s-footer-con {
 
     .footer-last {
-      
+
       .footer-address{
           width: 210px;
           margin-left: auto;
