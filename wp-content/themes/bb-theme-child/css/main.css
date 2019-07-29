@@ -4010,7 +4010,8 @@ header #sr-header-con .fl-row-content-wrap {
     height: 90px; }
   .home-tool-section-con .icon {
     display: table;
-    height: 60px; }
+    height: 60px;
+    width: 100%; }
   .home-tool-section-con .icon > div.fl-node-content {
     display: table-cell;
     height: 60px;

@@ -990,6 +990,7 @@ $breakpoint: map-get($breakpoints, sm);
   .home-tool-section-con .icon {
     display: table;
     height: 60px;
+    width: 100%;
   }
   .home-tool-section-con .icon > div.fl-node-content {
     display: table-cell;
