@@ -155,7 +155,7 @@ jQuery(document).ready(function( $ ) {
     });
 
     $("body").on("click", "#cookie-consent-banner  .cookieconsent .buttons .yes-btn", function() {
-        setLocalCookie('username','newuser',2);
+        setLocalCookie('username','newuser',3);
         $("#cookie-consent-banner").hide();
     });
 
