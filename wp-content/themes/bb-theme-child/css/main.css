@@ -2825,6 +2825,9 @@ header #sr-header-con .fl-row-content-wrap {
 .growth-black-stripe .fl-row-content-wrap {
   margin-top: -100px !important; }
 
+.eg-sistaraden-element-38-a {
+  height: 80px; }
+
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
   .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {
@@ -4199,7 +4202,7 @@ header #sr-header-con .fl-row-content-wrap {
     margin-left: unset;
     margin-right: auto; }
   ul#menu-footer-menu, ul#menu-footer-menu-de, ul#menu-footer-menu-en {
-    margin-left: 10% !important;
+    margin-left: 0 !important;
     margin-right: 0px !important;
     padding: 0px !important;
     width: 100% !important; }
