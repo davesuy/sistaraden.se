@@ -323,12 +323,12 @@ add_shortcode( 'login_form', 'wpabsolute_login_form_shortcode' );
 //Page Slug Body Class
 
 function add_slug_body_class( $classes ) {
-	
+
 	global $post;
 
 
     $current_language = ICL_LANGUAGE_CODE;
-     
+
     if($current_language == 'de'){
 
         $output_lang = 'german-language';
@@ -358,19 +358,19 @@ function cookie_consent_banner () {
 
 	if(!isset($_COOKIE['username']) || strcmp($_COOKIE['koiCookieConsent'],'0') == 0){
 		 if(ICL_LANGUAGE_CODE=='sv'){
-		 	$policyLink = esc_url('https://info.sistaraden.se/datapolicy'); 
-		 } 
-        	
+		 	$policyLink = esc_url('https://info.sistaraden.se/datapolicy');
+		 }
+
 	    if(ICL_LANGUAGE_CODE=='de'){
-	    	$policyLink = esc_url('http://info.sistaraden.se/datapolicy-english/'); 
-	    } 
-	        
-       
+	    	$policyLink = esc_url('http://info.sistaraden.se/datapolicy-english/');
+	    }
+
+
 	    echo '<div id="cookie-consent-banner"><div class="cookieconsent full-width"><div class="container cookie-consent-container"><div class="row"><p>';
 		echo _e("We use cookies. When using our website you consent to the use of cookies according to our ");
 		echo '<a href="'.$policyLink.'" target="_blank">';
 		echo _e("Privacy Policy");
-		echo '</a></p></div><div class="row"><div class="buttons">';		
+		echo '</a></p></div><div class="row"><div class="buttons">';
 		echo '<button class="primary-btn yes-btn" onclick="window.runKoiTracking()">';
 		echo _e('I agree');
 		echo '</button><button class="secondary-btn no-btn" onclick="window.removeKoiConsent()">';
@@ -381,26 +381,26 @@ function cookie_consent_banner () {
 add_shortcode('cookie-consent-banner', 'cookie_consent_banner');
 
 // wpml shortcodes --------------------
- 
+
 add_shortcode( 'wpml_language', 'wpml_find_language');
- 
- 
+
+
 /* ---------------------------------------------------------------------------
- 
+
  * Shortcode [wpml_language language="en"] [/wpml_language]
- 
+
  * --------------------------------------------------------------------------- */
- 
+
 function wpml_find_language( $atts, $content = null ) {
- 
+
    $a = shortcode_atts( array(
 		'language' => 'se'
 	), $atts );
-    
+
     $language = $a['language'];
 
     $current_language = ICL_LANGUAGE_CODE;
-     
+
     if($current_language == $language){
 
         $output = do_shortcode($content);
@@ -410,43 +410,138 @@ function wpml_find_language( $atts, $content = null ) {
          $output = do_shortcode($content);
 
     }
-         
+
     return $output;
 }
 
 function hook_tracking_code (){
 	?>
-		<script>
-		(function () {
-      var checkConsent = function () {
-        var results = document.cookie.match('(^|;) ?koiCookieConsent=([^;]*)(;|$)');
-        if (!results || !results[2]) return;
-        return decodeURIComponent(results[2]) === "1";
-      };
-      var setCookie = function (v) {
-        var expires = (new Date((new Date()).getTime() + 324000000000));
-        document.cookie = 'koiCookieConsent=' + v + '; expires=' + expires.toUTCString();
-      };
-      window.runKoiTracking = function () {
-        if (window.koiTrackingRan) return;
-        if (!checkConsent()) setCookie('1');
-        window.koiTrackingRan = true;
-        var ss = document.createElement('script');
-        ss.type = 'text/javascript'; ss.async = true;
-        ss.src = 'https://KOI-3Z5541FJ9K.marketingautomation.services/client/ss.js?ver=1.1.1';
-        var scr = document.getElementsByTagName('script')[0];
-        scr.parentNode.insertBefore(ss, scr);
-      };
-      window.removeKoiConsent = function () {
-        setCookie('0');
-      };
-      if (checkConsent()) {
-        runKoiTracking();
-      }
-    })();</script>
+		<?php if(ICL_LANGUAGE_CODE=='sv') { ?>
+		    <script type="text/javascript">
+		       var _ss = _ss || [];
+		       _ss.push(['_setDomain', 'https://koi-3QND5HPDTM.marketingautomation.services/net']);
+		       _ss.push(['_setAccount', 'KOI-3Z5541FJ9K']);
+		       _ss.push(['_trackPageView']);
+			    (function () {
+					var checkConsent = function () {
+						var results = document.cookie.match('(^|;) ?koiCookieConsent=([^;]*)(;|$)');
 
+						if (!results || !results[2]) {
+							return;
+						}
+						return decodeURIComponent(results[2]) === "1";
+					};
+
+					var setCookie = function (v) {
+						var expires = (new Date((new Date()).getTime() + 324000000000));
+						document.cookie = 'koiCookieConsent=' + v + '; expires=' + expires.toUTCString();
+					};
+
+					window.runKoiTracking = function () {
+						if (window.koiTrackingRan) {
+							return;
+						}
+						if (!checkConsent()) setCookie('1');
+						window.koiTrackingRan = true;
+						var ss = document.createElement('script');
+						ss.type = 'text/javascript'; ss.async = true;
+						ss.src = 'https://KOI-3Z5541FJ9K.marketingautomation.services/client/ss.js?ver=1.1.1';
+						var scr = document.getElementsByTagName('script')[0];
+						scr.parentNode.insertBefore(ss, scr);
+					};
+					window.removeKoiConsent = function () {
+						setCookie('0');
+					};
+					if (checkConsent()) {
+						runKoiTracking();
+					}
+				})();
+		    </script>
+		<?php } elseif(ICL_LANGUAGE_CODE=='en') { ?>
+		    <script type="text/javascript">
+		       var _ss = _ss || [];
+		       _ss.push(['_setDomain', 'https://koi-3QND5HPDTM.marketingautomation.services/net']);
+		       _ss.push(['_setAccount', 'KOI-44NW0LZQYW']);
+		       _ss.push(['_trackPageView']);
+		    	(function () {
+					var checkConsent = function () {
+						var results = document.cookie.match('(^|;) ?koiCookieConsent=([^;]*)(;|$)');
+
+						if (!results || !results[2]) {
+							return;
+						}
+						return decodeURIComponent(results[2]) === "1";
+					};
+
+					var setCookie = function (v) {
+						var expires = (new Date((new Date()).getTime() + 324000000000));
+						document.cookie = 'koiCookieConsent=' + v + '; expires=' + expires.toUTCString();
+					};
+
+					window.runKoiTracking = function () {
+						if (window.koiTrackingRan) {
+							return;
+						}
+						if (!checkConsent()) setCookie('1');
+						window.koiTrackingRan = true;
+						var ss = document.createElement('script');
+						ss.type = 'text/javascript'; ss.async = true;
+						ss.src = 'https://KOI-44NW0LZQYW.marketingautomation.services/client/ss.js?ver=1.1.1';
+						var scr = document.getElementsByTagName('script')[0];
+						scr.parentNode.insertBefore(ss, scr);
+					};
+					window.removeKoiConsent = function () {
+						setCookie('0');
+					};
+					if (checkConsent()) {
+						runKoiTracking();
+					}
+				})();
+		    </script>
+		<?php } elseif(ICL_LANGUAGE_CODE=='de') { ?>
+		    <script type="text/javascript">
+		       var _ss = _ss || [];
+		       _ss.push(['_setDomain', 'https://koi-3QND5HPDTM.marketingautomation.services/net']);
+		       _ss.push(['_setAccount', 'KOI-44NVFR81FS']);
+		       _ss.push(['_trackPageView']);
+			    (function () {
+					var checkConsent = function () {
+						var results = document.cookie.match('(^|;) ?koiCookieConsent=([^;]*)(;|$)');
+
+						if (!results || !results[2]) {
+							return;
+						}
+						return decodeURIComponent(results[2]) === "1";
+					};
+
+					var setCookie = function (v) {
+						var expires = (new Date((new Date()).getTime() + 324000000000));
+						document.cookie = 'koiCookieConsent=' + v + '; expires=' + expires.toUTCString();
+					};
+
+					window.runKoiTracking = function () {
+						if (window.koiTrackingRan) {
+							return;
+						}
+						if (!checkConsent()) setCookie('1');
+						window.koiTrackingRan = true;
+						var ss = document.createElement('script');
+						ss.type = 'text/javascript'; ss.async = true;
+						ss.src = 'https://KOI-44NVFR81FS.marketingautomation.services/client/ss.js?ver=1.1.1';
+						var scr = document.getElementsByTagName('script')[0];
+						scr.parentNode.insertBefore(ss, scr);
+					};
+					window.removeKoiConsent = function () {
+						setCookie('0');
+					};
+					if (checkConsent()) {
+						runKoiTracking();
+					}
+				})();
+		    </script>
+		<?php } ?>
 	<?php
-} 
+}
 add_action('wp_head', 'hook_tracking_code');
 
 function footer_ga_hook_tracking_code () {
@@ -457,7 +552,7 @@ function footer_ga_hook_tracking_code () {
 
 	if ( defined( 'ICL_LANGUAGE_CODE' ) && 'sv' == ICL_LANGUAGE_CODE ) {
 
-	
+
 		?>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406859-1"></script>
@@ -475,7 +570,7 @@ function footer_ga_hook_tracking_code () {
 	else if ( defined( 'ICL_LANGUAGE_CODE' ) && 'de' == ICL_LANGUAGE_CODE ) {
 
 		 ?>
-	
+
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406859-2"></script>
 		<script>
 		 window.dataLayer = window.dataLayer || [];
@@ -483,13 +578,13 @@ function footer_ga_hook_tracking_code () {
 		 gtag('js', new Date());
 
 		 gtag('config', 'UA-112406859-2');
-		 
+
 		</script>
 
 	<?php }
 	// EN language
 	else if ( defined( 'ICL_LANGUAGE_CODE' ) && 'en' == ICL_LANGUAGE_CODE ) {
-		
+
 		?>
 
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112406859-3"></script>
@@ -499,13 +594,13 @@ function footer_ga_hook_tracking_code () {
 		 gtag('js', new Date());
 
 		 gtag('config', 'UA-112406859-3');
-		 
+
 		</script>
 
 	<?php }
-	
 
-} 
+
+}
 
 add_action('wp_footer', 'footer_ga_hook_tracking_code');
 
@@ -521,8 +616,8 @@ function fb_pixel_base_code (){
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window,document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    
-    fbq('init', '176908109581048'); 
+
+    fbq('init', '176908109581048');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=176908109581048&ev=PageView&noscript=1"/></noscript>
