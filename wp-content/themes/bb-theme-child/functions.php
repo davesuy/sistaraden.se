@@ -445,7 +445,7 @@ function hook_tracking_code (){
 						window.koiTrackingRan = true;
 						var ss = document.createElement('script');
 						ss.type = 'text/javascript'; ss.async = true;
-						ss.src = 'https:koi-3QND5HPDTM.marketingautomation.services/client/ss.js?ver=2.2.1';
+						ss.src = 'https://koi-3QND5HPDTM.marketingautomation.services/client/ss.js?ver=2.2.1';
 						var scr = document.getElementsByTagName('script')[0];
 						scr.parentNode.insertBefore(ss, scr);
 					};
@@ -486,7 +486,7 @@ function hook_tracking_code (){
 						window.koiTrackingRan = true;
 						var ss = document.createElement('script');
 						ss.type = 'text/javascript'; ss.async = true;
-						ss.src = 'https:koi-3QND5HPDTM.marketingautomation.services/client/ss.js?ver=2.2.1';
+						ss.src = 'https://koi-3QND5HPDTM.marketingautomation.services/client/ss.js?ver=2.2.1';
 						var scr = document.getElementsByTagName('script')[0];
 						scr.parentNode.insertBefore(ss, scr);
 					};
@@ -527,7 +527,7 @@ function hook_tracking_code (){
 						window.koiTrackingRan = true;
 						var ss = document.createElement('script');
 						ss.type = 'text/javascript'; ss.async = true;
-						ss.src = 'https:koi-3QND5HPDTM.marketingautomation.services/client/ss.js?ver=2.2.1';
+						ss.src = 'https://koi-3QND5HPDTM.marketingautomation.services/client/ss.js?ver=2.2.1';
 						var scr = document.getElementsByTagName('script')[0];
 						scr.parentNode.insertBefore(ss, scr);
 					};
