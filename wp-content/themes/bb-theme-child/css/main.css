@@ -3074,6 +3074,9 @@ header #sr-header-con .fl-row-content-wrap {
     padding: 0;
     font-size: 15px; }
 
+.fl-builder-content .footer-link .fl-button-wrap a {
+  display: inline-block; }
+
 .kunskap-title {
   position: relative;
   top: 75px; }
