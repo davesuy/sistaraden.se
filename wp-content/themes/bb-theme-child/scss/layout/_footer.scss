@@ -3,6 +3,7 @@
 	  a {
 		width: fit-content;
 		margin-left: auto;
+        display: inline-block;
 	  }
 	}
 }
@@ -273,6 +274,10 @@
 
         }
 
+    }
+
+    .email-link {
+        display: inline-block;
     }
 
 }

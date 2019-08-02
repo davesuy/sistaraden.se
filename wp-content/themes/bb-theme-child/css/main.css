@@ -2923,7 +2923,8 @@ header #sr-header-con .fl-row-content-wrap {
 
 #menu-footer-menu li a {
   width: fit-content;
-  margin-left: auto; }
+  margin-left: auto;
+  display: inline-block; }
 
 .footer-col-1 .footer-link .fl-button {
   width: fit-content;
@@ -3075,6 +3076,9 @@ header #sr-header-con .fl-row-content-wrap {
     font-size: 15px; }
 
 .fl-builder-content .footer-link .fl-button-wrap a {
+  display: inline-block; }
+
+.fl-builder-content .email-link {
   display: inline-block; }
 
 .kunskap-title {
