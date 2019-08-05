@@ -4219,7 +4219,7 @@ header #sr-header-con .fl-row-content-wrap {
     padding: 10px 0 !important;
     text-align: -webkit-left; }
   ul#menu-footer-menu li, ul#menu-footer-menu-de li, ul#menu-footer-menu-en li {
-    text-align: -webkit-center; }
+    text-align: -webkit-left; }
   #s-footer-con .footer-last .footer-address {
     width: 210px;
     margin-left: auto;
