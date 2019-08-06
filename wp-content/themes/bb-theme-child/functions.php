@@ -356,7 +356,8 @@ add_filter( 'body_class', 'add_slug_body_class' );
 
 function cookie_consent_banner () {
 
-	if(!isset($_COOKIE['username']) || strcmp($_COOKIE['koiCookieConsent'],'0') == 0){
+	if(!isset($_COOKIE['username']) == "newuser" || strcmp($_COOKIE['koiCookieConsent'],'0') == 0) {
+
 		 if(ICL_LANGUAGE_CODE=='sv'){
 		 	$policyLink = esc_url('https://info.sistaraden.se/datapolicy');
 		 }
@@ -376,6 +377,7 @@ function cookie_consent_banner () {
 		echo '</button><button class="secondary-btn no-btn" onclick="window.removeKoiConsent()">';
 		echo _e('No, thank you');
 		echo '</button></div></div></div></div></div>';
+
 	}
 }
 add_shortcode('cookie-consent-banner', 'cookie_consent_banner');
