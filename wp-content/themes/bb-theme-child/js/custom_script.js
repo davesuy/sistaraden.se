@@ -435,7 +435,8 @@ function getCookie(name) {
 } 
 
 
-jQuery(window).load(function( $ ) {
+jQuery(window).load(function() {
+
 
 	var cook_user = getCookie('username'); 
 
@@ -443,7 +444,7 @@ jQuery(window).load(function( $ ) {
 
 	if (cook_user == 'newuser') {
 
-         $("#cookie-consent-banner ").hide();
+         jQuery("#cookie-consent-banner").hide();
     }
     else {
         // do cookie exists stuff
