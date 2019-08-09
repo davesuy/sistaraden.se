@@ -917,6 +917,7 @@ $breakpoint: map-get($breakpoints, sm);
         .footer-col-2 {
           clear: none;
           float: left;
+          width: 100% !important;
         }
 
       }
