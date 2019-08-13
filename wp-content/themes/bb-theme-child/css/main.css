@@ -2857,13 +2857,15 @@ header #sr-header-con .fl-row-content-wrap {
   width: 56px;
   height: 48px;
   background: url(../images/mobile_css_sprites.png) -10px -10px;
-  display: block; }
+  display: block;
+  margin: 0 auto; }
 
 #sr-mobile-menu .bg-close_hamburger {
   width: 32px;
   height: 32px;
   background: url(../images/mobile_css_sprites.png) -86px -10px;
-  display: block; }
+  display: block;
+  margin: 0 auto; }
 
 .sr-mobile-menu-toggle img {
   width: 45px; }

@@ -50,12 +50,14 @@
 	    width: 56px; height: 48px;
 	    background: url(#{$images_dir}/mobile_css_sprites.png) -10px -10px;
 	    display: block;
+	    margin: 0 auto;
 	}
 
 	.bg-close_hamburger {
 	    width: 32px; height: 32px;
 	    background: url(#{$images_dir}/mobile_css_sprites.png) -86px -10px;
 	    display: block;
+	    margin: 0 auto;
 	}
 
 }

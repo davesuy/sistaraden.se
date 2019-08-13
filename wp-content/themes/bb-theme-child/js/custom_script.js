@@ -148,6 +148,11 @@ jQuery(document).ready(function( $ ) {
        //$("#sr-mobile-menu").css('position', 'fixed');
     });
 
+    $( "#sr-mobile-menu .sr-mobile-menu-close .bg-close_hamburger" ).click(function() {
+      $( "#sr-mobile-menu .sr-mobile-menu-overlay" ).slideToggle( "slow");
+       //$("#sr-mobile-menu").css('position', 'fixed');
+    });
+
 
     //Coookie Consent Banner
 	$("body").on("click", "#cookie-consent-banner .cookieconsent .buttons .no-btn", function() {
