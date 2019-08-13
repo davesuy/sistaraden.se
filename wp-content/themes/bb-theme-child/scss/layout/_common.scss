@@ -726,3 +726,80 @@ header {
 .eg-sistaraden-element-38-a {
     height: 80px;
 }
+
+/* Css Sprites */
+
+.bg-digital_marketing {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -10px -10px;
+    display: block;
+	margin: 0 auto;
+}
+
+
+.bg-inbound_marketing {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -78px -10px;
+    display: block;
+	margin: 0 auto;
+}
+
+.bg-market_auto {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -10px -78px;
+    display: block;
+	margin: 0 auto;
+}
+
+.bg-performance {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -78px -78px;
+    display: block;
+	margin: 0 auto;
+}
+
+.bg-seo_sem {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -146px -10px;
+    display: block;
+	margin: 0 auto;
+}
+
+
+.bg-social_media {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -146px -78px;
+    display: block;
+	margin: 0 auto;
+}
+
+
+.bg-user_experience {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -10px -146px;
+    display: block;
+	margin: 0 auto;
+}
+
+.bg-web_dev {
+    width: 48px; height: 48px;
+    background: url(#{$images_dir}/tools_css_sprites.png) -78px -146px;
+    display: block;
+	margin: 0 auto;
+}
+
+
+
+.bg-handshake {
+    width: 99px; height: 99px;
+    background: url(#{$images_dir}/tips_css_sprites.png) -10px -10px;
+    display: block;
+	margin: 0 auto;
+}
+
+.bg-target {
+    width: 99px; height: 99px;
+    background: url(#{$images_dir}/tips_css_sprites.png) -129px -10px;
+    display: block;
+	margin: 0 auto;
+}
