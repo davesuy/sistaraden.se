@@ -627,4 +627,9 @@ function fb_pixel_base_code (){
 <?php
 }
 add_action('wp_head', 'fb_pixel_base_code');
+
+// Beaver Builder css, js cache on load 
+
+add_filter( 'fl_builder_render_assets_inline', '__return_true' );
+
 ?>
