@@ -791,15 +791,15 @@ header {
 
 
 .bg-handshake {
-    width: 99px; height: 99px;
-    background: url(#{$images_dir}/tips_css_sprites.png) -10px -10px;
+    width: 99px; height: 74px;
+    background: url(#{$images_dir}/tips_css_sprites.png) -129px -10px;
     display: block;
 	margin: 0 auto;
 }
 
 .bg-target {
     width: 99px; height: 99px;
-    background: url(#{$images_dir}/tips_css_sprites.png) -129px -10px;
+    background: url(#{$images_dir}/tips_css_sprites.png) -10px -10px;
     display: block;
 	margin: 0 auto;
 }

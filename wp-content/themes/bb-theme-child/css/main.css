@@ -2887,15 +2887,15 @@ header #sr-header-con .fl-row-content-wrap {
 
 .bg-handshake {
   width: 99px;
-  height: 99px;
-  background: url(../images/tips_css_sprites.png) -10px -10px;
+  height: 74px;
+  background: url(../images/tips_css_sprites.png) -129px -10px;
   display: block;
   margin: 0 auto; }
 
 .bg-target {
   width: 99px;
   height: 99px;
-  background: url(../images/tips_css_sprites.png) -129px -10px;
+  background: url(../images/tips_css_sprites.png) -10px -10px;
   display: block;
   margin: 0 auto; }
 
@@ -4098,10 +4098,10 @@ header #sr-header-con .fl-row-content-wrap {
   body .home-tool-section-con .fl-heading {
     padding-left: 15px !important;
     padding-right: 15px !important; }
-  .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 220px; }
+  body .home-tool-section-con .fl-col-content.fl-node-content {
+    min-height: 198px !important; }
   .swedish-language .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 220px; }
+    min-height: 205px; }
   .home-tool-section-con .title {
     height: 90px; }
   .home-tool-section-con .icon {
@@ -4114,14 +4114,16 @@ header #sr-header-con .fl-row-content-wrap {
     vertical-align: middle; }
   .home-tool-section-con .learn-more {
     display: table;
-    height: 60px;
+    height: 40px;
     width: 100%; }
   .home-tool-section-con .learn-more > div.fl-node-content {
     display: table-cell;
-    height: 60px;
-    vertical-align: middle; }
+    height: 40px;
+    vertical-align: bottom; }
   .home-tool-section-con .bottom-line {
-    height: 20px; } }
+    height: 20px; }
+  .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
+    min-height: 30px; } }
 
 @media screen and (max-width: 500px) {
   .blue-stripe:before {
