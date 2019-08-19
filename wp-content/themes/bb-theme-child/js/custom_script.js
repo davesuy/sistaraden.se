@@ -1,19 +1,21 @@
 jQuery(document).ready(function( $ ) {
 	/* Sticky Mobile Header */
-    	var didScroll;
-    	var lastScrollTop = 0;
-    	var delta = 5;
-    	var navbarHeight = $('#sr-mobile-menu').outerHeight();
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('#sr-mobile-menu').outerHeight();
 
-    	$(window).scroll(function(){
-    	    didScroll = true;
-    	});
+        $(window).scroll(function(){
+            didScroll = true;
+        });
 
-        function hasScrolled() {
-            var st = $(this).scrollTop();
+    function hasScrolled() {
+    var st = $(this).scrollTop();
 
             // Make scroll more than delta
-            if(Math.abs(lastScrollTop - st) <= delta) { return; }
+            if(Math.abs(lastScrollTop - st) <= delta) {
+                return;
+            }
 
             // If scrolled down and past the navbar, add class .nav-up.
             if (st > lastScrollTop && st > navbarHeight) {
@@ -32,6 +34,7 @@ jQuery(document).ready(function( $ ) {
     	        didScroll = false;
     	    }
     	}, 250);
+
     /* End Sticky Mobile Header */
 
 	/* Grid Animate */
@@ -234,9 +237,9 @@ jQuery(document).ready(function( $ ) {
     var $isAnimatedSecond = $('.second .is-animated');
     var $isAnimatedSecondSingle = $('.second .is-animated__single');
     var $isAnimatedThird = $('.second .right-animated');
-    var $isAnimatedThirdSingle = $('.third .is-animated__single');
-    var $isAnimatedFourth = $('.fourth .is-animated');
-    var $isAnimatedFourthSingle = $('.fourth .is-animated__single');
+    // var $isAnimatedThirdSingle = $('.third .is-animated__single');
+    // var $isAnimatedFourth = $('.fourth .is-animated');
+    // var $isAnimatedFourthSingle = $('.fourth .is-animated__single');
     var $isAnimatedDown = $('.second .down-animated');
 
 	$('#fullpage').fullpage({
