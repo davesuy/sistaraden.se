@@ -355,6 +355,7 @@ $breakpoint: map-get($breakpoints, sm);
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
+
   .page-kostnadsfri-konsultation {
     .fl-page-content {
       padding-top: 100px;
@@ -979,7 +980,7 @@ $breakpoint: map-get($breakpoints, sm);
     .home-tool-section-con {
       .fl-col-content {
         &.fl-node-content {
-          min-height: 220px;
+          min-height: 205px;
         }
       }
     }
@@ -1005,12 +1006,29 @@ $breakpoint: map-get($breakpoints, sm);
   }
   .home-tool-section-con .learn-more > div.fl-node-content {
     display: table-cell;
-    height: 60px;
-    vertical-align: middle;
+    height: 40px;
+    vertical-align: bottom;
   }
   .home-tool-section-con .bottom-line {
     height: 20px;
   }
+
+  .home-tool-section-con {
+
+    .fl-col {
+
+      .fl-col-content {
+
+        .fl-module-image-icon {
+          min-height: 30px;
+        }
+        
+      }
+
+    }
+
+  }
+
 }
 
 @media screen and (max-width: 500px)  {

@@ -4101,7 +4101,7 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .fl-col-content.fl-node-content {
     min-height: 220px; }
   .swedish-language .home-tool-section-con .fl-col-content.fl-node-content {
-    min-height: 220px; }
+    min-height: 205px; }
   .home-tool-section-con .title {
     height: 90px; }
   .home-tool-section-con .icon {
@@ -4118,10 +4118,12 @@ header #sr-header-con .fl-row-content-wrap {
     width: 100%; }
   .home-tool-section-con .learn-more > div.fl-node-content {
     display: table-cell;
-    height: 60px;
-    vertical-align: middle; }
+    height: 40px;
+    vertical-align: bottom; }
   .home-tool-section-con .bottom-line {
-    height: 20px; } }
+    height: 20px; }
+  .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
+    min-height: 30px; } }
 
 @media screen and (max-width: 500px) {
   .blue-stripe:before {
