@@ -4103,7 +4103,9 @@ header #sr-header-con .fl-row-content-wrap {
   .swedish-language .home-tool-section-con .fl-col-content.fl-node-content {
     min-height: 205px; }
   .home-tool-section-con .title {
-    height: 90px; }
+    height: 90px;
+    max-width: 90%;
+    margin: 0 auto; }
   .home-tool-section-con .icon {
     display: table;
     height: 60px;
