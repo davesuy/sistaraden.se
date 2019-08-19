@@ -969,11 +969,11 @@ $breakpoint: map-get($breakpoints, sm);
   }
 
    body {
-   
+
     .home-tool-section-con {
       .fl-col-content {
         &.fl-node-content {
-          min-height: 205px;
+          min-height: 205px !important;
         }
       }
     }
