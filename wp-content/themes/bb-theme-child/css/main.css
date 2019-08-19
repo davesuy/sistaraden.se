@@ -2887,15 +2887,15 @@ header #sr-header-con .fl-row-content-wrap {
 
 .bg-handshake {
   width: 99px;
-  height: 99px;
-  background: url(../images/tips_css_sprites.png) -10px -10px;
+  height: 74px;
+  background: url(../images/tips_css_sprites.png) -129px -10px;
   display: block;
   margin: 0 auto; }
 
 .bg-target {
   width: 99px;
   height: 99px;
-  background: url(../images/tips_css_sprites.png) -129px -10px;
+  background: url(../images/tips_css_sprites.png) -10px -10px;
   display: block;
   margin: 0 auto; }
 
