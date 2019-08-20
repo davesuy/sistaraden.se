@@ -2904,7 +2904,6 @@ header #sr-header-con .fl-row-content-wrap {
   padding-bottom: 50px; }
   .single-tool-page-stripe::before {
     background: url(https://sistaraden.se/wp-content/uploads/2019/08/single-tool-stripe.png);
-    background-repeat: repeat-x;
     background-attachment: fixed;
     background-position: bottom;
     position: absolute;
