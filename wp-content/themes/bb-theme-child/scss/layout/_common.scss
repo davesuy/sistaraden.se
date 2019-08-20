@@ -812,6 +812,8 @@ header {
         background: url(https://sistaraden.se/wp-content/uploads/2019/08/single-tool-stripe-bg.png);
         background-attachment: fixed;
         background-position: bottom;
+        background-repeat-x: repeat;
+        background-repeat-y: no-repeat;
         position: absolute;
         bottom: 0;
         width: 100%;
