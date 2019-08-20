@@ -2899,6 +2899,22 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 0 auto; }
 
+.single-tool-page-stripe {
+  position: relative;
+  padding-bottom: 50px; }
+  .single-tool-page-stripe::before {
+    background: url(https://sistaraden.se/wp-content/uploads/2019/08/single-tool-stripe.png);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-position: bottom;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px; }
+  .single-tool-page-stripe .fl-row-content {
+    background: #FFF;
+    padding: 0 30px 30px; }
+
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
   .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {

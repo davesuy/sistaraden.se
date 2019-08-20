@@ -300,8 +300,8 @@ form#loginform {
 
 header {
 	#sr-header-con {
-		.fl-row-content-wrap { 
-			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); 
+		.fl-row-content-wrap {
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 		}
 	}
 }
@@ -318,16 +318,16 @@ header {
 	}
 }
 
-.employee-fifty-percent-width { 
-	width: 612px; 
+.employee-fifty-percent-width {
+	width: 612px;
 }
 
-.employee-eighty-percent-width { 
-	width: 846px; 
+.employee-eighty-percent-width {
+	width: 846px;
 }
 
-.back-link { 
-	position: relative; 
+.back-link {
+	position: relative;
 }
 .back-link{
 		&::before {
@@ -351,7 +351,7 @@ header {
 		box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);
 	}
 	h2{
-		&.widgettitle { 
+		&.widgettitle {
 			text-transform: uppercase;
 		}
 	}
@@ -418,25 +418,25 @@ header {
 
 .job-template-default {
 	.fl-page-content {
-		.container { 
-			width: unset; 
+		.container {
+			width: unset;
 		}
 	}
 	.fl-page-content {
 		.container {
 			article {
-				header { 
-					display: none; 
+				header {
+					display: none;
 				}
 			}
 		}
 	}
-	.fl-post-meta-bottom { 
-		display: none; 
+	.fl-post-meta-bottom {
+		display: none;
 	}
 
-	.fl-content{ 
-		margin: 40px 0 0 !important; 
+	.fl-content{
+		margin: 40px 0 0 !important;
 	}
 
 	.violet-background{
@@ -490,8 +490,8 @@ header {
 	        text-align: center;
 	    }
 	}
-	.violet-background { 
-		position: relative; 
+	.violet-background {
+		position: relative;
 
 		&::before {
 			content: ' ';
@@ -617,13 +617,13 @@ header {
 }
 
 .page-not-found-container {
-	#notice-container { 
-		position: relative; 
+	#notice-container {
+		position: relative;
 	}
 	#notice-container {
-		.fl-col-content { 
-			position: relative; 
-			z-index: 1; 
+		.fl-col-content {
+			position: relative;
+			z-index: 1;
 		}
 	}
 	#notice-container{
@@ -802,4 +802,25 @@ header {
     background: url(#{$images_dir}/tips_css_sprites.png) -10px -10px;
     display: block;
 	margin: 0 auto;
+}
+
+.single-tool-page-stripe {
+    position: relative;
+    padding-bottom: 50px;
+
+    &::before {
+        background: url(https://sistaraden.se/wp-content/uploads/2019/08/single-tool-stripe.png);
+        background-repeat: repeat-x;
+        background-attachment: fixed;
+        background-position: bottom;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 350px;
+    }
+
+    .fl-row-content {
+        background: #FFF;
+        padding: 0 30px 30px;
+    }
 }
