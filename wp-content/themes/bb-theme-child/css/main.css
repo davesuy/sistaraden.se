@@ -2899,7 +2899,7 @@ header #sr-header-con .fl-row-content-wrap {
   position: relative;
   padding-bottom: 50px; }
   .single-tool-page-stripe::before {
-    background: url(https://sistaraden.se/wp-content/uploads/2019/08/single-tool-stripe-bg.png);
+    background: url(https://sistaraden.se/wp-content/uploads/2019/08/background-single-tool-stripe.png);
     background-attachment: fixed;
     background-position: bottom;
     background-repeat-x: repeat;
@@ -4138,7 +4138,10 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .bottom-line {
     height: 20px; }
   .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
-    min-height: 30px; } }
+    min-height: 30px; }
+  .single-tool-page-stripe::before {
+    bottom: unset;
+    height: 500px; } }
 
 @media screen and (max-width: 500px) {
   .blue-stripe:before {

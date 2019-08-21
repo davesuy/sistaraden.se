@@ -1029,11 +1029,18 @@ $breakpoint: map-get($breakpoints, sm);
         .fl-module-image-icon {
           min-height: 30px;
         }
-        
+
       }
 
     }
 
+  }
+
+  .single-tool-page-stripe {
+      &::before {
+          bottom: unset;
+          height: 500px;
+      }
   }
 
 }
