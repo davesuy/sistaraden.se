@@ -804,12 +804,87 @@ header {
     position: relative;
     padding-bottom: 50px;
 
+    &.head-digital-strategi {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/digital-strategi-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
+    &.head-marketing-automation {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/marketing-automation-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
+    &.head-inbound-marketing {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/inbound-marketing-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
+    &.head-web-development {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/webbutveckling-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
+    &.head-user-experience {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/user-experience-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
+    &.head-seo {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/sem-seo-sea-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
+    &.head-social-media {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/social-medier-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
+    &.head-performance-marketing {
+    	&::before {
+        	background: url(https://sistaraden.se/wp-content/uploads/2019/08/performance-marketing-bg.png);
+	        background-attachment: fixed;
+	        background-position: bottom;
+	        background-repeat-x: repeat;
+	        background-repeat-y: no-repeat;
+        }
+    }
+
     &::before {
-        background: url(https://sistaraden.se/wp-content/uploads/2019/08/background-single-tool-stripe.png);
-        background-attachment: fixed;
-        background-position: bottom;
-        background-repeat-x: repeat;
-        background-repeat-y: no-repeat;
         position: absolute;
         bottom: 0;
         width: 100%;
