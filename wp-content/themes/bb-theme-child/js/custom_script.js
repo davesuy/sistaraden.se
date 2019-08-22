@@ -335,13 +335,13 @@ jQuery(document).ready(function( $ ) {
 			// 	});
 			// }
 		},
-		afterSlideLoad: function(section, origin, destination, direction){
+		afterSlideLoad: function(/*section,*/ origin, destination, direction){
 		},
-		onLeave: function(index, nextIndex, direction){
+		onLeave: function(/*index,*/ nextIndex, direction){
 			//fullpage_api.setAutoScrolling(false);
 			//$.fn.fullpage.setAllowScrolling(false);
 		},
-		afterLoad: function(origin, destination, direction) {
+		afterLoad: function(origin, destination, /*direction*/) {
 			if(destination.index === 1) {
 				fullpage_api.setAutoScrolling(false);
 			} else if(destination.index === 0) {
@@ -350,7 +350,7 @@ jQuery(document).ready(function( $ ) {
 
 			$(document).scroll(function() {
 				var last_section = $('#fullpage').find('.section').last();
-				var offset = last_section.offset();
+				// var offset = last_section.offset();
 				// var w = $(window);
 
 				//if(offset.top - w.scrollTop() > 0) {

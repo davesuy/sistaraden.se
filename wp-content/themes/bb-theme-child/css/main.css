@@ -2376,7 +2376,6 @@ Copyright (c) 2015 Daniel Eden
     height: 333px;
     width: 100%;
     max-width: 456px;
-    width: 100%;
     bottom: -55px;
     left: 0; }
 
@@ -2467,17 +2466,17 @@ Copyright (c) 2015 Daniel Eden
   padding-right: 3px;
   vertical-align: middle;
   font-weight: 900;
-  border: 0px;
+  border: 0;
   position: absolute;
   top: calc(50% - 0.75em);
   right: 5px;
   color: #000000; }
 
 .card-hover-animation .fl-col-content:hover {
-  webkit-box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
-  -o-box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
-  box-shadow: 0px 0px 10px 1px rgba(168, 168, 168, 0.9);
+  webkit-box-shadow: 0 0 10px 1px rgba(168, 168, 168, 0.9);
+  -moz-box-shadow: 0 0 10px 1px rgba(168, 168, 168, 0.9);
+  -o-box-shadow: 0 0 10px 1px rgba(168, 168, 168, 0.9);
+  box-shadow: 0 0 10px 1px rgba(168, 168, 168, 0.9);
   -webkit-transition: -webkit-box-shadow 200ms ease-in-out, -webkit-transform 200ms ease-in-out;
   -moz-transition: -moz-box-shadow 200ms ease-in-out, -moz-transform 200ms ease-in-out;
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
@@ -2486,7 +2485,7 @@ Copyright (c) 2015 Daniel Eden
 
 .no-gutters {
   padding: 5px;
-  margin: 0px; }
+  margin: 0; }
 
 .thick-border {
   border-top: 4px solid #222222; }
@@ -2496,7 +2495,7 @@ form#loginform p:not(.login-remember):not([type="submit"]) {
 
 form#loginform p:not(.login-remember):not([type="submit"]) input {
   position: relative;
-  padding: 12px 0px 5px 0;
+  padding: 12px 0 5px 0;
   width: 100%;
   outline: 0;
   border: 0;
@@ -2525,10 +2524,7 @@ header #sr-header-con .fl-row-content-wrap {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16); }
 
 .fl-builder-content .fl-node-5cde6693c835a a.fl-button {
-  padding-top: 40px;
-  padding-right: 40;
-  padding-bottom: 40px;
-  padding-left: 40; }
+  padding: 40px 40; }
 
 .employee-fifty-percent-width {
   width: 612px; }
@@ -2546,7 +2542,7 @@ header #sr-header-con .fl-row-content-wrap {
   padding-right: 3px;
   vertical-align: middle;
   font-weight: 900;
-  border: 0px;
+  border: 0;
   position: absolute;
   left: 0;
   color: #000000; }
@@ -2554,7 +2550,7 @@ header #sr-header-con .fl-row-content-wrap {
 .application-form-container .gform_widget {
   background: #FFFFFF;
   padding: 50px;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
 
 .application-form-container h2.widgettitle {
   text-transform: uppercase; }
@@ -2899,6 +2895,23 @@ header #sr-header-con .fl-row-content-wrap {
   display: block;
   margin: 0 auto; }
 
+.single-tool-page-stripe {
+  position: relative;
+  padding-bottom: 50px; }
+  .single-tool-page-stripe::before {
+    background: url(https://sistaraden.se/wp-content/uploads/2019/08/background-single-tool-stripe.png);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat-x: repeat;
+    background-repeat-y: no-repeat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 350px; }
+  .single-tool-page-stripe .fl-row-content {
+    background: #FFF;
+    padding: 0 30px 30px; }
+
 .sr-menu-con.fl-menu-mobile-clone .fl-module-content {
   margin: 0 !important; }
   .sr-menu-con.fl-menu-mobile-clone .fl-module-content .fl-menu {
@@ -3112,7 +3125,7 @@ header #sr-header-con .fl-row-content-wrap {
     padding-bottom: 40px;
     max-height: 217px; }
     #cookie-consent-banner .cookieconsent .container.cookie-consent-container .row {
-      margin: 0px; }
+      margin: 0; }
   #cookie-consent-banner .cookieconsent .buttons {
     text-align: center;
     padding: 0px;
@@ -4125,7 +4138,10 @@ header #sr-header-con .fl-row-content-wrap {
   .home-tool-section-con .bottom-line {
     height: 20px; }
   .home-tool-section-con .fl-col .fl-col-content .fl-module-image-icon {
-    min-height: 30px; } }
+    min-height: 30px; }
+  .single-tool-page-stripe::before {
+    bottom: unset;
+    height: 500px; } }
 
 @media screen and (max-width: 500px) {
   .blue-stripe:before {
